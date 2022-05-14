@@ -1,0 +1,120 @@
+.App {
+  text-align: center;
+}
+
+.App-bars {
+  display: grid;
+  justify-content: right;
+  grid-template-columns: 45%;
+  position: absolute;
+  row-gap: 8%;
+  width: 100%;
+}
+
+.App-bar1-container {
+  padding-left: 45%;
+}
+
+.App-bar2-container {
+  padding-left: 30%;
+}
+
+.App-bar3-container {
+  padding-left: 15%;
+}
+
+.App-bar1 {
+  height: 12vh;
+  background: linear-gradient(98.23deg, #2af588 0%, #405a9b 154.02%);
+  border-radius: 100px 0px 0px 100px;
+}
+
+.App-bar2 {
+  height: 12vh;
+  background: linear-gradient(98.48deg, #2af588 -15.38%, #405a9b 136.17%);
+  border-radius: 100px 0px 0px 100px;
+}
+
+.App-bar3 {
+  height: 12vh;
+  background: linear-gradient(98.22deg, #2af588 -31.14%, #405a9b 119.42%);
+  border-radius: 100px 0px 0px 100px;
+}
+
+.App-bar4 {
+  height: 12vh;
+  background: linear-gradient(98.34deg, #2af588 -52.31%, #405a9b 103.33%);
+  border-radius: 100px 0px 0px 100px;
+}
+
+.App-header {
+  display: relative;
+  font-size: calc(3px + 2vmin);
+  color: white;
+}
+
+.App-header-grid {
+  position: relative;
+  display: grid;
+  text-align: center;
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 700;
+  line-height: 27px;
+  /* identical to box height */
+  letter-spacing: -0.01em;
+
+  color: #ffffff;
+  align-content: center;
+  justify-content: right;
+  grid-template-columns: auto auto auto auto;
+  gap: 5vh;
+  padding: 8vh;
+  padding-bottom: 1vh;
+  padding-right: 10vh;
+}
+
+.App-fp {
+  min-height: 656px;
+  background-color: #36393f;
+}
+
+.App-fp-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 13px 15px 13px 0px;
+  margin-left: 15vh;
+  margin-right: 60%;
+  color: #ffff;
+  text-align: left;
+}
+
+.App-title {
+  z-index: 0;
+  /* logo title */
+  font-family: "Chillax";
+  font-style: normal;
+  font-weight: 600;
+  font-size: calc(88px + 2vmin);
+  line-height: 145px;
+  /* identical to box height */
+  letter-spacing: -0.04em;
+}
+
+.App-header2 {
+  /* header 2 */
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 700;
+  font-size: calc(16px + 2vmin);
+  line-height: 120%;
+  /* or 43px */
+  letter-spacing: -0.01em;
+}
+
+.App-create {
+  position: relative;
+  height: 809px;
+  background: #36393f;
+}
