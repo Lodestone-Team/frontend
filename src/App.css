@@ -85,7 +85,7 @@
   align-items: flex-start;
   padding: 13px 15px 13px 0px;
   margin-left: 15vh;
-  margin-right: 60%;
+  margin-right: 120vh;
   color: #ffff;
   text-align: left;
 }
@@ -117,4 +117,63 @@
   position: relative;
   height: 809px;
   background: #36393f;
+}
+
+.App-compenent {
+  margin-left: 15vh;
+  margin-right: 15vh;
+  height: 50vh;
+  box-sizing: border-box;
+  /* fade txt */
+
+  border: calc(0px + 0.4vmin) solid #767A82;
+  border-radius: 35px;
+}
+
+.App-searchbar {
+  margin-top: 8vh;
+  margin-left: 35vh;
+  margin-right: 35vh;
+  height: 2.5vh;
+  background: #C4C4C4;
+  border-radius: 40px;
+  padding-top: 2.5vh;
+  font-family: 'Satoshi';
+  font-style: normal;
+  font-weight: 700;
+  font-size: calc(0px + 2vmin);
+  line-height: 0%;
+  /* identical to box height, or 0px */
+  
+  letter-spacing: -0.01em;
+  
+  /* dark bg accent */
+  color: #36393F;
+}
+
+.App-search-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.App-search-btn {
+  position:relative;
+  box-sizing: border-box;
+  margin-right: 0.5vh;
+  margin-top: -2vh;
+  padding-top: 1.8vh;
+  width: 12.5vh;
+  height: 4vh;
+
+  background: linear-gradient(94.72deg, #2AF588 -83.64%, #334675 113.99%);
+  border-radius: 32px;
+  /* bright txt */
+
+  color: #E3E3E4;
+}
+
+.App-about {
+  position: relative;
+  background: #26282C;
+  height: 716px;
 }

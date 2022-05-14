@@ -32,7 +32,19 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="App-create"></div>
+      <div className="App-create">
+        <div className="App-compenent">
+
+        </div>
+        <div className="App-searchbar">what's your server name?
+          <div className="App-search-container">
+            <div className="App-search-btn">go!</div>
+          </div>
+        </div>
+      </div>
+      <div className="App-about">
+        
+      </div>
     </div>
   );
 }
