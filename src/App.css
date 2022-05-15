@@ -1,3 +1,23 @@
+@keyframes slide1 {
+  0% { padding-left: 45%; }
+  100% { padding-left: 65%; }
+}
+
+@keyframes slide2 {
+  0% { padding-left: 30%; }
+  100% { padding-left: 50%; }
+}
+
+@keyframes slide3 {
+  0% { padding-left: 15%; }
+  100% { padding-left: 35%; }
+}
+
+@keyframes slide4 {
+  0% { padding-left: 0%; }
+  100% { padding-left: 20%; }
+}
+
 .App {
   text-align: center;
 }
@@ -13,14 +33,41 @@
 
 .App-bar1-container {
   padding-left: 45%;
+  animation-name: slide1;
+  animation-direction: alternate;
+  animation-timing-function:cubic-bezier(.32,.1,.25,.97);
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-delay: -2s;
 }
 
 .App-bar2-container {
   padding-left: 30%;
+  animation-name: slide2;
+  animation-direction: alternate;
+  animation-timing-function:cubic-bezier(.32,.1,.25,.97);
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-delay: -1.5s;
 }
 
 .App-bar3-container {
   padding-left: 15%;
+  animation-name: slide3;
+  animation-direction: alternate;
+  animation-timing-function:cubic-bezier(.32,.1,.25,.97);
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-delay: -1s;
+}
+
+.App-bar4-container {
+  animation-name: slide4;
+  animation-direction: alternate;
+  animation-timing-function:cubic-bezier(.32,.1,.25,.97);
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-delay: -0.5s;
 }
 
 .App-bar1 {
@@ -134,10 +181,10 @@
   margin-top: 8vh;
   margin-left: 35vh;
   margin-right: 35vh;
-  height: 2.5vh;
-  background: #C4C4C4;
-  border-radius: 40px;
-  padding-top: 2.5vh;
+  /* height: 2.5vh; */
+  /* background: #C4C4C4; */
+  /* border-radius: 40px; */
+  /* padding-top: 2.5vh; */
   font-family: 'Satoshi';
   font-style: normal;
   font-weight: 700;
@@ -159,17 +206,21 @@
 .App-search-btn {
   position:relative;
   box-sizing: border-box;
-  margin-right: 0.5vh;
-  margin-top: -2vh;
-  padding-top: 1.8vh;
+  margin-right: 0.2vh;
+  margin-top: -5vh;
+  padding-top: 2vh;
   width: 12.5vh;
-  height: 4vh;
-
+  height: 4.5vh;
+  cursor: pointer;
   background: linear-gradient(94.72deg, #2AF588 -83.64%, #334675 113.99%);
   border-radius: 32px;
   /* bright txt */
 
   color: #E3E3E4;
+}
+
+.App-search-btn:hover {
+  background: linear-gradient(104.66deg, #2fe283 -22.99%, #40568d 144.65%);
 }
 
 .App-about {
