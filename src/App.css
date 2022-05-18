@@ -198,6 +198,27 @@
   color: #36393F;
 }
 
+.input {
+  background: #c4c4c4;
+  text-align: center;
+  width: 100%;
+  height: 2.5vh;
+  background: #c4c4c4;
+  border: 0px transparent;
+  border-radius: 40px;
+  padding-top: 1.5vh;
+  padding-bottom: 1.5vh;
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 700;
+  font-size: calc(0px + 2vmin);
+  line-height: 0%;
+  /* identical to box height, or 0px */
+  letter-spacing: -0.01em;
+  /* dark bg accent */
+  color: #36393f;
+}
+
 .App-search-container {
   display: flex;
   justify-content: flex-end;

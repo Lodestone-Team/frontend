@@ -1,45 +1,14 @@
-// import landing from './pages/landing.js';
-import styled from "styled-components";
 import React, { useState } from "react";
 import "./App.css";
 
-const StyledInput = styled.input`
-  background: #c4c4c4;
-  text-align: center;
-  width: 100%;
-  height: 2.5vh;
-  background: #c4c4c4;
-  border: 0px transparent;
-  border-radius: 40px;
-  padding-top: 1.5vh;
-  padding-bottom: 1.5vh;
-  font-family: "Satoshi";
-  font-style: normal;
-  font-weight: 700;
-  font-size: calc(0px + 2vmin);
-  line-height: 0%;
-  /* identical to box height, or 0px */
+const App: React.FunctionComponent = () => {
+  const [query, setQuery] = useState('');
 
-  letter-spacing: -0.01em;
-
-  /* dark bg accent */
-  color: #36393f;
-`;
-
-// Creating a custom hook
-function useInput(defaultValue) {
-  const [value, setValue] = useState(defaultValue);
-  function onChange(e) {
-    setValue(e.target.value);
-  }
-  return {
-    value,
-    onChange,
+  const inputHandler = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const enteredName = event.target.value;
+    setQuery(enteredName);
   };
-}
 
-function App() {
-  const inputValue = useInput();
   return (
     <div className="App">
       <div className="App-fp">
@@ -75,7 +44,7 @@ function App() {
       <div className="App-create">
         <div className="App-compenent"></div>
         <div className="App-searchbar">
-          <StyledInput {...inputValue} placeholder="what's your server name?" />
+          <input value={query} onChange={inputHandler} placeholder="what's your server name?" className="input" />
           <div className="App-search-container">
             <div className="App-search-btn">
               go!
@@ -85,7 +54,23 @@ function App() {
       </div>
       <div className="App-about">
         <div className="App-about-grid">
-          <div className="App-about-container"></div>
+          <div className="App-about-container">
+            <div className="App-about-title-grey">
+              your server.
+            </div>
+            <div className="App-about-title-white">
+              for
+            </div>
+            <div className="App-about-title-gradient">
+              free.
+            </div>
+            <div className="App-about-title-white">
+              forever.
+            </div>
+            <div className="App-about-title-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque at consectetur tortor. Quisque metus lacus, varius ut semper ac, finibus sit amet lectus. Proin facilisis convallis mi, efficitur placerat sem ultrices ut. Etiam accumsan gravida magna non finibus. Donec eleifend magna nec nisl viverra, ac cursus odio rutrum. Aenean mattis eros id lacus euismod, vel tristique nibh viverra. 
+            </div>
+            </div>
           <div className="App-about-img"></div>
         </div>
       </div>
