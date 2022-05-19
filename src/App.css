@@ -1,3 +1,17 @@
+:root {
+  --primary-blue: #334675;
+  --primary-green: #2AF588;
+  --darker-background: #1D1E21;
+  --dark-background: #26282C;
+  --dark-background-accent: #36393f;
+  --light-background: #E5E7EB;
+  --bright-text: #E3E3E4;
+  --fade-text: #767A82;
+  --std-gradient: linear-gradient(270deg, #2AF588 0%, #334675 99.99%);
+  --selection-green: #6DD277;
+  --selection-red: #D26D6D;
+}
+
 @keyframes slide1 {
   0% { padding-left: 45%; }
   100% { padding-left: 65%; }
@@ -111,7 +125,7 @@
   /* identical to box height */
   letter-spacing: -0.01em;
 
-  color: #ffffff;
+  color: white;
   align-content: center;
   justify-content: right;
   grid-template-columns: auto auto auto auto;
@@ -123,7 +137,7 @@
 
 .App-fp {
   min-height: 656px;
-  background-color: #36393f;
+  background-color: var(--dark-background-accent);
 }
 
 .App-fp-container {
@@ -133,7 +147,7 @@
   padding: 13px 15px 13px 0px;
   margin-left: 15vh;
   margin-right: 120vh;
-  color: #ffff;
+  color: white;
   text-align: left;
 }
 
@@ -173,7 +187,7 @@
   box-sizing: border-box;
   /* fade txt */
 
-  border: calc(0px + 0.4vmin) solid #767A82;
+  border: calc(0px + 0.4vmin) solid var(--fade-text);
   border-radius: 35px;
 }
 
@@ -181,10 +195,6 @@
   margin-top: 8vh;
   margin-left: 35vh;
   margin-right: 35vh;
-  /* height: 2.5vh; */
-  /* background: #C4C4C4; */
-  /* border-radius: 40px; */
-  /* padding-top: 2.5vh; */
   font-family: 'Satoshi';
   font-style: normal;
   font-weight: 700;
@@ -193,13 +203,11 @@
   /* identical to box height, or 0px */
   
   letter-spacing: -0.01em;
-  
-  /* dark bg accent */
-  color: #36393F;
+
+  color: var(--dark-background-accent);
 }
 
 .input {
-  background: #c4c4c4;
   text-align: center;
   width: 100%;
   height: 2.5vh;
@@ -215,8 +223,8 @@
   line-height: 0%;
   /* identical to box height, or 0px */
   letter-spacing: -0.01em;
-  /* dark bg accent */
-  color: #36393f;
+
+  color: var(--dark-background-accent);
 }
 
 .App-search-container {
@@ -235,9 +243,8 @@
   cursor: pointer;
   background: linear-gradient(94.72deg, #2AF588 -83.64%, #334675 113.99%);
   border-radius: 32px;
-  /* bright txt */
 
-  color: #E3E3E4;
+  color: var(--bright-text);
 }
 
 .App-search-btn:hover {
@@ -246,6 +253,6 @@
 
 .App-about {
   position: relative;
-  background: #26282C;
+  background: var(--dark-background);
   height: 716px;
 }
