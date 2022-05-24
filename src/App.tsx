@@ -74,6 +74,20 @@ const App: React.FunctionComponent = () => {
           </div>
         <div className="App-about-img"></div>
       </div>
+
+      <div className="App-simple-setup">
+        <div className="App-simple-setup-container">
+          <div className="App-simple-setup-superscript">
+            (the easiest crafting recipe)
+          </div>
+          <div className="App-simple-setup-title">
+            one-click setup.
+          </div>
+          <div className="App-simple-setup-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque at consectetur tortor. Quisque metus lacus, varius ut semper ac, finibus sit amet lectus. Proin facilisis convallis mi, efficitur placerat sem ultrices ut. Etiam accumsan gravida magna non finibus. Donec eleifend magna nec nisl viverra, ac cursus odio rutrum. Aenean mattis eros id lacus euismod, vel tristique nibh viverra.
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

@@ -268,8 +268,8 @@
 
 .App-about-title-container {
   margin-bottom: 2vh;
-  font-size: 96px;
   font-weight: 700;
+  font-size: 600%;
   letter-spacing: -0.01em;
   display: flex;
   flex-wrap: wrap;
@@ -302,7 +302,6 @@
 
 .App-about-title-text {
   font-family: 'Satoshi';
-  font-style: normal;
   font-weight: 500;
   font-size: 125%;
   line-height: 100%;
@@ -311,4 +310,42 @@
   letter-spacing: -0.01em;
 
   color: #E3E3E4;
+}
+
+.App-simple-setup {
+  background: var(--dark-background);
+  font-family: 'Satoshi';
+  height: 716px;
+}
+
+.App-simple-setup-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+  padding: 10vh 15px 15px 0px;
+  margin-left: 110vh;
+  margin-right: 15vh;
+  letter-spacing: -0.01em;
+}
+
+.App-simple-setup-superscript {
+  color: #767A82;
+  font-weight: 700;
+  font-size: 250%;
+  line-height: 120%;
+}
+
+.App-simple-setup-title {
+  color: white;
+  font-weight: 700;
+  font-size: 600%;
+  line-height: 120%;
+}
+
+.App-simple-setup-text {
+  color: #E3E3E4;
+  font-weight: 500;
+  font-size: 125%;
+  line-height: 100%;
 }
