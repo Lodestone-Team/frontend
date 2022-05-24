@@ -252,35 +252,63 @@
 }
 
 .App-about {
-  position: relative;
   background: var(--dark-background);
   height: 716px;
 }
 
+.App-about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10vh 15px 15px 0px;
+  margin-left: 15vh;
+  margin-right: 120vh;
+  text-align: left;
+}
+
 .App-about-title-container {
-  display: relative;
-  font-size: calc(3px + 5vmin);
+  margin-bottom: 2vh;
+  font-size: 96px;
   font-weight: 700;
-}
+  letter-spacing: -0.01em;
+  display: flex;
+  flex-wrap: wrap;
+  }
 
-.App-about-title-white {
-  display: relative;
-  font-size: calc(3px + 5vmin);
+.App-about-title-white-first {
   color: white;
+  width: fit-content;
+  flex-basis: 27%; /*lgtm! kekw */
 }
 
+.App-about-title-white-second {
+  color: white;
+  width: fit-content;
+}
 .App-about-title-grey {
-  display: relative;
-  font-size: calc(3px + 5vmin);
-  color: grey;
+  color: grey;  
+  width: fit-content;
 }
 
 .App-about-title-gradient {
-  display: relative;
-  font-size: calc(3px + 5vmin);
-  width: fit-content;
 	background: linear-gradient(98.23deg, #2af588 0%, #405a9b 154.02%);
+  background-clip: unset;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
+  width: fit-content;
   font-weight: 900;
+  flex-basis: 40%;
+}
+
+.App-about-title-text {
+  font-family: 'Satoshi';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 125%;
+  line-height: 100%;
+
+  /* or 20px */
+  letter-spacing: -0.01em;
+
+  color: #E3E3E4;
 }

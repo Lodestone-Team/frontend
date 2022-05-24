@@ -53,28 +53,26 @@ const App: React.FunctionComponent = () => {
         </div>
       </div>
       <div className="App-about">
-        <div className="App-about-grid">
-          <div className="App-about-container">
-            <div className="App-about-title-container">
-              <div className="App-about-title-grey">
-                your server.
-              </div>
-              <div className="App-about-title-white">
-                for
-              </div>
-              <div className="App-about-title-gradient">
-                free.
-              </div>
-              <div className="App-about-title-white">
-                forever.
-              </div>
+        <div className="App-about-container">
+          <div className="App-about-title-container">
+            <div className="App-about-title-grey">
+              your server.
             </div>
-            <div className="App-about-title-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque at consectetur tortor. Quisque metus lacus, varius ut semper ac, finibus sit amet lectus. Proin facilisis convallis mi, efficitur placerat sem ultrices ut. Etiam accumsan gravida magna non finibus. Donec eleifend magna nec nisl viverra, ac cursus odio rutrum. Aenean mattis eros id lacus euismod, vel tristique nibh viverra. 
-              </div>
+            <div className="App-about-title-white-first">
+              for
             </div>
-          <div className="App-about-img"></div>
-        </div>
+            <div className="App-about-title-gradient">
+              free.
+            </div>
+            <div className="App-about-title-white-second">
+              forever.
+            </div>
+          </div>
+          <div className="App-about-title-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque at consectetur tortor. Quisque metus lacus, varius ut semper ac, finibus sit amet lectus. Proin facilisis convallis mi, efficitur placerat sem ultrices ut. Etiam accumsan gravida magna non finibus. Donec eleifend magna nec nisl viverra, ac cursus odio rutrum. Aenean mattis eros id lacus euismod, vel tristique nibh viverra. 
+            </div>
+          </div>
+        <div className="App-about-img"></div>
       </div>
     </div>
   );
