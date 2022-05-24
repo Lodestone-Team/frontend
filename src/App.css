@@ -110,7 +110,7 @@
 
 .App-header {
   display: relative;
-  font-size: calc(3px + 2vmin);
+  font-size: 1.5rem;
   color: white;
 }
 
@@ -157,18 +157,20 @@
   font-family: "Chillax";
   font-style: normal;
   font-weight: 600;
-  font-size: calc(88px + 2vmin);
+  font-size: 12rem;
   line-height: 145px;
+  margin-bottom: 1rem;
   /* identical to box height */
   letter-spacing: -0.04em;
 }
 
 .App-header2 {
+  color: slategrey;
   /* header 2 */
   font-family: "Satoshi";
   font-style: normal;
   font-weight: 700;
-  font-size: calc(16px + 2vmin);
+  font-size: 2.5rem;
   line-height: 120%;
   /* or 43px */
   letter-spacing: -0.01em;
@@ -198,7 +200,7 @@
   font-family: 'Satoshi';
   font-style: normal;
   font-weight: 700;
-  font-size: calc(0px + 2vmin);
+  font-size: 1.5rem;
   line-height: 0%;
   /* identical to box height, or 0px */
   
@@ -217,9 +219,8 @@
   padding-top: 1.5vh;
   padding-bottom: 1.5vh;
   font-family: "Satoshi";
-  font-style: normal;
   font-weight: 700;
-  font-size: calc(0px + 2vmin);
+  font-size: 1.5rem;
   line-height: 0%;
   /* identical to box height, or 0px */
   letter-spacing: -0.01em;
@@ -269,7 +270,7 @@
 .App-about-title-container {
   margin-bottom: 2vh;
   font-weight: 700;
-  font-size: 600%;
+  font-size: 6rem;
   letter-spacing: -0.01em;
   display: flex;
   flex-wrap: wrap;
@@ -304,7 +305,7 @@
 .App-about-title-text {
   font-family: 'Satoshi';
   font-weight: 500;
-  font-size: 125%;
+  font-size: 1.25rem;
   line-height: 100%;
 
   letter-spacing: -0.01em;
@@ -332,21 +333,21 @@
 .App-simple-setup-superscript {
   color: #767A82;
   font-weight: 700;
-  font-size: 250%;
+  font-size: 2.5rem;
   line-height: 120%;
 }
 
 .App-simple-setup-title {
   color: white;
   font-weight: 700;
-  font-size: 600%;
+  font-size: 5.75rem;
   line-height: 120%;
 }
 
 .App-simple-setup-text {
   color: #E3E3E4;
   font-weight: 500;
-  font-size: 125%;
+  font-size: 1.25rem;
   line-height: 100%;
 }
 
@@ -360,7 +361,7 @@
   font-family: sans-serif; /* writing this with no internet rn. idk why fonts no work rn. change. */
   background: linear-gradient(360deg, #484c53 5.98%, rgba(38, 40, 44, 0) 100%);  font-family: 'JetBrains Mono';
   font-weight: 500;
-  font-size: 100%;
+  font-size: 1rem;
   letter-spacing: -0.01em;
   line-height: 100%;
   word-wrap: break-word;
