@@ -256,3 +256,31 @@
   background: var(--dark-background);
   height: 716px;
 }
+
+.App-about-title-container {
+  display: relative;
+  font-size: calc(3px + 5vmin);
+  font-weight: 700;
+}
+
+.App-about-title-white {
+  display: relative;
+  font-size: calc(3px + 5vmin);
+  color: white;
+}
+
+.App-about-title-grey {
+  display: relative;
+  font-size: calc(3px + 5vmin);
+  color: grey;
+}
+
+.App-about-title-gradient {
+  display: relative;
+  font-size: calc(3px + 5vmin);
+  width: fit-content;
+	background: linear-gradient(98.23deg, #2af588 0%, #405a9b 154.02%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+  font-weight: 900;
+}
