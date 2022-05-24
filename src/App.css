@@ -253,7 +253,7 @@
 
 .App-about {
   background: var(--dark-background);
-  height: 716px;
+  height: 600px;
 }
 
 .App-about-container {
@@ -273,6 +273,7 @@
   letter-spacing: -0.01em;
   display: flex;
   flex-wrap: wrap;
+  line-height: 100%;
   }
 
 .App-about-title-white-first {
@@ -306,7 +307,6 @@
   font-size: 125%;
   line-height: 100%;
 
-  /* or 20px */
   letter-spacing: -0.01em;
 
   color: #E3E3E4;
@@ -315,7 +315,7 @@
 .App-simple-setup {
   background: var(--dark-background);
   font-family: 'Satoshi';
-  height: 716px;
+  height: 500px;
 }
 
 .App-simple-setup-container {
@@ -348,4 +348,32 @@
   font-weight: 500;
   font-size: 125%;
   line-height: 100%;
+}
+
+.App-security {
+  background: var(--dark-background);
+  height: 550px;
+  width: 100%;
+}
+
+.App-security-binary {
+  font-family: sans-serif; /* writing this with no internet rn. idk why fonts no work rn. change. */
+  background: linear-gradient(360deg, #484c53 5.98%, rgba(38, 40, 44, 0) 100%);  font-family: 'JetBrains Mono';
+  font-weight: 500;
+  font-size: 100%;
+  letter-spacing: -0.01em;
+  line-height: 100%;
+  word-wrap: break-word;
+
+  /* gives us nice text */
+  background-clip: unset; /* this line is here purely to stop the compiler from giving warning */
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+
+  /*gets rid of overflow*/
+  height: 550px;
+  text-overflow: clip;
+  white-space: normal;
+  overflow: hidden; 
+  /**/
 }
