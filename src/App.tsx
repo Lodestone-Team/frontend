@@ -150,7 +150,27 @@ const App: React.FunctionComponent = () => {
       </div>
 
       <div className="App-footer">
+        <div className="App-footer-title">
+          where will you go?
+        </div>
+        <div className="App-footer-download">
+          download now!
+        </div>
+        <div className="App-footer-github">
+          view our github repo! &#8594;
+        </div>
+        <div className="App-footer-wwu">
+          interested in working with us? &#8594;
+        </div>
+        <div className="App-footer-about-us">
+          About Us &#8594;
+        </div>
+        <div className="App-footer-cc">
+          © COPYRIGHT LODESTONE 2022. ALL RIGHTS RESERVED.
+        </div>
+        <div className="App-footer-image">
 
+        </div>
       </div>
     </div>
   );

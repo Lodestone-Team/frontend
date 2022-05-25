@@ -478,7 +478,7 @@
 
 .App-tools {
   background: var(--dark-background);
-  height: 180rem;
+  height: 110rem;
   width: 100%;
   position: relative;
 }
@@ -569,7 +569,7 @@
 
 .App-control-image-stickybox {
   grid-column: 4 / 6;
-  grid-row: 1 / 4;
+  grid-row: 1 / 6;
 }
 .App-control-image-box {
   top: 0;
@@ -579,18 +579,55 @@
   width: 40vw;
   height: 30vh;
 }
-/* code for app footer section here */
 
-/*
+
 .App-footer {
   background: var(--dark-background);
   height: 60rem;
   width: 100%;
   position: relative;
 
-    
-    background-color: rgb(192, 136, 192);
-    font-size: xx-large;
-    font-style: 'Comic Sans MS';
 }
-*/
+
+/* doing it this way because lazy. fix when refactor code */
+.App-footer-title {
+  font-family: sans-serif; 
+	background: white;
+  font-weight: 900;
+  font-size: 6rem;
+
+  /* gives us nice text */
+  background-clip: unset;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+
+  text-align: left;
+  width: 40vw;
+  position: absolute;
+  top: 15vh;
+  left: 10vw;
+}
+
+.App-footer-download {
+
+}
+
+.App-footer-github {
+
+}
+
+.App-footer-wwu {
+
+}
+
+.App-footer-about-us { /*more like amongus */
+
+}
+
+.App-footer-cc {
+
+}
+
+.App-footer-image {
+  
+}
