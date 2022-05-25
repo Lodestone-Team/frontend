@@ -280,7 +280,7 @@
 .App-about-title-white-first {
   color: white;
   width: fit-content;
-  flex-basis: 27%; /*lgtm! kekw */
+  flex-basis: 27%; 
 }
 
 .App-about-title-white-second {
@@ -408,7 +408,7 @@
 /*key wrapper*/
 .App-security-lock-key {
   width: 100%;
-  top: -32%;
+  top: -32.512500768123444213444433333%;
 
   position: relative;
 
@@ -461,28 +461,136 @@
   width: 74vw; /* 75% of the width of the veiwer */
 }
 
-/* code for app control section here */
+/* code for app control section here 
 .App-control {
   background: var(--dark-background);
   height: 60rem;
   width: 100%;
   position: relative;
+
+  background-color: rgb(192, 136, 192);
+  font-size: xx-large;
+  font-style: 'Comic Sans MS';
 }
+*/
 
 /* code for app tools section here */
 
 .App-tools {
   background: var(--dark-background);
-  height: 60rem;
+  height: 180rem;
   width: 100%;
   position: relative;
 }
 
+.App-tools-title-one {
+  font-family: sans-serif; 
+	background: linear-gradient(98.23deg, #2af588 0%, #405a9b 154.02%);
+  font-weight: 900;
+  font-size: 6rem;
+
+  /* gives us nice text */
+  background-clip: unset;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+
+  width: fit-content;
+  position: absolute;
+  top: 5vh;
+  left: 10vw;
+}
+
+/* doing it this way because lazy. fix when refactor code */
+.App-tools-title-two {
+  font-family: sans-serif; 
+	background: white;
+  font-weight: 900;
+  font-size: 6rem;
+
+  /* gives us nice text */
+  background-clip: unset;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+
+  width: fit-content;
+  position: absolute;
+  top: 15vh;
+  left: 10vw;
+}
+
+.App-control-text-wrapper {
+  /* grid things */
+  display: grid;
+    /* left and right margins are total 20% vw => 80% left for columns */
+  grid-template-columns: 10vw 20vw 20vw 20vw 20vw 10vw;
+  row-gap: 10vh;  
+  grid-auto-rows: auto;
+
+  /* position things */
+  position: absolute;
+  width: 100%;
+  top: 35vh;  
+
+
+  /* font */
+  font-style: 'Satoshi';
+  color: white;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 2rem;
+}
+
+/* columns 1 and 6 are not meant to be used. */
+/* here is just demonstrating grid functionality, make actual decisions time of */
+.App-control-text-one {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.App-control-text-two {
+  grid-column: 2 / 4;
+  grid-row: 2;
+}
+
+.App-control-text-three {
+  grid-column: 2 / 4;
+  grid-row: 3;
+}
+
+.App-control-text-four {
+  grid-column: 2 / 6;
+  grid-row: 4;
+}
+
+.App-control-text-five {
+  grid-column: 2;
+  grid-row: 5;
+}
+
+.App-control-image-stickybox {
+  grid-column: 4 / 6;
+  grid-row: 1 / 4;
+}
+.App-control-image-box {
+  top: 0;
+  position: sticky;
+  border: 0.5vmin solid rgb(85, 79, 78);
+  border-radius: 2vmin;
+  width: 40vw;
+  height: 30vh;
+}
 /* code for app footer section here */
 
+/*
 .App-footer {
   background: var(--dark-background);
   height: 60rem;
   width: 100%;
   position: relative;
+
+    
+    background-color: rgb(192, 136, 192);
+    font-size: xx-large;
+    font-style: 'Comic Sans MS';
 }
+*/
