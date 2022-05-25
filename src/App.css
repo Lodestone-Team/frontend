@@ -121,7 +121,7 @@
   font-family: "Satoshi";
   font-style: normal;
   font-weight: 700;
-  line-height: 27px;
+  line-height: 2rem;
   /* identical to box height */
   letter-spacing: -0.01em;
 
@@ -136,7 +136,7 @@
 }
 
 .App-fp {
-  min-height: 656px;
+  min-height: 40rem;
   background-color: var(--dark-background-accent);
 }
 
@@ -144,7 +144,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 13px 15px 13px 0px;
+  padding: 1rem 1rem 1rem 1rem;
   margin-left: 15vh;
   margin-right: 120vh;
   color: white;
@@ -158,7 +158,7 @@
   font-style: normal;
   font-weight: 600;
   font-size: 12rem;
-  line-height: 145px;
+  line-height: 14rem;
   margin-bottom: 1rem;
   /* identical to box height */
   letter-spacing: -0.04em;
@@ -178,7 +178,7 @@
 
 .App-create {
   position: relative;
-  height: 809px;
+  height: 45rem;
   background: #36393f;
 }
 
@@ -189,8 +189,8 @@
   box-sizing: border-box;
   /* fade txt */
 
-  border: calc(0px + 0.4vmin) solid var(--fade-text);
-  border-radius: 35px;
+  border: .2rem solid var(--fade-text);
+  border-radius: 6rem;
 }
 
 .App-searchbar {
@@ -214,8 +214,8 @@
   width: 100%;
   height: 2.5vh;
   background: #c4c4c4;
-  border: 0px transparent;
-  border-radius: 40px;
+  border: 0rem transparent;
+  border-radius: 3rem;
   padding-top: 1.5vh;
   padding-bottom: 1.5vh;
   font-family: "Satoshi";
@@ -243,7 +243,7 @@
   height: 4.5vh;
   cursor: pointer;
   background: linear-gradient(94.72deg, #2AF588 -83.64%, #334675 113.99%);
-  border-radius: 32px;
+  border-radius: 3rem;
 
   color: var(--bright-text);
 }
@@ -254,16 +254,16 @@
 
 .App-about {
   background: var(--dark-background);
-  height: 600px;
+  height: 35 rem;
 }
 
 .App-about-container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 10vh 15px 15px 0px;
+  padding: 5rem 1rem 1rem 1rem;
   margin-left: 15vh;
-  margin-right: 120vh;
+  margin-right: 65rem;
   text-align: left;
 }
 
@@ -316,7 +316,7 @@
 .App-simple-setup {
   background: var(--dark-background);
   font-family: 'Satoshi';
-  height: 500px;
+  height: 25rem;
 }
 
 .App-simple-setup-container {
@@ -324,9 +324,9 @@
   flex-direction: column;
   align-items: flex-end;
   text-align: right;
-  padding: 10vh 15px 15px 0px;
-  margin-left: 110vh;
-  margin-right: 15vh;
+  padding: 1rem 1rem 1rem 1rem;
+  margin-left: 65rem;
+  margin-right: 10rem;
   letter-spacing: -0.01em;
 }
 
@@ -341,7 +341,7 @@
   color: white;
   font-weight: 700;
   font-size: 5.75rem;
-  line-height: 120%;
+  line-height: 7rem;
 }
 
 .App-simple-setup-text {
@@ -351,14 +351,16 @@
   line-height: 100%;
 }
 
-.App-security {
+/*security section wrapper*/
+.App-security { 
   background: var(--dark-background);
-  height: 550px;
+  height: 60rem;
   width: 100%;
+  position: relative;
 }
 
 .App-security-binary {
-  font-family: sans-serif; /* writing this with no internet rn. idk why fonts no work rn. change. */
+  font-family: sans-serif; 
   background: linear-gradient(360deg, #484c53 5.98%, rgba(38, 40, 44, 0) 100%);  font-family: 'JetBrains Mono';
   font-weight: 500;
   font-size: 1rem;
@@ -372,9 +374,115 @@
 	-webkit-text-fill-color: transparent;
 
   /*gets rid of overflow*/
-  height: 550px;
+  height: 40rem;
   text-overflow: clip;
   white-space: normal;
   overflow: hidden; 
-  /**/
+}
+
+/*lock wrapper*/
+.App-security-lock {
+  width: 100%;
+  top: -30%;
+
+  position: relative;
+
+  
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+
+.App-security-lock-top {
+  background: #2AF588;
+}
+
+.App-security-lock-bot {
+  position: absolute;
+  width: 18vmin;
+  height: 18vmin;
+  border-radius: 4vmin;
+  background: var(--std-gradient);
+}
+
+/*key wrapper*/
+.App-security-lock-key {
+  width: 100%;
+  top: -32%;
+
+  position: relative;
+
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.App-key-bot {
+  width: 0;
+  height: 0;
+  border-left: 2vmin solid transparent;
+  border-right: 2vmin solid transparent;
+  border-bottom: 5vmin solid #26282C;
+  position: absolute;
+  top: 59%;
+}
+
+
+.App-key-top {
+  background: #26282C;
+  width: 4vmin;
+  height: 4vmin;
+  border-radius: 3vmin;
+  border-top: 3vm solid ;
+}
+
+.App-security-title-one {
+  font-family: 'Comic Sans MS';
+  color: #767A82;
+  font-size: 400%;
+  font-weight: 700;
+  line-height: 50%;
+}
+
+.App-security-title-two {
+  font-family: 'Comic Sans MS';
+  color: white;
+  font-size: 400%;
+  font-weight: 700;
+}
+
+.App-security-text {
+  font-family: 'Comic Sans MS';
+  color: white;
+  font-size: 110%;
+  font-weight: 500;
+  margin-left: 13vw; /* (100 - 75)/2 */
+  width: 74vw; /* 75% of the width of the veiwer */
+}
+
+/* code for app control section here */
+.App-control {
+  background: var(--dark-background);
+  height: 60rem;
+  width: 100%;
+  position: relative;
+}
+
+/* code for app tools section here */
+
+.App-tools {
+  background: var(--dark-background);
+  height: 60rem;
+  width: 100%;
+  position: relative;
+}
+
+/* code for app footer section here */
+
+.App-footer {
+  background: var(--dark-background);
+  height: 60rem;
+  width: 100%;
+  position: relative;
 }
