@@ -32,11 +32,58 @@
   100% { padding-left: 20%; }
 }
 
+.Header-Gradient {
+  background-clip: unset; /* here to avoid warnings */
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+  background-color: var(--std-gradient);
+  width: fit-content;
+  font-weight: 900;
+}
+
+.Header-White {
+  color: #E3E3E4;
+  width: fit-content;
+}
+
+.Header-Grey {
+  color: grey;  
+  width: fit-content;
+}
+
+.Section-Default {
+  background-color: var(--dark-background);
+  width: 100%;
+  position: relative;
+}
+
+.Text-Paragraph {
+  color: #E3E3E4;
+  font-family: 'Satoshi';
+}
+
+.Bar-Container {
+  animation-timing-function:cubic-bezier(.32,.1,.25,.97);
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-duration: 3s;
+}
+
+.App-Bar {
+  height: 12vh;
+  border-radius: 100px 0px 0px 100px;
+}
+
+.Image-Box {
+  border: 0.5vmin solid #767A82;
+  border-radius: 2vmin;
+}
+
 .App {
   text-align: center;
 }
 
-.App-bars {
+.App-bar-box {
   display: grid;
   justify-content: right;
   grid-template-columns: 45%;
@@ -45,67 +92,44 @@
   width: 100%;
 }
 
-.App-bar1-container {
+#Bar-Container-1 {
   padding-left: 45%;
   animation-name: slide1;
-  animation-direction: alternate;
-  animation-timing-function:cubic-bezier(.32,.1,.25,.97);
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
   animation-delay: -2s;
 }
 
-.App-bar2-container {
+#Bar-Container-2 {
   padding-left: 30%;
   animation-name: slide2;
-  animation-direction: alternate;
-  animation-timing-function:cubic-bezier(.32,.1,.25,.97);
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
   animation-delay: -1.5s;
 }
 
-.App-bar3-container {
+#Bar-Container-3 {
   padding-left: 15%;
   animation-name: slide3;
-  animation-direction: alternate;
-  animation-timing-function:cubic-bezier(.32,.1,.25,.97);
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
   animation-delay: -1s;
 }
 
-.App-bar4-container {
+#Bar-Container-4 {
+  padding-left: 0%;
   animation-name: slide4;
-  animation-direction: alternate;
-  animation-timing-function:cubic-bezier(.32,.1,.25,.97);
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
   animation-delay: -0.5s;
 }
 
-.App-bar1 {
-  height: 12vh;
+#Bar1 {
   background: linear-gradient(98.23deg, #2af588 0%, #405a9b 154.02%);
-  border-radius: 100px 0px 0px 100px;
 }
 
-.App-bar2 {
-  height: 12vh;
+#Bar2 {
   background: linear-gradient(98.48deg, #2af588 -15.38%, #405a9b 136.17%);
-  border-radius: 100px 0px 0px 100px;
 }
 
-.App-bar3 {
-  height: 12vh;
+#Bar3 {
   background: linear-gradient(98.22deg, #2af588 -31.14%, #405a9b 119.42%);
-  border-radius: 100px 0px 0px 100px;
 }
 
-.App-bar4 {
-  height: 12vh;
+#Bar4 {
   background: linear-gradient(98.34deg, #2af588 -52.31%, #405a9b 103.33%);
-  border-radius: 100px 0px 0px 100px;
 }
 
 .App-header {
@@ -252,9 +276,8 @@
   background: linear-gradient(104.66deg, #2fe283 -22.99%, #40568d 144.65%);
 }
 
-.App-about {
-  background: var(--dark-background);
-  height: 35 rem;
+#About-section {
+  height: 60vh;
 }
 
 .App-about-container {
@@ -275,29 +298,20 @@
   display: flex;
   flex-wrap: wrap;
   line-height: 100%;
-  }
+}
 
-.App-about-title-white-first {
-  color: white;
-  width: fit-content;
+#about-wh {
   flex-basis: 27%; 
 }
 
-.App-about-title-white-second {
-  color: white;
-  width: fit-content;
-}
-.App-about-title-grey {
-  color: grey;  
-  width: fit-content;
-}
+
 
 .App-about-title-gradient {
 	background: linear-gradient(98.23deg, #2af588 0%, #405a9b 154.02%);
   background-clip: unset;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-  width: fit-content;
+  
   font-weight: 900;
   flex-basis: 40%;
 }
@@ -312,7 +326,7 @@
 
   color: #E3E3E4;
 }
-
+/* ---------------------------------------------------------------- */
 .App-simple-setup {
   background: var(--dark-background);
   font-family: 'Satoshi';
@@ -629,5 +643,5 @@
 }
 
 .App-footer-image {
-  
+
 }
