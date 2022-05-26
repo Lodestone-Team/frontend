@@ -36,19 +36,31 @@
   background-clip: unset; /* here to avoid warnings */
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-  background-color: var(--std-gradient);
+  background-image: var(--std-gradient);
   width: fit-content;
   font-weight: 900;
+  font-size: 500%;
+  line-height: 100%;
+  letter-spacing: -0.01em;
+  height: 100%;
+
 }
 
 .Header-White {
   color: #E3E3E4;
   width: fit-content;
+  font-size: 500%;
+  line-height: 95%;
+  font-weight: 700;
+  letter-spacing: -0.01em;
 }
 
 .Header-Grey {
   color: grey;  
   width: fit-content;
+  font-size: 500%;
+  font-weight: 700;
+  letter-spacing: -0.01em;
 }
 
 .Section-Default {
@@ -58,8 +70,12 @@
 }
 
 .Text-Paragraph {
+  text-align: left;
   color: #E3E3E4;
   font-family: 'Satoshi';
+  font-weight: 500;
+  font-size: 1.25rem;
+  letter-spacing: -0.01em;
 }
 
 .Bar-Container {
@@ -277,94 +293,69 @@
 }
 
 #About-section {
-  height: 60vh;
+  height: 100vh;
 }
 
-.App-about-container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 5rem 1rem 1rem 1rem;
-  margin-left: 15vh;
-  margin-right: 65rem;
-  text-align: left;
+#App-about-grid {
+  display: grid;
+  grid-template-columns: 10vw 40vw 40vw 10vw;
+  grid-template-rows: 5vh 35vh 35vh 10vh;
+  row-gap: 10vh;
 }
 
-.App-about-title-container {
-  margin-bottom: 2vh;
-  font-weight: 700;
-  font-size: 6rem;
-  letter-spacing: -0.01em;
-  display: flex;
-  flex-wrap: wrap;
-  line-height: 100%;
+#App-about-container {
+  grid-column: 2;
+  grid-row: 2;
 }
 
-#about-wh {
-  flex-basis: 27%; 
+#About-grad-free-container {
+  position: relative;
 }
 
-
-
-.App-about-title-gradient {
-	background: linear-gradient(98.23deg, #2af588 0%, #405a9b 154.02%);
-  background-clip: unset;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-  
-  font-weight: 900;
-  flex-basis: 40%;
+#About-grad-free {
+  font-size: 100%;
+  position: absolute;
+  left: 120%;
+  top: 0%;
 }
 
-.App-about-title-text {
-  font-family: 'Satoshi';
-  font-weight: 500;
-  font-size: 1.25rem;
-  line-height: 100%;
+#About-para {
+  margin-top: 2vh;
+}
 
-  letter-spacing: -0.01em;
+#About-img-1 {
+  grid-column: 3;
+  grid-row: 2;
+}
 
-  color: #E3E3E4;
+#About-img-2 {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+#App-ss-container {
+  grid-column: 3;
+  grid-row: 3;
+  position: relative;
+}
+
+#SS-header-grey {
+  font-size: 2.5rem;
+  margin-right: 0%;
+  margin-left: auto;
+}
+
+#SS-header-white {
+  margin-right: 0%;
+  margin-left: auto;
+}
+
+#SS-text-para {
+  text-align: right;
+  margin-top: 2vh;
 }
 /* ---------------------------------------------------------------- */
-.App-simple-setup {
-  background: var(--dark-background);
-  font-family: 'Satoshi';
-  height: 25rem;
-}
-
-.App-simple-setup-container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  text-align: right;
-  padding: 1rem 1rem 1rem 1rem;
-  margin-left: 65rem;
-  margin-right: 10rem;
-  letter-spacing: -0.01em;
-}
-
-.App-simple-setup-superscript {
-  color: #767A82;
-  font-weight: 700;
-  font-size: 2.5rem;
-  line-height: 120%;
-}
-
-.App-simple-setup-title {
-  color: white;
-  font-weight: 700;
-  font-size: 5.75rem;
-  line-height: 7rem;
-}
-
-.App-simple-setup-text {
-  color: #E3E3E4;
-  font-weight: 500;
-  font-size: 1.25rem;
-  line-height: 100%;
-}
-
+/* Security section is beyond repair. will replace with a svg sometime */
 /*security section wrapper*/
 .App-security { 
   background: var(--dark-background);
@@ -475,6 +466,8 @@
   width: 74vw; /* 75% of the width of the veiwer */
 }
 
+/* ---------------------------------------------------------------- */
+
 /* code for app control section here 
 .App-control {
   background: var(--dark-background);
@@ -490,49 +483,23 @@
 
 /* code for app tools section here */
 
-.App-tools {
-  background: var(--dark-background);
-  height: 110rem;
-  width: 100%;
-  position: relative;
+#Tools-section {
+  height: 100rem;
 }
 
-.App-tools-title-one {
-  font-family: sans-serif; 
-	background: linear-gradient(98.23deg, #2af588 0%, #405a9b 154.02%);
-  font-weight: 900;
-  font-size: 6rem;
-
-  /* gives us nice text */
-  background-clip: unset;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-
-  width: fit-content;
+#Tools-title-grad {
   position: absolute;
-  top: 5vh;
+  top: 0vh;
   left: 10vw;
 }
 
-/* doing it this way because lazy. fix when refactor code */
-.App-tools-title-two {
-  font-family: sans-serif; 
-	background: white;
-  font-weight: 900;
-  font-size: 6rem;
-
-  /* gives us nice text */
-  background-clip: unset;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-
-  width: fit-content;
+#Tools-title-white {
   position: absolute;
-  top: 15vh;
+  top: 10vh;
   left: 10vw;
 }
 
-.App-control-text-wrapper {
+#Control-text-wrapper {
   /* grid things */
   display: grid;
     /* left and right margins are total 20% vw => 80% left for columns */
@@ -544,39 +511,31 @@
   position: absolute;
   width: 100%;
   top: 35vh;  
-
-
-  /* font */
-  font-style: 'Satoshi';
-  color: white;
-  font-weight: 500;
-  font-size: 1.125rem;
-  line-height: 2rem;
 }
 
 /* columns 1 and 6 are not meant to be used. */
 /* here is just demonstrating grid functionality, make actual decisions time of */
-.App-control-text-one {
+#Control-text-one {
   grid-column: 2;
   grid-row: 1;
 }
 
-.App-control-text-two {
+#Control-text-two {
   grid-column: 2 / 4;
   grid-row: 2;
 }
 
-.App-control-text-three {
+#Control-text-three {
   grid-column: 2 / 4;
   grid-row: 3;
 }
 
-.App-control-text-four {
+#Control-text-four {
   grid-column: 2 / 6;
   grid-row: 4;
 }
 
-.App-control-text-five {
+#Control-text-five {
   grid-column: 2;
   grid-row: 5;
 }
@@ -585,63 +544,62 @@
   grid-column: 4 / 6;
   grid-row: 1 / 6;
 }
-.App-control-image-box {
-  top: 0;
+
+#Control-sticky-img {
   position: sticky;
-  border: 0.5vmin solid rgb(85, 79, 78);
-  border-radius: 2vmin;
+  top: 0;
   width: 40vw;
   height: 30vh;
 }
 
+/* ---------------------------------------------------------------- */
 
-.App-footer {
-  background: var(--dark-background);
+#Footer {
   height: 60rem;
-  width: 100%;
-  position: relative;
-
 }
 
-/* doing it this way because lazy. fix when refactor code */
-.App-footer-title {
-  font-family: sans-serif; 
-	background: white;
-  font-weight: 900;
-  font-size: 6rem;
-
-  /* gives us nice text */
-  background-clip: unset;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-
-  text-align: left;
-  width: 40vw;
+#Footer-title {
   position: absolute;
+  text-align: left;
+  font-size: 800%;
   top: 15vh;
+  left: 10vw;
+  width: 50vw;
+}
+
+.Footer-Links {
+  position: absolute;
+  text-decoration: none;
+  font-size: 1.5rem;
   left: 10vw;
 }
 
-.App-footer-download {
-
+#Footer-download {
+  bottom: 45vh;
+  left: 20vw;
 }
 
-.App-footer-github {
-
+#Footer-github {
+  bottom: 22vh;
 }
 
-.App-footer-wwu {
-
+#Footer-wwu {
+  bottom: 25vh;
 }
 
-.App-footer-about-us { /*more like amongus */
-
+#Footer-about-us { /*more like amongus */
+  bottom: 28vh;
 }
 
-.App-footer-cc {
-
+#Footer-cc {
+  bottom: 5vh;
+  font-size: 0.8rem;
 }
 
-.App-footer-image {
-
+#Footer-image {
+  position: absolute;
+  bottom: 5vh;
+  right: 10vh;
+  width: 50vw;
+  height: 50vh;
 }

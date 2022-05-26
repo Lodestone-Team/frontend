@@ -55,41 +55,41 @@ const App: React.FunctionComponent = () => {
       </div>
         {/* code above unfactored */}
       <div className="Section-Default" id="About-section">
-        <div className="App-about-container">
-          <div className="App-about-title-container">
+        <div id="App-about-grid">
+          <div id="App-about-container">
             <div className="Header-Grey">
               your server.
             </div>
-            <div className="Header-White" id="about-wh">
+            <div className="Header-White" id="About-grad-free-container">
               for
-            </div>
-            <div className="App-about-title-gradient">
-              free.
+              <div className="Header-Gradient" id="About-grad-free">
+                free.
+              </div>
             </div>
             <div className="Header-White">
               forever.
             </div>
-          </div>
-          <div className="App-about-title-text">
+            <div className="Text-Paragraph" id="About-para">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque at consectetur tortor. Quisque metus lacus, varius ut semper ac, finibus sit amet lectus. Proin facilisis convallis mi, efficitur placerat sem ultrices ut. Etiam accumsan gravida magna non finibus. Donec eleifend magna nec nisl viverra, ac cursus odio rutrum. Aenean mattis eros id lacus euismod, vel tristique nibh viverra. 
             </div>
           </div>
-        <div className="App-about-img"></div>
-      </div>
 
-      <div className="App-simple-setup">
-        <div className="App-simple-setup-container">
-          <div className="App-simple-setup-superscript">
-            (the easiest crafting recipe)
-          </div>
-          <div className="App-simple-setup-title">
-            one-click setup.
-          </div>
-          <div className="App-simple-setup-text">
+          <div id="App-ss-container">
+            <div className="Header-Grey" id="SS-header-grey">
+              (the easiest crafting recipe)
+            </div>
+            <div className="Header-White" id="SS-header-white">
+              one-click setup.
+            </div>
+            <div className="Text-Paragraph" id="SS-text-para">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque at consectetur tortor. Quisque metus lacus, varius ut semper ac, finibus sit amet lectus. Proin facilisis convallis mi, efficitur placerat sem ultrices ut. Etiam accumsan gravida magna non finibus. Donec eleifend magna nec nisl viverra, ac cursus odio rutrum. Aenean mattis eros id lacus euismod, vel tristique nibh viverra.
+            </div>
           </div>
+
+          <div className="Image-Box" id="About-img-1"></div>
+          <div className="Image-Box" id="About-img-2"></div>
         </div>
-      </div>
+    </div>
 
       <div className="App-security">
         <div className="App-security-binary">
@@ -118,61 +118,59 @@ const App: React.FunctionComponent = () => {
       <div className="App-control">
       </div>
 
-      <div className="App-tools">
-        <div className="App-tools-title-one">
+      <div className="Section-Default" id="Tools-section">
+        <div className="Header-Gradient" id="Tools-title-grad">
           power manage
         </div>
-        <div className="App-tools-title-two">
+        <div className="Header-White" id="Tools-title-white">
           your world.
         </div>
         
-        <div className="App-control-text-wrapper">
-          <div className="App-control-text-one">
+        <div id="Control-text-wrapper">
+          <div id="Control-text-one" className="Text-Paragraph">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque at consectetur tortor. Quisque metus lacus, varius ut semper ac, finibus sit amet lectus. Proin facilisis convallis mi, efficitur placerat sem ultrices ut. Etiam accumsan gravida magna non finibus. Donec eleifend magna nec nisl viverra, ac cursus odio rutrum. Aenean mattis eros id lacus euismod, vel tristique nibh viverra. 
           </div>
-          <div className="App-control-text-two">
+          <div id="Control-text-two" className="Text-Paragraph">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque at consectetur tortor. Quisque metus lacus, varius ut semper ac, finibus sit amet lectus. Proin facilisis convallis mi, efficitur placerat sem ultrices ut. Etiam accumsan gravida magna non finibus. Donec eleifend magna nec nisl viverra, ac cursus odio rutrum. Aenean mattis eros id lacus euismod, vel tristique nibh viverra. 
           </div>
-          <div className="App-control-text-three">
+          <div id="Control-text-three" className="Text-Paragraph">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque at consectetur tortor. Quisque metus lacus, varius ut semper ac, finibus sit amet lectus. Proin facilisis convallis mi, efficitur placerat sem ultrices ut. Etiam accumsan gravida magna non finibus. Donec eleifend magna nec nisl viverra, ac cursus odio rutrum. Aenean mattis eros id lacus euismod, vel tristique nibh viverra. 
           </div>
-          <div className="App-control-text-four">
+          <div id="Control-text-four" className="Text-Paragraph">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque at consectetur tortor. Quisque metus lacus, varius ut semper ac, finibus sit amet lectus. Proin facilisis convallis mi, efficitur placerat sem ultrices ut. Etiam accumsan gravida magna non finibus. Donec eleifend magna nec nisl viverra, ac cursus odio rutrum. Aenean mattis eros id lacus euismod, vel tristique nibh viverra. 
           </div>
-          <div className="App-control-text-five">
+          <div id="Control-text-five" className="Text-Paragraph">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque at consectetur tortor. Quisque metus lacus, varius ut semper ac, finibus sit amet lectus. Proin facilisis convallis mi, efficitur placerat sem ultrices ut. Etiam accumsan gravida magna non finibus. Donec eleifend magna nec nisl viverra, ac cursus odio rutrum. Aenean mattis eros id lacus euismod, vel tristique nibh viverra. 
           </div>
 
           <div className="App-control-image-stickybox">
-            <div className="App-control-image-box">
+            <div className="Image-Box" id="Control-sticky-img">
               unionize.png
             </div>
           </div>
         </div>
       </div>
 
-      <div className="App-footer">
-        <div className="App-footer-title">
+      <div className="Section-Default" id="Footer">
+        <div className="Header-White" id="Footer-title">
           where will you go?
         </div>
-        <div className="App-footer-download">
+        <a href="http://localhost:3000/" id="Footer-download" className="Text-Paragraph Footer-Links">
           download now!
-        </div>
-        <div className="App-footer-github">
+        </a>
+        <a href="http://localhost:3000/" id="Footer-github" className="Text-Paragraph Footer-Links">
           view our github repo! &#8594;
-        </div>
-        <div className="App-footer-wwu">
-          interested in working with us? &#8594;
-        </div>
-        <div className="App-footer-about-us">
-          About Us &#8594;
-        </div>
-        <div className="App-footer-cc">
+        </a>
+        <a href="http://localhost:3000/" id="Footer-wwu" className="Text-Paragraph Footer-Links">
+          work with us! &#8594;
+        </a>
+        <a href="http://localhost:3000/" id="Footer-about-us" className="Text-Paragraph Footer-Links">
+          about us &#8594;
+        </a>
+        <div id="Footer-cc" className="Text-Paragraph Footer-Links">
           © COPYRIGHT LODESTONE 2022. ALL RIGHTS RESERVED.
         </div>
-        <div className="App-footer-image">
-
-        </div>
+        <div id="Footer-image" className="Image-Box"></div>
       </div>
     </div>
   );
