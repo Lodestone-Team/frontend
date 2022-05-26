@@ -12,18 +12,18 @@ const App: React.FunctionComponent = () => {
   return (
     <div className="App">
       <div className="App-fp">
-        <div className="App-bars">
-          <div className="App-bar1-container">
-            <div className="App-bar1"></div>
+        <div className="App-bar-box">
+          <div className="Bar-Container" id="Bar-Container-1">
+            <div className="App-Bar" id="Bar1"></div>
           </div>
-          <div className="App-bar2-container">
-            <div className="App-bar2"></div>
+          <div className="Bar-Container" id="Bar-Container-2">
+            <div className="App-Bar" id="Bar2"></div>
           </div>
-          <div className="App-bar3-container">
-            <div className="App-bar3"></div>
+          <div className="Bar-Container" id="Bar-Container-3">
+            <div className="App-Bar" id="Bar3"></div>
           </div>
-          <div className="App-bar4-container">
-            <div className="App-bar4"></div>
+          <div className="Bar-Container" id="Bar-Container-4">
+            <div className="App-Bar" id="Bar4"></div>
             </div>
         </div>
         <header className="App-header">
@@ -34,6 +34,7 @@ const App: React.FunctionComponent = () => {
             <div className="header-grid-item">point 4</div>
           </div>
         </header>
+        {/* code below unfactored */}
         <div className="App-fp-container">
           <div className="App-title">Lodestone</div>
           <div className="App-header2">
@@ -52,19 +53,20 @@ const App: React.FunctionComponent = () => {
           </div>
         </div>
       </div>
-      <div className="App-about">
+        {/* code above unfactored */}
+      <div className="Section-Default" id="About-section">
         <div className="App-about-container">
           <div className="App-about-title-container">
-            <div className="App-about-title-grey">
+            <div className="Header-Grey">
               your server.
             </div>
-            <div className="App-about-title-white-first">
+            <div className="Header-White" id="about-wh">
               for
             </div>
             <div className="App-about-title-gradient">
               free.
             </div>
-            <div className="App-about-title-white-second">
+            <div className="Header-White">
               forever.
             </div>
           </div>
