@@ -63,7 +63,7 @@ const App: React.FunctionComponent = () => {
         </div>
       </div>
       <div className="App-create">
-        <div className="Compenent-img"></div>
+        <div className="Compenent-placeholder"></div>
         <div className="App-searchbar">
           <input
             value={query}

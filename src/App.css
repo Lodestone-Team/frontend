@@ -105,7 +105,7 @@
 }
 
 .App-Bar {
-  height: 12vh;
+  height: 15vh;
   border-radius: 100px 0px 0px 100px;
 }
 
@@ -123,7 +123,7 @@
   justify-content: right;
   grid-template-columns: 45%;
   position: absolute;
-  row-gap: 8%;
+  row-gap: 8vh;
   width: 100%;
 }
 
@@ -168,9 +168,11 @@
 }
 
 .App-header {
-  display: relative;
+  position: absolute;
   font-size: 1.5rem;
   color: white;
+  top: 8vh;
+  right: 4.165vw;
 }
 
 .App-header-grid {
@@ -188,27 +190,24 @@
   align-content: center;
   justify-content: right;
   grid-template-columns: auto auto auto auto;
-  gap: 5vh;
-  padding: 8vh;
-  padding-bottom: 1vh;
-  padding-right: 10vh;
+  /* gap: 5vh; */
 }
 
 .Header-Links {
   font-family: 'Satoshi';
   font-style: normal;
   font-weight: 700;
-  font-size: 20px;
   line-height: 27px;
 /* identical to box height */
 
   letter-spacing: -0.01em;
   text-decoration: none;
   font-size: 1.5rem;
+  width: 8.33vw;
 }
 
 .App-fp {
-  min-height: 40rem;
+  min-height: 90vh;
   background-color: var(--dark-background-accent);
 }
 
@@ -217,8 +216,9 @@
   flex-direction: column;
   align-items: flex-start;
   padding: 1rem 1rem 1rem 1rem;
-  margin-left: 15vh;
-  margin-right: 120vh;
+  margin-left: 8.33vw;
+  margin-right: 58.33vw;
+  padding-top: 20vh;
   color: white;
   text-align: left;
 }
@@ -229,7 +229,7 @@
   font-family: "Chillax";
   font-style: normal;
   font-weight: 600;
-  font-size: 12rem;
+  font-size: 8rem;
   line-height: 14rem;
   margin-bottom: 1rem;
   /* identical to box height */
@@ -237,7 +237,6 @@
 }
 
 .App-header2 {
-  color: slategrey;
   /* header 2 */
   font-family: "Satoshi";
   font-style: normal;
@@ -254,7 +253,7 @@
   background: var(--dark-background-accent);
 }
 
-.Compenent-img {
+.Compenent-placeholder {
   margin-left: 15vh;
   margin-right: 15vh;
   height: 50vh;
