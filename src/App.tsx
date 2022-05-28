@@ -29,25 +29,25 @@ const App: React.FunctionComponent = () => {
         <header className="App-header">
           <div className="App-header-grid">
             <a
-              href="http://localhost:3000/"
+              href="/"
               className="Text-Paragraph Header-Links"
             >
               point 1
             </a>
             <a
-              href="http://localhost:3000/"
+              href="/"
               className="Text-Paragraph Header-Links"
             >
               point 2
             </a>
             <a
-              href="http://localhost:3000/"
+              href="/"
               className="Text-Paragraph Header-Links"
             >
               point 3
             </a>
             <a
-              href="http://localhost:3000/"
+              href="/"
               className="Text-Paragraph Header-Links"
             >
               point 4
@@ -274,28 +274,28 @@ const App: React.FunctionComponent = () => {
           where will you go?
         </div>
         <a
-          href="http://localhost:3000/"
+          href="/"
           id="Footer-download"
           className="Text-Paragraph Footer-Links"
         >
           download now!
         </a>
         <a
-          href="http://localhost:3000/"
+          href="/"
           id="Footer-github"
           className="Text-Paragraph Footer-Links"
         >
           view our github repo! &#8594;
         </a>
         <a
-          href="http://localhost:3000/"
+          href="/"
           id="Footer-wwu"
           className="Text-Paragraph Footer-Links"
         >
           work with us! &#8594;
         </a>
         <a
-          href="http://localhost:3000/"
+          href="/"
           id="Footer-about-us"
           className="Text-Paragraph Footer-Links"
         >
