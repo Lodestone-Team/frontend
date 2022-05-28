@@ -32,6 +32,26 @@
   100% { padding-left: 20%; }
 }
 
+@-webkit-keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
+}
+
 .Header-Gradient {
   background-clip: unset; /* here to avoid warnings */
 	-webkit-background-clip: text;
@@ -43,11 +63,10 @@
   line-height: 100%;
   letter-spacing: -0.01em;
   height: 100%;
-
 }
 
 .Header-White {
-  color: #E3E3E4;
+  color: var(--bright-text);
   width: fit-content;
   font-size: 500%;
   line-height: 95%;
@@ -71,7 +90,7 @@
 
 .Text-Paragraph {
   text-align: left;
-  color: #E3E3E4;
+  color: var(--bright-text);
   font-family: 'Satoshi';
   font-weight: 500;
   font-size: 1.25rem;
@@ -91,7 +110,7 @@
 }
 
 .Image-Box {
-  border: 0.5vmin solid #767A82;
+  border: 0.5vmin solid var(--fade-text);
   border-radius: 2vmin;
 }
 
@@ -175,6 +194,19 @@
   padding-right: 10vh;
 }
 
+.Header-Links {
+  font-family: 'Satoshi';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+/* identical to box height */
+
+  letter-spacing: -0.01em;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
 .App-fp {
   min-height: 40rem;
   background-color: var(--dark-background-accent);
@@ -219,18 +251,18 @@
 .App-create {
   position: relative;
   height: 45rem;
-  background: #36393f;
+  background: var(--dark-background-accent);
 }
 
-.App-compenent {
+.Compenent-img {
   margin-left: 15vh;
   margin-right: 15vh;
   height: 50vh;
   box-sizing: border-box;
   /* fade txt */
 
-  border: .2rem solid var(--fade-text);
-  border-radius: 6rem;
+  border: 0.5vmin solid var(--fade-text);
+  border-radius: 2vmin;
 }
 
 .App-searchbar {
@@ -399,7 +431,7 @@
 }
 
 .App-security-lock-top {
-  background: #2AF588;
+  background: var(--primary-green);
 }
 
 .App-security-lock-bot {
@@ -428,14 +460,14 @@
   height: 0;
   border-left: 2vmin solid transparent;
   border-right: 2vmin solid transparent;
-  border-bottom: 5vmin solid #26282C;
+  border-bottom: 5vmin solid var(--dark-background);
   position: absolute;
   top: 59%;
 }
 
 
 .App-key-top {
-  background: #26282C;
+  background: var(--dark-background);
   width: 4vmin;
   height: 4vmin;
   border-radius: 3vmin;
@@ -444,7 +476,7 @@
 
 .App-security-title-one {
   font-family: 'Comic Sans MS';
-  color: #767A82;
+  color: var(--fade-text);
   font-size: 400%;
   font-weight: 700;
   line-height: 50%;
@@ -468,19 +500,118 @@
 
 /* ---------------------------------------------------------------- */
 
-/* code for app control section here 
+/* code for app control section here  */
 .App-control {
+  z-index: -1;
   background: var(--dark-background);
   height: 60rem;
   width: 100%;
   position: relative;
 
-  background-color: rgb(192, 136, 192);
   font-size: xx-large;
   font-style: 'Comic Sans MS';
 }
-*/
 
+.App-control-title-one {
+  position: absolute;
+  left: 15%;
+  top: 15%;
+  font-family: 'Satoshi';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 100%;
+  /* identical to box height, or 96px */
+
+  text-align: center;
+  letter-spacing: -0.01em;
+
+  color: white;
+}
+
+.App-control-title-two {
+  position: absolute;
+  left: 35%;
+  top: 35%;
+  font-family: 'Satoshi';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 100%;
+  /* identical to box height, or 96px */
+
+  text-align: center;
+  letter-spacing: -0.01em;
+
+  color: white;
+}
+
+.App-control-text {
+  position: absolute;
+  left: 5%;
+  right: 5%;
+  top: 60%;
+
+  /* body */
+
+  font-family: 'Satoshi';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  /* or 20px */
+
+  text-align: center;
+  letter-spacing: -0.01em;
+
+  color: white;
+}
+
+.slider {
+  z-index: -1;
+  display: flex;
+  background: var(--dark-background);
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  height: inherit;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.slider::before,
+.slider::after {
+  background: linear-gradient(to right, var(--dark-background) 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 250px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+.slider::before {
+  left: 0;
+  top: 0;
+}
+
+.slider .slide-track {
+  -webkit-animation: scroll 40s linear infinite;
+  animation: scroll 40s linear infinite;
+  display: flex;
+  width: calc(250px * 14);
+  align-self: center;
+}
+
+.slider .slide {
+  height: 200px;
+  width: 250px;
+}
 /* code for app tools section here */
 
 #Tools-section {
