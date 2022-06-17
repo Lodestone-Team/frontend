@@ -12,7 +12,7 @@ const SectionContainer = (props: any) => {
         minHeight: minHeight,
         background: backgroundColor,
         width: '100%',
-        display: 'block',  // delete
+        position: 'relative'
     };
 
     // returning whatever structures we need here.
