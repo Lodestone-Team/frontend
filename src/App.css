@@ -145,7 +145,7 @@
 }
 
 .App-create {
-  position: relative;
+  position: block;
   height: 45rem;
   background: var(--dark-background-accent);
 }

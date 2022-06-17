@@ -7,6 +7,7 @@ const BarSection = (props: any) => {
         justifyContent: 'right',
         gridTemplateColumns: '45%',
         position: 'absolute',
+        top: '-5vh',
         rowGap: '8vh',
         width: '100%',
     };

@@ -21,7 +21,7 @@ const App: React.FunctionComponent = () => {
 
   return (
     <div className="App">
-      <SectionContainer minHeight='80vh' color={darkBackgroundAccent}>
+      <SectionContainer minHeight='100vh' color={darkBackgroundAccent}>
 
         <BarSection>
           <Bar barNum='1'/>
@@ -32,30 +32,19 @@ const App: React.FunctionComponent = () => {
 
         <NavHeader/>
 
-          <div className="App-fp-container">
-            <div className="App-title">Lodestone</div>
-            <div className="App-header2">
-              The most comprehensive Minecraft Server Management tool.
-            </div>
-          </div>
-
-
-
-        <div className="App-create">
-          <GhostBlock leftMarg='10vw' rightMarg='10vw' height='50vh'/>
-          <div className="App-searchbar">
-            <input
-              value={query}
-              onChange={inputHandler}
-              placeholder="what's your server name?"
-              className="input"
-            />
-            <div className="App-search-container">
-              <div className="App-search-btn">go!</div>
-            </div>
+        <div className="App-fp-container">
+          <div className="App-title">Lodestone</div>
+          <div className="App-header2">
+            The most comprehensive Minecraft Server Management tool.
           </div>
         </div>
+
       </SectionContainer>
+
+
+
+
+
       <div className="Section-Default" id="About-section">
         <div id="App-about-grid">
           <div id="App-about-container">

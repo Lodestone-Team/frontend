@@ -5,15 +5,15 @@ const NavHeader = (props: any) => {
         gridTemplateColumns: 'auto auto auto auto',
         position: 'absolute',
         display: 'grid',
-        right: '4vw',
-        top: '8vh',
+        right: '5vw',
+        top: '4vh',
     };
 
     let linkStyles: React.CSSProperties = {
         textDecoration: 'none',
         lineHeight: '27px',
         fontWeight: 700,
-        fontSize: '1.5rem',
+        fontSize: '1.75rem',
         color: '#E3E3E4',
         width: '8.33vw',
     };
