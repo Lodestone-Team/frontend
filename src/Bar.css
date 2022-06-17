@@ -1,0 +1,63 @@
+@keyframes slide1 {
+    0% { padding-left: 45%; }
+    100% { padding-left: 65%; }
+}
+
+@keyframes slide2 {
+0% { padding-left: 30%; }
+100% { padding-left: 50%; }
+}
+
+@keyframes slide3 {
+0% { padding-left: 15%; }
+100% { padding-left: 35%; }
+}
+
+@keyframes slide4 {
+0% { padding-left: 0%; }
+100% { padding-left: 20%; }
+}
+
+.container {
+    animation-timing-function: cubic-bezier(.32,.1,.25,.97);
+}
+
+#container1 {
+    padding-left: 45%;
+    animation-name: slide1;
+    animation-delay: -2s;
+}
+
+#container2 {
+    padding-left: 30%;
+    animation-name: slide2;
+    animation-delay: -1.5s;
+}
+
+#container3 {
+    padding-left: 15%;
+    animation-name: slide3;
+    animation-delay: -1s;
+}
+
+#container4 {
+    padding-left: 0%;
+    animation-name: slide4;
+    animation-delay: -0.5s;
+}
+
+#bar1 {
+    background: linear-gradient(98.23deg, #2af588 0%, #405a9b 154.02%);
+  }
+  
+#bar2 {
+    background: linear-gradient(98.48deg, #2af588 -15.38%, #405a9b 136.17%);
+}
+
+#bar3 {
+    background: linear-gradient(98.22deg, #2af588 -31.14%, #405a9b 119.42%);
+}
+
+#bar4 {
+    background: linear-gradient(98.34deg, #2af588 -52.31%, #405a9b 103.33%);
+}

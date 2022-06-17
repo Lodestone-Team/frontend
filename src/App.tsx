@@ -1,6 +1,13 @@
 import React, { useState } from "react";
 import "./App.css";
 
+
+import SectionContainer from "./SectionContainer";
+import BarSection from "./BarSection";
+import GhostBlock from "./GhostBlock";
+import NavHeader from "./NavHeader";
+import Bar from "./Bar";
+
 const App: React.FunctionComponent = () => {
   const [query, setQuery] = useState('');
 
@@ -9,74 +16,46 @@ const App: React.FunctionComponent = () => {
     setQuery(enteredName);
   };
 
+  const darkBackgroundAccent = '#36393f';
+  //const darkBackground = '#26282C';
+
   return (
     <div className="App">
-      <div className="App-fp">
-        <div className="App-bar-box">
-          <div className="Bar-Container" id="Bar-Container-1">
-            <div className="App-Bar" id="Bar1"></div>
+      <SectionContainer minHeight='80vh' color={darkBackgroundAccent}>
+
+        <BarSection>
+          <Bar barNum='1'/>
+          <Bar barNum='2'/>
+          <Bar barNum='3'/>
+          <Bar barNum='4'/>
+        </BarSection>
+
+        <NavHeader/>
+
+          <div className="App-fp-container">
+            <div className="App-title">Lodestone</div>
+            <div className="App-header2">
+              The most comprehensive Minecraft Server Management tool.
+            </div>
           </div>
-          <div className="Bar-Container" id="Bar-Container-2">
-            <div className="App-Bar" id="Bar2"></div>
-          </div>
-          <div className="Bar-Container" id="Bar-Container-3">
-            <div className="App-Bar" id="Bar3"></div>
-          </div>
-          <div className="Bar-Container" id="Bar-Container-4">
-            <div className="App-Bar" id="Bar4"></div>
-          </div>
-        </div>
-        <header className="App-header">
-          <div className="App-header-grid">
-            <a
-              href="/"
-              className="Text-Paragraph Header-Links"
-            >
-              point 1
-            </a>
-            <a
-              href="/"
-              className="Text-Paragraph Header-Links"
-            >
-              point 2
-            </a>
-            <a
-              href="/"
-              className="Text-Paragraph Header-Links"
-            >
-              point 3
-            </a>
-            <a
-              href="/"
-              className="Text-Paragraph Header-Links"
-            >
-              point 4
-            </a>
-          </div>
-        </header>
-        {/* code below unfactored */}
-        <div className="App-fp-container">
-          <div className="App-title">Lodestone</div>
-          <div className="App-header2">
-            The most comprehensive Minecraft Server Management tool.
+
+
+
+        <div className="App-create">
+          <GhostBlock leftMarg='10vw' rightMarg='10vw' height='50vh'/>
+          <div className="App-searchbar">
+            <input
+              value={query}
+              onChange={inputHandler}
+              placeholder="what's your server name?"
+              className="input"
+            />
+            <div className="App-search-container">
+              <div className="App-search-btn">go!</div>
+            </div>
           </div>
         </div>
-      </div>
-      <div className="App-create">
-        <div className="Compenent-placeholder"></div>
-        <div className="App-searchbar">
-          <input
-            value={query}
-            onChange={inputHandler}
-            placeholder="what's your server name?"
-            className="input"
-          />
-          <div className="App-search-container">
-            <div className="App-search-btn">go!</div>
-          </div>
-        </div>
-      </div>
-      {/* code above unfactored */}
+      </SectionContainer>
       <div className="Section-Default" id="About-section">
         <div id="App-about-grid">
           <div id="App-about-container">
