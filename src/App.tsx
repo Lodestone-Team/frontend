@@ -44,8 +44,6 @@ const App: React.FunctionComponent = () => {
           <GhostBlock></GhostBlock>
           <GhostBlock></GhostBlock>
           <GhostBlock></GhostBlock>
-          <GhostBlock></GhostBlock>
-          <GhostBlock></GhostBlock>
           {/* */}
 
         </ControlPanel>
