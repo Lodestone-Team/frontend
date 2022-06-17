@@ -1,23 +1,18 @@
-import React, { useState } from "react";
+import React from "react";
 import "./App.css";
 
 
 import SectionContainer from "./SectionContainer";
+import ControlPanel from "./ControlPanel";
 import BarSection from "./BarSection";
 import GhostBlock from "./GhostBlock";
 import NavHeader from "./NavHeader";
 import Bar from "./Bar";
 
 const App: React.FunctionComponent = () => {
-  const [query, setQuery] = useState('');
-
-  const inputHandler = (event: React.ChangeEvent<HTMLInputElement>) => {
-    const enteredName = event.target.value;
-    setQuery(enteredName);
-  };
 
   const darkBackgroundAccent = '#36393f';
-  //const darkBackground = '#26282C';
+  const darkBackground = '#26282C';
 
   return (
     <div className="App">
@@ -40,11 +35,21 @@ const App: React.FunctionComponent = () => {
         </div>
 
       </SectionContainer>
+      <SectionContainer minHeight='100vh' color={darkBackground}>
+        <ControlPanel>
 
+          {/* test code */}
+          <GhostBlock></GhostBlock>
+          <GhostBlock></GhostBlock>
+          <GhostBlock></GhostBlock>
+          <GhostBlock></GhostBlock>
+          <GhostBlock></GhostBlock>
+          <GhostBlock></GhostBlock>
+          <GhostBlock></GhostBlock>
+          {/* */}
 
-
-
-
+        </ControlPanel>
+      </SectionContainer>
       <div className="Section-Default" id="About-section">
         <div id="App-about-grid">
           <div id="App-about-container">
