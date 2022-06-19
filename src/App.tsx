@@ -11,8 +11,10 @@ import Bar from "./Bar";
 
 const App: React.FunctionComponent = () => {
 
+  const loremIpsum = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque at consectetur tortor. Quisque metus lacus, varius ut semper ac, finibus sit amet lectus. Proin facilisis convallis mi, efficitur placerat sem ultrices ut. Etiam accumsan gravida magna non finibus. Donec eleifend magna nec nisl viverra, ac cursus odio rutrum. Aenean mattis eros id lacus euismod, vel tristique nibh viverra.";
   const darkBackgroundAccent = '#36393f';
   const darkBackground = '#26282C';
+
 
   return (
     <div className="App">
@@ -27,6 +29,7 @@ const App: React.FunctionComponent = () => {
 
         <NavHeader/>
 
+        {/* iconic piece of legacy code */}
         <div className="App-fp-container">
           <div className="App-title">Lodestone</div>
           <div className="App-header2">
@@ -35,6 +38,9 @@ const App: React.FunctionComponent = () => {
         </div>
 
       </SectionContainer>
+      {/* */}
+      <GhostBlock></GhostBlock>
+      {/* */}
       <SectionContainer minHeight='100vh' color={darkBackground}>
         <ControlPanel>
 
@@ -48,9 +54,11 @@ const App: React.FunctionComponent = () => {
 
         </ControlPanel>
       </SectionContainer>
-      <div className="Section-Default" id="About-section">
-        <div id="App-about-grid">
-          <div id="App-about-container">
+      {/* */}
+      <GhostBlock></GhostBlock>
+      {/* */}
+      <SectionContainer minHeight='50vh' color={darkBackground}>
+      <div id="App-about-container">
             <div className="Header-Grey">your server.</div>
             <div className="Header-White" id="About-grad-free-container">
               for
@@ -59,39 +67,26 @@ const App: React.FunctionComponent = () => {
               </div>
             </div>
             <div className="Header-White">forever.</div>
-            <div className="Text-Paragraph" id="About-para">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Pellentesque at consectetur tortor. Quisque metus lacus, varius ut
-              semper ac, finibus sit amet lectus. Proin facilisis convallis mi,
-              efficitur placerat sem ultrices ut. Etiam accumsan gravida magna
-              non finibus. Donec eleifend magna nec nisl viverra, ac cursus odio
-              rutrum. Aenean mattis eros id lacus euismod, vel tristique nibh
-              viverra.
-            </div>
+            <div className="Text-Paragraph" id="About-para">{loremIpsum}</div>
           </div>
-
-          <div id="App-ss-container">
+      </SectionContainer>
+      {/* */}
+      <GhostBlock></GhostBlock>
+      {/* */}
+      <SectionContainer minHeight='50vh' color={darkBackground}>
+      <div id="App-ss-container">
             <div className="Header-Grey" id="SS-header-grey">
               (the easiest crafting recipe)
             </div>
             <div className="Header-White" id="SS-header-white">
               one-click setup.
             </div>
-            <div className="Text-Paragraph" id="SS-text-para">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Pellentesque at consectetur tortor. Quisque metus lacus, varius ut
-              semper ac, finibus sit amet lectus. Proin facilisis convallis mi,
-              efficitur placerat sem ultrices ut. Etiam accumsan gravida magna
-              non finibus. Donec eleifend magna nec nisl viverra, ac cursus odio
-              rutrum. Aenean mattis eros id lacus euismod, vel tristique nibh
-              viverra.
-            </div>
+            <div className="Text-Paragraph" id="SS-text-para">{loremIpsum}</div>
           </div>
-
-          <div className="Image-Box" id="About-img-1"></div>
-          <div className="Image-Box" id="About-img-2"></div>
-        </div>
-      </div>
+      </SectionContainer>
+      {/* */}
+      <GhostBlock></GhostBlock>
+      {/* */}
 
       <div className="App-security">
         <div className="App-security-binary">
@@ -109,26 +104,14 @@ const App: React.FunctionComponent = () => {
         <div className="App-security-title-one">blurb about security.</div>
         <div className="App-security-title-two">yeah. secure.</div>
         <div className="App-security-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
-          at consectetur tortor. Quisque metus lacus, varius ut semper ac,
-          finibus sit amet lectus. Proin facilisis convallis mi, efficitur
-          placerat sem ultrices ut. Etiam accumsan gravida magna non finibus.
-          Donec eleifend magna nec nisl viverra, ac cursus odio rutrum. Aenean
-          mattis eros id lacus euismod, vel tristique nibh viverra.
+        {loremIpsum}
         </div>
       </div>
 
       <div className="App-control">
         <div className="App-control-title-one">total control</div>
         <div className="App-control-title-two">endless fidelity.</div>
-        <div className="App-control-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
-          at consectetur tortor. Quisque metus lacus, varius ut semper ac,
-          finibus sit amet lectus. Proin facilisis convallis mi, efficitur
-          placerat sem ultrices ut. Etiam accumsan gravida magna non finibus.
-          Donec eleifend magna nec nisl viverra, ac cursus odio rutrum. Aenean
-          mattis eros id lacus euismod, vel tristique nibh viverra.
-        </div>
+        <div className="App-control-text">{loremIpsum}</div>
         <div className="slider">
           <div className="slide-track">
             <div className="slide">
@@ -137,42 +120,7 @@ const App: React.FunctionComponent = () => {
             <div className="slide">
               <div className="Image-Box"></div>
             </div>
-            <div className="slide">
-              <div className="Image-Box"></div>
-            </div>
-            <div className="slide">
-              <div className="Image-Box"></div>
-            </div>
-            <div className="slide">
-              <div className="Image-Box"></div>
-            </div>
-            <div className="slide">
-              <div className="Image-Box"></div>
-            </div>
-            <div className="slide">
-              <div className="Image-Box"></div>
-            </div>
-            <div className="slide">
-              <div className="Image-Box"></div>
-            </div>
-            <div className="slide">
-              <div className="Image-Box"></div>
-            </div>
-            <div className="slide">
-              <div className="Image-Box"></div>
-            </div>
-            <div className="slide">
-              <div className="Image-Box"></div>
-            </div>
-            <div className="slide">
-              <div className="Image-Box"></div>
-            </div>
-            <div className="slide">
-              <div className="Image-Box"></div>
-            </div>
-            <div className="slide">
-              <div className="Image-Box"></div>
-            </div>
+
           </div>
         </div>
       </div>
@@ -186,51 +134,11 @@ const App: React.FunctionComponent = () => {
         </div>
 
         <div id="Control-text-wrapper">
-          <div id="Control-text-one" className="Text-Paragraph">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Pellentesque at consectetur tortor. Quisque metus lacus, varius ut
-            semper ac, finibus sit amet lectus. Proin facilisis convallis mi,
-            efficitur placerat sem ultrices ut. Etiam accumsan gravida magna non
-            finibus. Donec eleifend magna nec nisl viverra, ac cursus odio
-            rutrum. Aenean mattis eros id lacus euismod, vel tristique nibh
-            viverra.
-          </div>
-          <div id="Control-text-two" className="Text-Paragraph">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Pellentesque at consectetur tortor. Quisque metus lacus, varius ut
-            semper ac, finibus sit amet lectus. Proin facilisis convallis mi,
-            efficitur placerat sem ultrices ut. Etiam accumsan gravida magna non
-            finibus. Donec eleifend magna nec nisl viverra, ac cursus odio
-            rutrum. Aenean mattis eros id lacus euismod, vel tristique nibh
-            viverra.
-          </div>
-          <div id="Control-text-three" className="Text-Paragraph">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Pellentesque at consectetur tortor. Quisque metus lacus, varius ut
-            semper ac, finibus sit amet lectus. Proin facilisis convallis mi,
-            efficitur placerat sem ultrices ut. Etiam accumsan gravida magna non
-            finibus. Donec eleifend magna nec nisl viverra, ac cursus odio
-            rutrum. Aenean mattis eros id lacus euismod, vel tristique nibh
-            viverra.
-          </div>
-          <div id="Control-text-four" className="Text-Paragraph">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Pellentesque at consectetur tortor. Quisque metus lacus, varius ut
-            semper ac, finibus sit amet lectus. Proin facilisis convallis mi,
-            efficitur placerat sem ultrices ut. Etiam accumsan gravida magna non
-            finibus. Donec eleifend magna nec nisl viverra, ac cursus odio
-            rutrum. Aenean mattis eros id lacus euismod, vel tristique nibh
-            viverra.
-          </div>
-          <div id="Control-text-five" className="Text-Paragraph">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Pellentesque at consectetur tortor. Quisque metus lacus, varius ut
-            semper ac, finibus sit amet lectus. Proin facilisis convallis mi,
-            efficitur placerat sem ultrices ut. Etiam accumsan gravida magna non
-            finibus. Donec eleifend magna nec nisl viverra, ac cursus odio
-            rutrum. Aenean mattis eros id lacus euismod, vel tristique nibh
-            viverra.
-          </div>
+          <div id="Control-text-one" className="Text-Paragraph">{loremIpsum}</div>
+          <div id="Control-text-two" className="Text-Paragraph">{loremIpsum}</div>
+          <div id="Control-text-three" className="Text-Paragraph">{loremIpsum}</div>
+          <div id="Control-text-four" className="Text-Paragraph">{loremIpsum}</div>
+          <div id="Control-text-five" className="Text-Paragraph">{loremIpsum}</div>
 
           <div className="App-control-image-stickybox">
             <div className="Image-Box" id="Control-sticky-img">
