@@ -3,6 +3,8 @@ import React from "react";
 const SectionContainer = (props: any) => {
     // props to be used to change css properties defined as consts 
     const minHeight = props.minHeight;
+    const maxWidth = props.maxWidth;
+    const lrMarg = props.margins;
     const backgroundColor = props.color;
 
     // making 'stylesheets' 
@@ -10,6 +12,9 @@ const SectionContainer = (props: any) => {
     // a few  props would cover most of the basic use cases of this instance though
     let styles: React.CSSProperties = {
         minHeight: minHeight,
+        maxWidth: maxWidth,
+        marginLeft: lrMarg,
+        marginRight: lrMarg,
         background: backgroundColor,
         width: '100%',
         position: 'relative'

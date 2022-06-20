@@ -1,8 +1,6 @@
 import React from "react";
+import GhostBlock from "./GhostBlock";
 
-// remove 
-
-//
 const ControlPanel = (props: any) => {
 
     let styles: React.CSSProperties = {
@@ -21,12 +19,16 @@ const ControlPanel = (props: any) => {
     // possible different block classes. or we find a way for these children to have grid props? 
     return (
         <div style={styles}>
-            {props.children}
-
-            {/* test code */}
-            {props.children}
-            {/* test code */}
-
+            <GhostBlock></GhostBlock>
+            <GhostBlock></GhostBlock>
+            <GhostBlock></GhostBlock>
+            <GhostBlock></GhostBlock>
+            <GhostBlock></GhostBlock>
+            <GhostBlock></GhostBlock>
+            <GhostBlock></GhostBlock>
+            <GhostBlock></GhostBlock>
+            <GhostBlock></GhostBlock>
+            <GhostBlock></GhostBlock>
         </div>
     );
 }

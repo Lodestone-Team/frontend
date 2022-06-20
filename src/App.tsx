@@ -3,11 +3,10 @@ import "./App.css";
 
 
 import SectionContainer from "./SectionContainer";
+import FrontPage from "./FrontPage";
 import ControlPanel from "./ControlPanel";
-import BarSection from "./BarSection";
+import AboutSection from "./AboutSection";
 import GhostBlock from "./GhostBlock";
-import NavHeader from "./NavHeader";
-import Bar from "./Bar";
 
 const App: React.FunctionComponent = () => {
 
@@ -18,75 +17,13 @@ const App: React.FunctionComponent = () => {
 
   return (
     <div className="App">
-      <SectionContainer minHeight='100vh' color={darkBackgroundAccent}>
+      <FrontPage></FrontPage>
 
-        <BarSection>
-          <Bar barNum='1'/>
-          <Bar barNum='2'/>
-          <Bar barNum='3'/>
-          <Bar barNum='4'/>
-        </BarSection>
-
-        <NavHeader/>
-
-        {/* iconic piece of legacy code */}
-        <div className="App-fp-container">
-          <div className="App-title">Lodestone</div>
-          <div className="App-header2">
-            The most comprehensive Minecraft Server Management tool.
-          </div>
-        </div>
-
-      </SectionContainer>
-      {/* */}
-      <GhostBlock></GhostBlock>
-      {/* */}
       <SectionContainer minHeight='100vh' color={darkBackground}>
-        <ControlPanel>
+        <ControlPanel> </ControlPanel>
+      </SectionContainer>
 
-          {/* test code */}
-          <GhostBlock></GhostBlock>
-          <GhostBlock></GhostBlock>
-          <GhostBlock></GhostBlock>
-          <GhostBlock></GhostBlock>
-          <GhostBlock></GhostBlock>
-          {/* */}
-
-        </ControlPanel>
-      </SectionContainer>
-      {/* */}
-      <GhostBlock></GhostBlock>
-      {/* */}
-      <SectionContainer minHeight='50vh' color={darkBackground}>
-      <div id="App-about-container">
-            <div className="Header-Grey">your server.</div>
-            <div className="Header-White" id="About-grad-free-container">
-              for
-              <div className="Header-Gradient" id="About-grad-free">
-                free.
-              </div>
-            </div>
-            <div className="Header-White">forever.</div>
-            <div className="Text-Paragraph" id="About-para">{loremIpsum}</div>
-          </div>
-      </SectionContainer>
-      {/* */}
-      <GhostBlock></GhostBlock>
-      {/* */}
-      <SectionContainer minHeight='50vh' color={darkBackground}>
-      <div id="App-ss-container">
-            <div className="Header-Grey" id="SS-header-grey">
-              (the easiest crafting recipe)
-            </div>
-            <div className="Header-White" id="SS-header-white">
-              one-click setup.
-            </div>
-            <div className="Text-Paragraph" id="SS-text-para">{loremIpsum}</div>
-          </div>
-      </SectionContainer>
-      {/* */}
-      <GhostBlock></GhostBlock>
-      {/* */}
+      <AboutSection></AboutSection>
 
       <div className="App-security">
         <div className="App-security-binary">
