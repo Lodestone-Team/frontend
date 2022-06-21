@@ -18,11 +18,11 @@ const App: React.FunctionComponent = () => {
 
   return (
     <div className="App">
-      <FrontPage></FrontPage>
+      <FrontPage/>
 
-      <ControlPanel></ControlPanel>
+      <ControlPanel/>
 
-      <AboutSection></AboutSection>
+      <AboutSection/>
       
       {/* security section is a bit of a lost cause right now. will do later */}
       <SecuritySection></SecuritySection>
@@ -44,34 +44,9 @@ const App: React.FunctionComponent = () => {
           </div>
         </div>
       </div>
-      */
-      <ToolsSection></ToolsSection>
-      /*
-      <div className="Section-Default" id="Tools-section">
-        <div className="Header-Gradient" id="Tools-title-grad">
-          power manage
-        </div>
-        <div className="Header-White" id="Tools-title-white">
-          your world.
-        </div>
-
-        <div id="Control-text-wrapper">
-          <div id="Control-text-one" className="Text-Paragraph">{loremIpsum}</div>
-          <div id="Control-text-two" className="Text-Paragraph">{loremIpsum}</div>
-          <div id="Control-text-three" className="Text-Paragraph">{loremIpsum}</div>
-          <div id="Control-text-four" className="Text-Paragraph">{loremIpsum}</div>
-          <div id="Control-text-five" className="Text-Paragraph">{loremIpsum}</div>
-
-          <div className="App-control-image-stickybox">
-            <div className="Image-Box" id="Control-sticky-img">
-              unionize.png
-            </div>
-          </div>
-        </div>
-      </div>
-      */}
-
-      <FooterSection></FooterSection>
+  */}
+      <ToolsSection/>
+      <FooterSection/>
     </div>
   );
 }
