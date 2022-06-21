@@ -32,17 +32,17 @@ body#setup {
 }
 
 body h1 {
-    font-size: 500%;
+    font-size: 5rem;
     line-height: 95%;
 }
 
 #free h2 {
-    font-size: 500%;
+    font-size: 5rem;
     color: grey;
 }
 
 #setup h2 {
-    font-size: 200%;
+    font-size: 2rem;
     color: grey;
 }
 

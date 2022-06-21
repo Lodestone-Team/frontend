@@ -6,8 +6,8 @@ import FrontPage from "./FrontPage";
 import ControlPanel from "./ControlPanel";
 import AboutSection from "./AboutSection";
 import SecuritySection from "./SecuritySection";
+import ToolsSection from "./ToolsSection";
 import FooterSection from "./FooterSection";
-import GhostBlock from "./GhostBlock";
 
 const App: React.FunctionComponent = () => {
 
@@ -44,7 +44,9 @@ const App: React.FunctionComponent = () => {
           </div>
         </div>
       </div>
-
+      */
+      <ToolsSection></ToolsSection>
+      /*
       <div className="Section-Default" id="Tools-section">
         <div className="Header-Gradient" id="Tools-title-grad">
           power manage
@@ -67,45 +69,6 @@ const App: React.FunctionComponent = () => {
           </div>
         </div>
       </div>
-
-      <div className="Section-Default" id="Footer">
-        <div className="Header-White" id="Footer-title">
-          where will you go?
-        </div>
-        <a
-          href="/"
-          id="Footer-download"
-          className="Text-Paragraph Footer-Links"
-        >
-          download now!
-        </a>
-        <a
-          href="/"
-          id="Footer-github"
-          className="Text-Paragraph Footer-Links"
-        >
-          view our github repo! &#8594;
-        </a>
-        <a
-          href="/"
-          id="Footer-wwu"
-          className="Text-Paragraph Footer-Links"
-        >
-          work with us! &#8594;
-        </a>
-        <a
-          href="/"
-          id="Footer-about-us"
-          className="Text-Paragraph Footer-Links"
-        >
-          about us &#8594;
-        </a>
-        <div id="Footer-cc" className="Text-Paragraph Footer-Links">
-          © COPYRIGHT LODESTONE 2022. ALL RIGHTS RESERVED.
-        </div>
-        <div id="Footer-image" className="Image-Box"></div>
-      </div>
-
       */}
 
       <FooterSection></FooterSection>

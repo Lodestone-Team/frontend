@@ -1,0 +1,51 @@
+#tools {
+    background: #26282C;
+    min-height: 150vh;
+    position: relative;
+    width: 100%;
+}
+
+#toolsHeader {
+    position: absolute;
+    color: #e3e3e3;
+    font-size: 6rem;
+    font-weight: 900;
+    top: 10vh;
+    left: 10vw;
+    width: 40vw;
+}
+
+#toolsGrad {
+    background-clip: unset; /* here to avoid warnings */
+    -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    background-image: var(--std-gradient);
+}
+
+#paraList {
+    position: absolute;
+    top: 30vh;
+    left: 10vw;
+    width: 30vw;
+    list-style: none;
+}
+
+#para {
+    color: #e3e3e3;
+    margin-top: 5vh;
+    font-size: 1.25rem;
+}
+
+#stickyBoxBounds {
+    position: absolute;
+    width: 40vw;
+    right: 5vw;
+    top: 20vh;
+    bottom: 10vh;
+}
+
+#stickyBox {
+    top: 0;
+    height: 40vh;
+    position: sticky;
+}
