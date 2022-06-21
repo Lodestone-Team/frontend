@@ -1,0 +1,19 @@
+#controlPanel {
+    width: 100%;
+    position: relative;
+    min-height: 100vh;
+    background-color: #36393f;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: 15vw 15vw 15vw 15vw 15vw;
+    grid-template-rows: 15vw 15vw 15vw;
+    column-gap: 1vw;
+    row-gap: 1vw;
+
+    position: absolute;
+    margin-left: 9vw;
+    margin-right: 9vw;
+    top: 10vh;
+}

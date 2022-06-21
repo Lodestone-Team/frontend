@@ -13,10 +13,10 @@ const FrontPage = (props: any) => {
             <BarAnimation></BarAnimation>
 
             <nav id="headerGrid">
-                    <a id="hLink" href="/">point 1</a>
-                    <a id="hLink" href="/">point 2</a>
-                    <a id="hLink" href="/">point 3</a>
-                    <a id="hLink" href="/">point 4</a>
+                <a id="hLink" href="/">point 1</a>
+                <a id="hLink" href="/">point 2</a>
+                <a id="hLink" href="/">point 3</a>
+                <a id="hLink" href="/">point 4</a>
             </nav>
 
             <header id="title">
