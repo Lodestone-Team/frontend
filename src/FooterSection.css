@@ -1,0 +1,64 @@
+#footer {
+    background: #26282C;
+    min-height: 100vh;
+    position: relative;
+    width: 100%;
+}
+
+#footerh1 {
+    font-style: 'Chillax';
+    color: #e3e3e3;
+    position: absolute;
+    text-align: left;
+    font-size: 8rem;
+    width: 50vw;
+    top: 10vh;
+    left: 5vw;
+}
+
+#footerNavbar{
+    list-style: none;
+    position: absolute;
+    left: 5vw;
+    bottom: 5vh;
+}
+
+#footer #footerCC {
+    margin-top: 20vh;
+    color: #e3e3e3;
+}
+
+#footer a {
+    width: fit-content;
+    color: #e3e3e3;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+#footer a:hover {
+    text-decoration: white solid underline;
+}
+
+#footer li{
+    margin-top: 2vh;
+}
+
+#buttonContainer {
+    margin-bottom: 10vh;
+}
+
+#downloadButton {
+    font-style: 'Satoshi';
+    width: 15vw;
+    height: 2.5vw;
+    color: #e3e3e3;
+    font-size: 1.25rem;
+    background-image: linear-gradient(270deg, #2AF588 0%, #334675 99.99%);
+    border-radius: 2vmin;
+}
+
+#footersvg {
+    position: absolute;
+    right: 0px;
+    bottom: 10vh;
+}
