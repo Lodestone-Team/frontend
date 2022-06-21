@@ -21,13 +21,13 @@ body.aboutBody {
 
 body#free {
     left: 10vw;
-    top: 10vh;
+    top: 5vh;
     text-align: left;
 }
 
 body#setup {
     right: 10vw;
-    bottom: 10vh;
+    bottom: 5vh;
     text-align: right;
 }
 

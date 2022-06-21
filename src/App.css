@@ -32,8 +32,9 @@
   }
 }
 
+/*
 .Header-Gradient {
-  background-clip: unset; /* here to avoid warnings */
+  background-clip: unset;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
   background-image: var(--std-gradient);
@@ -86,7 +87,6 @@
   text-align: center;
 }
 
-/* code for app control section here  */
 .App-control {
   z-index: -1;
   background: var(--dark-background);
@@ -107,7 +107,6 @@
   font-weight: 700;
   font-size: 96px;
   line-height: 100%;
-  /* identical to box height, or 96px */
 
   text-align: center;
   letter-spacing: -0.01em;
@@ -124,7 +123,6 @@
   font-weight: 700;
   font-size: 96px;
   line-height: 100%;
-  /* identical to box height, or 96px */
 
   text-align: center;
   letter-spacing: -0.01em;
@@ -138,14 +136,14 @@
   right: 5%;
   top: 60%;
 
-  /* body */
+  
 
   font-family: 'Satoshi';
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 100%;
-  /* or 20px */
+  
 
   text-align: center;
   letter-spacing: -0.01em;
@@ -198,7 +196,6 @@
   height: 200px;
   width: 250px;
 }
-/* code for app tools section here */
 
 #Tools-section {
   height: 100rem;
@@ -217,21 +214,16 @@
 }
 
 #Control-text-wrapper {
-  /* grid things */
   display: grid;
-    /* left and right margins are total 20% vw => 80% left for columns */
   grid-template-columns: 10vw 20vw 20vw 20vw 20vw 10vw;
   row-gap: 10vh;  
   grid-auto-rows: auto;
 
-  /* position things */
   position: absolute;
   width: 100%;
   top: 35vh;  
 }
 
-/* columns 1 and 6 are not meant to be used. */
-/* here is just demonstrating grid functionality, make actual decisions time of */
 #Control-text-one {
   grid-column: 2;
   grid-row: 1;
@@ -269,7 +261,6 @@
   height: 30vh;
 }
 
-/* ---------------------------------------------------------------- */
 
 #Footer {
   height: 60rem;
@@ -283,7 +274,6 @@
   left: 10vw;
   width: 50vw;
 }
-/* --------------------use a <nav> tag for good style------------ */
 .Footer-Links {
   position: absolute;
   text-decoration: none;
@@ -304,7 +294,7 @@
   bottom: 25vh;
 }
 
-#Footer-about-us { /*more like amongus */
+#Footer-about-us {
   bottom: 28vh;
 }
 
@@ -320,3 +310,5 @@
   width: 50vw;
   height: 50vh;
 }
+
+*/

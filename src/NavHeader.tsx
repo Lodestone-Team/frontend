@@ -7,7 +7,7 @@ const NavHeader = (props: any) => {
         display: 'grid',
         right: '5vw',
         top: '4vh',
-    };
+    }; 
 
     let linkStyles: React.CSSProperties = {
         textDecoration: 'none',

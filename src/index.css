@@ -1,3 +1,7 @@
+a:hover {
+  text-decoration: white solid underline;
+}
+
 @media screen and (max-width: 1536px){
   html {
     font-size: 16px;
@@ -57,6 +61,7 @@ code {
 html, body {
   height: 100%;
 }
+
 
 * {
   margin: 0;

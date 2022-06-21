@@ -1,24 +1,27 @@
 import React from "react";
-import BarSection from "./BarSection";
-import NavHeader from "./NavHeader";
-import Bar from "./Bar";
+import BarAnimation from "./BarAnimation";
+
 import './FrontPage.css'
+
 
 const FrontPage = (props: any) => {
 
     return (
-        <section id="title">
-            <BarSection>
-                <Bar barNum='1'/>
-                <Bar barNum='2'/>
-                <Bar barNum='3'/>
-                <Bar barNum='4'/>
-            </BarSection>
+        
+        <section id="titleSection">
 
-            <NavHeader/>
+            <BarAnimation></BarAnimation>
+
+            <nav id="headerGrid">
+                    <a id="hLink" href="/">point 1</a>
+                    <a id="hLink" href="/">point 2</a>
+                    <a id="hLink" href="/">point 3</a>
+                    <a id="hLink" href="/">point 4</a>
+            </nav>
+
             <header id="title">
-                <h1 id="title">Lodestone</h1>
-                <h2 id="title">The most comprehensive Minecraft Server Management tool.</h2>
+                <h1 id="titleh1">Lodestone</h1>
+                <h2 id="titleh2">The most comprehensive Minecraft Server Management tool.</h2>
             </header>
 
         </section>

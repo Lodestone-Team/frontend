@@ -1,0 +1,20 @@
+a:hover {
+    text-decoration: underline;
+}
+
+#link {
+    text-decoration: 'none';
+    line-height: '27px';
+    font-weight: 700;
+    font-size: '1.75rem';
+    color: '#E3E3E4';
+    width: '8.33vw';
+}
+
+#grid {
+    grid-template-columns: 'auto auto auto auto';
+    position: 'absolute';
+    display: 'grid';
+    right: '5vw';
+    top: '4vh';
+}

@@ -14,7 +14,7 @@ const ControlPanel = (props: any) => {
         margin: '9vw',
         top: '1vh',
     };
-
+    
     // a different layout scheme is most likely required for smaller screens/windows.
     // possible different block classes. or we find a way for these children to have grid props? 
     return (

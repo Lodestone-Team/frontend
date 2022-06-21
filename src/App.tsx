@@ -6,6 +6,7 @@ import SectionContainer from "./SectionContainer";
 import FrontPage from "./FrontPage";
 import ControlPanel from "./ControlPanel";
 import AboutSection from "./AboutSection";
+import SecuritySection from "./SecuritySection";
 import GhostBlock from "./GhostBlock";
 
 const App: React.FunctionComponent = () => {
@@ -19,12 +20,15 @@ const App: React.FunctionComponent = () => {
     <div className="App">
       <FrontPage></FrontPage>
 
-      <SectionContainer minHeight='100vh' color={darkBackground}>
+      {/*
+      <SectionContainer minHeight='100vh' color={darkBackgroundAccent}>
         <ControlPanel> </ControlPanel>
       </SectionContainer>
 
       <AboutSection></AboutSection>
+      <SecuritySection></SecuritySection>
 
+      
       <div className="App-control">
         <div className="App-control-title-one">total control</div>
         <div className="App-control-title-two">endless fidelity.</div>
@@ -102,6 +106,8 @@ const App: React.FunctionComponent = () => {
         </div>
         <div id="Footer-image" className="Image-Box"></div>
       </div>
+
+      */}
     </div>
   );
 }
