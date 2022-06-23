@@ -1,6 +1,6 @@
 #tools {
     background: #26282C;
-    min-height: 150vh;
+    min-height: 250vh;
     position: relative;
     width: 100%;
 }
@@ -36,12 +36,13 @@
     font-size: 1.25rem;
 }
 
+/* I like having this section be a bit longer to give a fade in type animation*/
 #stickyBoxBounds {
     position: absolute;
     width: 40vw;
     right: 5vw;
     top: 20vh;
-    bottom: 10vh;
+    bottom: 100vh;
 }
 
 #stickyBox {

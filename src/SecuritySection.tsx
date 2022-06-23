@@ -1,16 +1,14 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import './SecuritySection.css'
 import Lock from './Lock.svg'
 
 const SecuritySection = (props: any) => {
 
     return (
-        <section id="security">
-            <div id="imageContainer">
-                <img src={Lock} alt="not found" id="lock"/>
-            </div>
-        </section>
+        <div className="app">
+            <div className="section"></div>
 
+        </div>
     );
 }
 

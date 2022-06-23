@@ -1,0 +1,31 @@
+#control {
+    background: #26282C;
+    min-height: 50vh;
+    position: relative;
+    width: 100%;
+}
+
+#controlTitle {
+    color: white;
+    position: absolute;
+    top: 20%;
+    left: 25%;
+}
+
+#controlTitle2 {
+    color: white;
+    position: absolute;
+    right: 25%;
+    top: 50%;
+}
+
+#controlPara {
+    color: white;
+    position: absolute;
+    text-align: center;
+    width: 80vw;
+    bottom: 10%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, 50%);
+}

@@ -8,7 +8,6 @@ const ToolsSection = (props: any) => {
 
     return (
         <section id="tools">
-            <div><GhostBlock></GhostBlock></div>
 
             <h1 id="toolsHeader"><span id="toolsGrad">power manage.</span> your world</h1>
             <ul id="paraList">
