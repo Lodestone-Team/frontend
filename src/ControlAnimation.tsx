@@ -64,7 +64,7 @@ const ControlAnimation = (props: any) => {
     return (
         <div id="box">
             {/* we can put literally any content in here to be animated by whatever */}
-            <div id="container1">
+            <div id="cont">
                 <GhostBlock></GhostBlock>
             </div>
         </div>

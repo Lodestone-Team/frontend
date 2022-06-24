@@ -1,4 +1,4 @@
-@keyframes slide1 {
+@keyframes controlslide1 {
     0% { padding-left: 0%; }
     100% { padding-left: 100%; }
 }
@@ -11,9 +11,9 @@
     height: 50vh;
 }
 
-#container1 {
+#cont {
     padding-left: 45%;
-    animation-name: slide1;
+    animation-name: controlslide1;
     animation-delay: -2s;
 
     animation-iteration-count: infinite;
