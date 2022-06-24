@@ -1,5 +1,5 @@
 import React from "react";
-import "./LandingPage.css";
+import styles from "./LandingPage.module.scss";
 
 
 import HeadlineSection from "./HeadlineSection";
@@ -19,7 +19,7 @@ const LandingPage: React.FunctionComponent = () => {
 
 
   return (
-    <div className="App">
+    <div className={styles.container}>
       <HeadlineSection/>
 
       <OnboardSection/>
@@ -27,7 +27,7 @@ const LandingPage: React.FunctionComponent = () => {
       <AboutSection/>
       
       {/* security section is a bit of a lost cause right now. will do later */}
-      <SecuritySection></SecuritySection>
+      <SecuritySection/>
 
       <ControlSection/>
 

@@ -1,28 +1,28 @@
 import React from "react";
 import BarAnimation from "./BarAnimation";
 
-import './HeadlineSection.css'
+import styles from './HeadlineSection.module.scss'
 
 
-const HeadlineSection = (props: any) => {
+const HeadlineSection = () => {
 
     return (
         
-        <section id="titleSection">
+        <section className={styles.container}>
 
             <BarAnimation></BarAnimation>
 
-            <nav id="headerGrid">
-                <a id="hLink" href="/">point 1</a>
-                <a id="hLink" href="/">point 2</a>
-                <a id="hLink" href="/">point 3</a>
-                <a id="hLink" href="/">point 4</a>
+            <nav className={styles.header}>
+                <a href="/">point 1</a>
+                <a href="/">point 2</a>
+                <a href="/">point 3</a>
+                <a href="/">point 4</a>
             </nav>
 
-            <header id="title">
-                <h1 id="titleh1">Lodestone</h1>
-                <h2 id="titleh2">The most comprehensive Minecraft Server Management tool.</h2>
-            </header>
+            <div className={styles.title}>
+                <h1>Lodestone</h1>
+                <h2>The most comprehensive Minecraft Server Management tool.</h2>
+            </div>
 
         </section>
     );

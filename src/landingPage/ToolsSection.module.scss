@@ -1,0 +1,53 @@
+.container {
+    background: #26282C;
+    min-height: 250vh;
+    position: relative;
+    width: 100%;
+
+    h1 {
+        position: absolute;
+        color: #e3e3e3;
+        font-size: 6rem;
+        font-weight: 900;
+        top: 10vh;
+        left: 10vw;
+        width: 40vw;
+
+        .gradient {
+            background-clip: unset;
+            /* here to avoid warnings */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-image: var(--std-gradient);
+        }
+    }
+
+    ul.parameters {
+        position: absolute;
+        top: 30vh;
+        left: 10vw;
+        width: 30vw;
+        list-style: none;
+
+        p{
+            color: #e3e3e3;
+            margin-top: 5vh;
+            font-size: 1.25rem;
+        }
+    }
+}
+
+/* I like having this section be a bit longer to give a fade in type animation*/
+.stickyBoxBounds {
+    position: absolute;
+    width: 40vw;
+    right: 5vw;
+    top: 20vh;
+    bottom: 100vh;
+
+    .stickyBox {
+        top: 0;
+        height: 40vh;
+        position: sticky;
+    }
+}

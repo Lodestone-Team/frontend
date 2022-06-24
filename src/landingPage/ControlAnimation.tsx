@@ -1,8 +1,8 @@
 import React, {useRef} from "react";
-import './ControlAnimation.css'
+import styles from './ControlAnimation.module.scss'
 import GhostBlock from "common/GhostBlock";
 
-const ControlAnimation = (props: any) => {
+const ControlAnimation = () => {
     const numSteps = 20.0
 
     let boxElement: Element | null;
@@ -62,9 +62,9 @@ const ControlAnimation = (props: any) => {
     }
 
     return (
-        <div id="box">
+        <div className={styles.box}>
             {/* we can put literally any content in here to be animated by whatever */}
-            <div id="cont">
+            <div className={styles.content}>
                 <GhostBlock></GhostBlock>
             </div>
         </div>

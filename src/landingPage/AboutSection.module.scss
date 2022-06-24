@@ -1,0 +1,66 @@
+.section {
+    background: #26282C;
+    display: flex;
+    padding: 10vh calc(100vw / 12);
+    height: 40vh;
+
+    article {
+        font-weight: 700;
+        color: #e3e3e3;
+        width: 50%;
+
+        h1 {
+            font-size: 5rem;
+            line-height: 95%;
+        }
+
+        p {
+            margin-top: 2vh;
+            font-size: 1.25rem;
+            font-family: 'Satoshi';
+        }
+    }
+
+    figure {
+        order: 2;
+        width: 50%;
+    }
+
+    &.free article {
+        text-align: left;
+        order: 1;
+
+        margin-right: calc(100vw / 12/ 3);
+
+        h2 {
+            font-size: 5rem;
+            color: grey;
+        }
+
+        h3 {
+            display: inline;
+            background-clip: unset;
+            /* here to avoid warnings */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-image: var(--std-gradient);
+            font-weight: 900;
+        }
+    }
+
+    &.setup{
+        padding-top: 3vh;
+    }
+
+    &.setup article{
+        text-align: right;
+        order: 3;
+
+        margin-left: calc(100vw / 12/ 3);
+
+        h2 {
+            font-size: 2rem;
+            color: grey;
+        }
+    }
+}

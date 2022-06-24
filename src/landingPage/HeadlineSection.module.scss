@@ -1,0 +1,52 @@
+.container {
+    background: #36393f;
+    min-height: 100vh;
+    position: relative;
+    width: 100%;
+}
+
+.title {
+    text-align: left;
+    color: #e3e3e3;
+    position: absolute;
+    width: min-content;
+    font-size: 1.5rem;
+    padding: 20vh;
+
+    h1 {
+        font-family: 'Chillax';
+        font-size: 8rem;
+        font-weight: 600;
+        line-height: 14rem;
+        margin-bottom: 1rem;
+    }
+
+    h2 {
+        font-family: 'Satoshi';
+        font-size: 2.5rem;
+        font-weight: 700;
+        letter-spacing: -0.01em;
+        line-height: 120%;
+    }
+}
+
+
+.header {
+    position: absolute;
+    right: 5vw;
+    top: 4vh;
+    display: flex;
+
+    a {
+        text-decoration: none;
+        line-height: 27px;
+        font-weight: 700;
+        font-size: 1.75rem;
+        color: #E3E3E4;
+        min-width: 8.33vw;
+
+        &:hover {
+            text-decoration: white solid underline;
+        }
+    }
+}

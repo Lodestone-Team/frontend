@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
-import './SecuritySection.css'
+import styles from './SecuritySection.module.scss'
 import Lock from './Lock.svg'
 
-const SecuritySection = (props: any) => {
+const SecuritySection = () => {
 
     return (
-        <div className="app">
-            <div className="section"></div>
+        <div className={styles.container}>
+            <div className={styles.section}></div>
 
         </div>
     );

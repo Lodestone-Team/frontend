@@ -1,0 +1,34 @@
+.container {
+    background: #26282C;
+    min-height: 50vh;
+    position: relative;
+    width: 100%;
+
+    h1 {
+        color: white;
+        position: absolute;
+        font-size: 5rem;
+        line-height: 95%;
+
+        &.left {
+            top: 20%;
+        left: 25%;
+        }
+
+        &.right{
+            right: 25%;
+            top: 50%;
+        }
+    }
+
+    p {
+        color: white;
+        position: absolute;
+        text-align: center;
+        width: 80vw;
+        bottom: 10%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, 50%);
+    }
+}

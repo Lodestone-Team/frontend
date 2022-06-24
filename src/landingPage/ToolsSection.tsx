@@ -1,5 +1,5 @@
 import React from "react";
-import './ToolsSection.css'
+import styles from './ToolsSection.module.scss'
 import GhostBlock from "common/GhostBlock";
 
 const ToolsSection = (props: any) => {
@@ -7,21 +7,25 @@ const ToolsSection = (props: any) => {
 
 
     return (
-        <section id="tools">
+        <section className={styles.container}>
+            <h1>
+                <span className={styles.gradient}>power&nbsp;manage.</span> your&nbsp;world
+            </h1>
 
-            <h1 id="toolsHeader"><span id="toolsGrad">power manage.</span> your world</h1>
-            <ul id="paraList">
-                <li><p id="para">{loremIpsum}</p></li>
-                <li><p id="para">{loremIpsum}</p></li>
-                <li><p id="para">{loremIpsum}</p></li>
-                <li><p id="para">{loremIpsum}</p></li>
-                <li><p id="para">{loremIpsum}</p></li>
+            <ul className={styles.parameters}>
+                <li><p>{loremIpsum}</p></li>
+                <li><p>{loremIpsum}</p></li>
+                <li><p>{loremIpsum}</p></li>
+                <li><p>{loremIpsum}</p></li>
+                <li><p>{loremIpsum}</p></li>
             </ul>
 
             {/* this is done like this because it would be a waste of time to 
             implement props and stuff for ghostblock which will be removed anyways. */}
-            <div id="stickyBoxBounds">
-                <div id="stickyBox"><GhostBlock></GhostBlock></div>
+            <div className={styles.stickyBoxBounds}>
+                <div className={styles.stickyBox}>
+                    <GhostBlock></GhostBlock>
+                </div>
             </div>
         </section>
     );

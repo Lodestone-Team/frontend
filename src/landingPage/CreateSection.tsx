@@ -1,6 +1,6 @@
 // ex nihilo
 import React from "react";
-import './CreateSection.css'
+import styles from './CreateSection.module.scss'
 
 const CreateSection = (props: any) => {
 
