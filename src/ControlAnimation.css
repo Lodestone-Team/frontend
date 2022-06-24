@@ -1,16 +1,23 @@
+@keyframes slide1 {
+    0% { padding-left: 0%; }
+    100% { padding-left: 100%; }
+}
+
+
 #box {
-    background-color: rgba(40, 40, 190, 1);
-    border: 4px solid rgb(20, 20, 120);
-    transition: background-color 1s, border 1s;
-    width: 98.5vw;
+    animation-timing-function: cubic-bezier(.32,.1,.25,.97);
+    justify-content: right;
+    width: 100%;
     height: 50vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
-.vertical {
-    color: white;
-    font: 32px "Arial";
-}
+#container1 {
+    padding-left: 45%;
+    animation-name: slide1;
+    animation-delay: -2s;
 
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 3s;
+    height: 50vh;
+}
