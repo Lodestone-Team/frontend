@@ -27,21 +27,6 @@ a:hover {
     font-size: 8px;
   }
 }
-@media screen and (max-width: 896px){
-  html {
-    font-size: 6px;
-  }
-}
-@media screen and (max-width: 768px){
-  html {
-    font-size: 4px;
-  }
-}
-@media screen and (max-width: 640px){
-  html {
-    font-size: 2px;
-  }
-}
 
 
 body {
