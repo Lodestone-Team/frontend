@@ -1,6 +1,6 @@
 import React, {useRef} from "react";
 import './ControlAnimation.css'
-import GhostBlock from "../common/GhostBlock";
+import GhostBlock from "common/GhostBlock";
 
 const ControlAnimation = (props: any) => {
     const numSteps = 20.0

@@ -1,5 +1,5 @@
 import React from "react";
-import GhostBlock from "../common/GhostBlock";
+import GhostBlock from "common/GhostBlock";
 
 import './OnboardSection.css'
 
