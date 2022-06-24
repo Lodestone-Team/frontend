@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import styles from './SecuritySection.module.scss'
-import Lock from './Lock.svg'
+// import Lock from './Lock.svg'
 
 const SecuritySection = () => {
 

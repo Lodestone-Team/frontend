@@ -1,4 +1,4 @@
-import React, {useRef} from "react";
+import React from "react";
 import styles from './ControlSection.module.scss'
 import ControlAnimation from "./ControlAnimation";
 

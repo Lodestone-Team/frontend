@@ -1,9 +1,9 @@
-import React, {useRef} from "react";
+import React from "react";
 import styles from './ControlAnimation.module.scss'
 import GhostBlock from "common/GhostBlock";
 
 const ControlAnimation = () => {
-    const numSteps = 20.0
+    // const numSteps = 20.0
 
     let boxElement: Element | null;
     let contentRef: HTMLElement | null;
@@ -41,18 +41,18 @@ const ControlAnimation = () => {
             // same threshold, we will see that 'triggered' is True so we will play the reverse animation
             // on the object and set 'triggered' to False to indicate the object has been derendered as Jesus intended
              */
-            let tempElement = entry.target as HTMLElement;
+            // let tempElement = entry.target as HTMLElement;
             if (triggered){
                 // play out animation
                 // these if statements are necessary as type guards because the optional chaining operator " ?. " can be undefined
-                if (contentRef?.style != undefined) {
+                if (contentRef?.style !== undefined) {
                     contentRef.style.opacity = '100%';
                     contentRef.style.animationPlayState = 'running';
                 }
                 triggered = false
             } else {
                 // play in animation
-                if (contentRef?.style != undefined) {
+                if (contentRef?.style !== undefined) {
                     contentRef.style.animationPlayState = 'paused';
                     contentRef.style.opacity = '0%';
                 }
