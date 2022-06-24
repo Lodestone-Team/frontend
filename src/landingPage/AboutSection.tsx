@@ -1,11 +1,11 @@
-import React from "react";
-import styles from "./AboutSection.module.scss";
-import GhostBlock from "common/GhostBlock";
+import React from 'react';
+import styles from './AboutSection.module.scss';
+import GhostBlock from 'common/GhostBlock';
 
 const AboutSection = () => {
   return (
     <>
-      <section className={styles.section + " " + styles.free}>
+      <section className={styles.section + ' ' + styles.free}>
         <article>
           <h2>your server.</h2>
           <h1>
@@ -33,7 +33,7 @@ const AboutSection = () => {
         </figure>
       </section>
 
-      <section className={styles.section + " " + styles.setup}>
+      <section className={styles.section + ' ' + styles.setup}>
         <article>
           <h2>(the easiest crafting recipe)</h2>
           <h1>one click setup</h1>

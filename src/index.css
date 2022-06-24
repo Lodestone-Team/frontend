@@ -2,51 +2,50 @@ a:hover {
   text-decoration: white solid underline;
 }
 
-@media screen and (max-width: 1536px){
+@media screen and (max-width: 1536px) {
   html {
     font-size: 16px;
   }
 }
-@media screen and (max-width: 1408px){
+@media screen and (max-width: 1408px) {
   html {
     font-size: 14px;
   }
 }
-@media screen and (max-width: 1280px){
+@media screen and (max-width: 1280px) {
   html {
     font-size: 12px;
   }
 }
-@media screen and (max-width: 1152px){
+@media screen and (max-width: 1152px) {
   html {
     font-size: 10px;
   }
 }
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1024px) {
   html {
     font-size: 8px;
   }
 }
 
-
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Satoshi', 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Satoshi', 'Segoe UI',
+    'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+    'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', 'Satoshi',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    'Satoshi', monospace;
 }
 
-html, body {
+html,
+body {
   height: 100%;
 }
-
 
 * {
   margin: 0;
