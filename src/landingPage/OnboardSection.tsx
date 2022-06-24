@@ -1,9 +1,9 @@
 import React from "react";
 import GhostBlock from "../common/GhostBlock";
 
-import './ControlPanel.css'
+import './OnboardSection.css'
 
-const ControlPanel = (props: any) => {
+const OnboardSection = (props: any) => {
 
     // for implementation of actual setup and buttons, these will become custom classes/ids and have their own grid sizes, etc. 
     return (
@@ -25,4 +25,4 @@ const ControlPanel = (props: any) => {
     );
 }
 
-export default ControlPanel;
+export default OnboardSection;

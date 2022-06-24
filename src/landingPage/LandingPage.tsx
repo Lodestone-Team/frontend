@@ -2,8 +2,8 @@ import React from "react";
 import "./LandingPage.css";
 
 
-import FrontPage from "./FrontPage";
-import ControlPanel from "./ControlPanel";
+import HeadlineSection from "./HeadlineSection";
+import OnboardSection from "./OnboardSection";
 import AboutSection from "./AboutSection";
 import SecuritySection from "./SecuritySection";
 import ControlSection from "./ControlSection";
@@ -20,9 +20,9 @@ const LandingPage: React.FunctionComponent = () => {
 
   return (
     <div className="App">
-      <FrontPage/>
+      <HeadlineSection/>
 
-      <ControlPanel/>
+      <OnboardSection/>
 
       <AboutSection/>
       

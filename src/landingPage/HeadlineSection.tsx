@@ -1,10 +1,10 @@
 import React from "react";
 import BarAnimation from "./BarAnimation";
 
-import './FrontPage.css'
+import './HeadlineSection.css'
 
 
-const FrontPage = (props: any) => {
+const HeadlineSection = (props: any) => {
 
     return (
         
@@ -28,4 +28,4 @@ const FrontPage = (props: any) => {
     );
 }
 
-export default FrontPage;
+export default HeadlineSection;
