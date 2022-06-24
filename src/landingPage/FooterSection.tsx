@@ -1,6 +1,6 @@
 import React from "react";
 import './FooterSection.css'
-import { ReactComponent as YourSVG } from "./footerimg.svg";
+import { ReactComponent as YourSVG } from "../assets/footerimg.svg";
 
 const FooterSection = (props: any) => {
 

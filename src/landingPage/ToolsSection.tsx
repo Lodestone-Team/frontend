@@ -1,6 +1,6 @@
 import React from "react";
 import './ToolsSection.css'
-import GhostBlock from "./GhostBlock";
+import GhostBlock from "../common/GhostBlock";
 
 const ToolsSection = (props: any) => {
     const loremIpsum = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque at consectetur tortor. Quisque metus lacus, varius ut semper ac, finibus sit amet lectus. Proin facilisis convallis mi, efficitur placerat sem ultrices ut. Etiam accumsan gravida magna non finibus. Donec eleifend magna nec nisl viverra, ac cursus odio rutrum. Aenean mattis eros id lacus euismod, vel tristique nibh viverra.";

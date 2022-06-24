@@ -1,6 +1,6 @@
 import React from "react";
 import './AboutSection.css'
-import GhostBlock from "./GhostBlock";
+import GhostBlock from "../common/GhostBlock";
 
 const AboutSection = (props: any) => {
 

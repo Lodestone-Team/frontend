@@ -1,5 +1,5 @@
 import React from "react";
-import GhostBlock from "./GhostBlock";
+import GhostBlock from "../common/GhostBlock";
 
 import './ControlPanel.css'
 
