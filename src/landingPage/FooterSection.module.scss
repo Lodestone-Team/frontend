@@ -7,12 +7,12 @@
   h1 {
     font-style: 'Chillax';
     color: #e3e3e3;
-    position: absolute;
-    text-align: left;
     font-size: 8rem;
+    line-height: 100%;
     width: 50vw;
-    top: 10vh;
-    left: 5vw;
+
+    padding-top: 5vh;
+    margin-left: 5vw;
   }
 
   li {

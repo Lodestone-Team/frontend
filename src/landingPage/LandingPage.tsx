@@ -9,11 +9,7 @@ import ControlSection from './ControlSection';
 import ToolsSection from './ToolsSection';
 import FooterSection from './FooterSection';
 
-// import ControlAnimation from "./ControlAnimation";
-
 const LandingPage = () => {
-  //const darkBackgroundAccent = '#36393f';
-  //const darkBackground = '#26282C';
 
   return (
     <div className={styles.container}>

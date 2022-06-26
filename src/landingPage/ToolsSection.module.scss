@@ -1,21 +1,19 @@
 .container {
   background: #26282c;
-  min-height: 250vh;
   position: relative;
+  min-height: 150vh;
   width: 100%;
 
   h1 {
-    position: absolute;
     color: #e3e3e3;
     font-size: 6rem;
     font-weight: 900;
-    top: 10vh;
-    left: 10vw;
-    width: 40vw;
+    margin-left: 10vw;
+    padding-top: 10vh;
+    line-height: 90%;
 
     .gradient {
       background-clip: unset;
-      /* here to avoid warnings */
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-image: var(--std-gradient);
@@ -23,27 +21,33 @@
   }
 
   ul.parameters {
-    position: absolute;
-    top: 30vh;
-    left: 10vw;
-    width: 30vw;
+    margin-left: 10vw;
     list-style: none;
+    width: 30vw;
+
+    h2 {
+      padding-top: 4vh;
+      font-weight: 800;
+      font-size: 1.4rem;
+      color: teal;
+    }
 
     p {
       color: #e3e3e3;
       margin-top: 5vh;
       font-size: 1.25rem;
-    }
+      margin-top: 0%;
+    } 
   }
 }
 
-/* I like having this section be a bit longer to give a fade in type animation*/
 .stickyBoxBounds {
   position: absolute;
+  height: 100vh;
   width: 40vw;
+
+  top: 30vh;
   right: 5vw;
-  top: 20vh;
-  bottom: 100vh;
 
   .stickyBox {
     top: 0;

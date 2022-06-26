@@ -15,12 +15,10 @@ const AboutSection = () => {
             forever.
           </h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Pellentesque at consectetur tortor. Quisque metus lacus, varius ut
-            semper ac, finibus sit amet lectus. Proin facilisis convallis mi,
-            efficitur placerat sem ultrices ut. Etiam accumsan gravida magna non
-            finibus. Donec eleifend magna nec nisl viverra, ac cursus odio
-            rutrum.
+          Lodestone is our cutting edge local server management tool. 
+          It is the most comprehensive tool of its kind, and offers a wide 
+          range of features for managing your server. It is available for free, 
+          and is constantly updated with new features.
           </p>
         </article>
 
@@ -38,13 +36,9 @@ const AboutSection = () => {
           <h2>(the easiest crafting recipe)</h2>
           <h1>one click setup</h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Pellentesque at consectetur tortor. Quisque metus lacus, varius ut
-            semper ac, finibus sit amet lectus. Proin facilisis convallis mi,
-            efficitur placerat sem ultrices ut. Etiam accumsan gravida magna non
-            finibus. Donec eleifend magna nec nisl viverra, ac cursus odio
-            rutrum. Aenean mattis eros id lacus euismod, vel tristique nibh
-            viverra.
+          Lodestone is the perfect tool for easily managing your local Minecraft server. 
+          With just a few clicks you can set up and configure your server exactly how you want it, 
+          making it easy to get the most out of your Minecraft experience.
           </p>
         </article>
 

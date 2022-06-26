@@ -3,8 +3,6 @@ import styles from './ControlAnimation.module.scss';
 import GhostBlock from 'common/GhostBlock';
 
 const ControlAnimation = () => {
-  // const numSteps = 20.0
-
   let boxElement: Element | null;
   let contentRef: HTMLElement | null;
   let triggered: boolean = false;
