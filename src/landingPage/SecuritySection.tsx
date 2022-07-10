@@ -1,11 +1,10 @@
 import React from 'react';
 import styles from './SecuritySection.module.scss';
-// import Lock from './Lock.svg'
+import Lock from './Lock.svg'
 
 const SecuritySection = () => {
   return (
     <div className={styles.container}>
-      <div className={styles.section}></div>
     </div>
   );
 };

@@ -2,7 +2,6 @@
   background: #26282c;
   display: flex;
   padding: 10vh calc(100vw / 12);
-  height: 40vh;
 
   article {
     font-weight: 700;
@@ -24,6 +23,7 @@
   figure {
     order: 2;
     width: 50%;
+    height: 40vh;
   }
 
   &.free article {
@@ -61,6 +61,28 @@
     h2 {
       font-size: 2rem;
       color: grey;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section {
+    flex-direction: column;
+    padding: 3vh calc(100vw / 12);
+
+    article {
+      width: 100%;
+      margin-bottom: 2vh;
+    }
+
+    figure {
+      width: 100%;
+      height: 20vh;
+    }
+
+    &.setup article {
+      text-align: right;
+      order: 1;
     }
   }
 }

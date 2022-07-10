@@ -1,20 +1,5 @@
-// TODO
-
-section#security {
-  background: #26282c;
-  min-height: 100vh;
-  position: relative;
+.container {
   width: 100%;
-}
-
-#imageContainer {
-  position: absolute;
-  min-width: 20vw;
-  min-height: 20vh;
-  width: auto;
-  height: auto;
-}
-
-#lock {
-  position: absolute;
+  position: relative;
+  background-color: #36393f;
 }
