@@ -2,58 +2,62 @@
 
 @keyframes slide1 {
   0% {
-    padding-left: 45%;
+    width: calc(100%/6*2.5);
   }
 
   100% {
-    padding-left: 65%;
+    width: calc(100%/6*4);
   }
 }
 
 @keyframes slide2 {
   0% {
-    padding-left: 30%;
+    width: calc(100%/6*2.75);
   }
 
   100% {
-    padding-left: 50%;
+    width: calc(100%/6*4.5);
   }
 }
 
 @keyframes slide3 {
   0% {
-    padding-left: 15%;
+    width: calc(100%/6*3);
   }
 
   100% {
-    padding-left: 35%;
+    width: calc(100%/6*5);
   }
 }
 
 @keyframes slide4 {
   0% {
-    padding-left: 0%;
+    width: calc(100%/6*3.25);
   }
 
   100% {
-    padding-left: 20%;
+    width: calc(100%/6*5.5);
   }
 }
 
 .container {
-  animation-timing-function: cubic-bezier(0.32, 0.1, 0.25, 0.97);
-  display: grid;
-  justify-content: right;
-  grid-template-columns: 45%;
+  animation-timing-function: cubiccubic-bezier(0.35, 0.29, 0.68, 0.69);
   position: absolute;
-  top: -5vh;
-  row-gap: 8vh;
-  width: 100%;
+  right: 0;
+  top: 10vh;
+  width: 50%;
+  min-width: 40vh;
+  height: 100%;
 
   .barWrapper {
+    height: 14%;
+    margin-bottom: 6%;
+    margin-left: auto;
+    margin-right: 0;
+
     .bar {
-      border-radius: 100px 0px 0px 100px;
-      height: 15vh;
+      border-radius: 10000px 0 0 10000px;
+      height: 100%;
     }
 
     animation-iteration-count: infinite;
@@ -61,9 +65,8 @@
     animation-duration: 3s;
 
     &:nth-child(1) {
-      padding-left: 45%;
       animation-name: slide1;
-      animation-delay: -2s;
+      animation-delay: 0s;
 
       .bar {
         background: linear-gradient(98.23deg, #2af588 0%, #405a9b 154.02%);
@@ -71,9 +74,8 @@
     }
 
     &:nth-child(2) {
-      padding-left: 30%;
       animation-name: slide2;
-      animation-delay: -1.5s;
+      animation-delay: -0.5s;
 
       .bar {
         background: linear-gradient(98.48deg, #2af588 -15.38%, #405a9b 136.17%);
@@ -81,9 +83,8 @@
     }
 
     &:nth-child(3) {
-      padding-left: 15%;
       animation-name: slide3;
-      animation-delay: -1s;
+      animation-delay: -0.9s;
 
       .bar {
         background: linear-gradient(98.22deg, #2af588 -31.14%, #405a9b 119.42%);
@@ -91,9 +92,8 @@
     }
 
     &:nth-child(4) {
-      padding-left: 0%;
       animation-name: slide4;
-      animation-delay: -0.5s;
+      animation-delay: -1.2s;
 
       .bar {
         background: linear-gradient(98.34deg, #2af588 -52.31%, #405a9b 103.33%);

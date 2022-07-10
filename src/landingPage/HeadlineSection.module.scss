@@ -1,6 +1,6 @@
 .container {
   background: #36393f;
-  min-height: 100vh;
+  height: 90vh;
   position: relative;
   width: 100%;
 }
@@ -11,7 +11,8 @@
   position: absolute;
   width: min-content;
   font-size: 1.5rem;
-  padding: 20vh;
+  margin-top: 20vh;
+  margin-left: calc(100vw/12);
 
   h1 {
     font-family: 'Chillax';
@@ -42,7 +43,7 @@
     font-weight: 700;
     font-size: 1.75rem;
     color: #e3e3e4;
-    min-width: 8.33vw;
+    margin-left: 2rem;
 
     &:hover {
       text-decoration: white solid underline;
