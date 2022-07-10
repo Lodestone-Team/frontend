@@ -1,7 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styles from './SecuritySection.module.scss';
 import Lock from '../assets/lock.svg';
-import Background from '../assets/binarytext.svg';
 
 const SecuritySection = () => {
   // Contains a full width section with a repeating svg background
