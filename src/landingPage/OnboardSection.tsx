@@ -14,10 +14,9 @@ const OnboardSection = () => {
         <GhostBlock></GhostBlock>
         <GhostBlock></GhostBlock>
         <GhostBlock></GhostBlock>
-        <GhostBlock></GhostBlock>
-        <GhostBlock></GhostBlock>
-        <GhostBlock></GhostBlock>
-        <GhostBlock></GhostBlock>
+        <div className={styles.overlay}>
+          <h1>Create your server, coming soon!</h1>
+        </div>
       </div>
     </div>
   );

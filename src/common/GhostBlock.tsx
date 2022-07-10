@@ -10,7 +10,7 @@ const GhostBlock = (props: any) => {
     height: '100%',
   };
 
-  return <div style={styles}>{props.children}</div>;
+  return <div style={styles} className={props.className}>{props.children}</div>;
 };
 
 export default GhostBlock;
