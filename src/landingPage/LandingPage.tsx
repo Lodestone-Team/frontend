@@ -19,7 +19,6 @@ const LandingPage = () => {
 
       <AboutSection />
 
-      {/* security section is a bit of a lost cause right now. will do later */}
       <SecuritySection />
 
       <ControlSection />

@@ -1,5 +1,70 @@
 .container {
   width: 100%;
+  min-height: 40vh;
   position: relative;
-  background-color: #36393f;
+  background-color: #26282c;
+  padding-bottom: 10vh;
+}
+
+.lockSection {
+  width: 100%;
+  position: relative;
+  background-image: url('../assets/binarytext.svg');
+
+  .bakgroundGradient {
+    width: 100vw;
+    height: 40vh;
+    top: 0;
+    left: 0;
+    background: linear-gradient(180deg, #26282C 5%, rgba(38, 40, 44, 0) 100%);
+  }
+
+  .lock {
+    width: 10rem;
+    position: absolute;
+    // Center the lock in the middle of the screen
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+
+    img {
+      overflow: visible;
+    }
+  }
+}
+
+.textSection {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  h1 {
+    font-family: 'Satoshi';
+    font-size: 5rem;
+    line-height: 95%;
+    color: #767A82;
+  }
+
+  h2 {
+    font-family: 'Satoshi';
+    font-size: 5rem;
+    line-height: 95%;
+    color: #ffffff;
+    font-weight: 900;
+  }
+
+  p {
+    margin-top: 3vh;
+    font-family: 'Satoshi';
+    font-weight: 500;
+    font-size: 1rem;
+    color: #FFFFFF;
+    width: 75rem;
+    max-width: 80vw;
+  }
 }
