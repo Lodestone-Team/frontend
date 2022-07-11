@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './SecuritySection.module.scss';
-import Lock from '../assets/lock.svg';
+import lock from '../assets/lock.svg';
 
 const SecuritySection = () => {
   // Contains a full width section with a repeating svg background
@@ -12,7 +12,7 @@ const SecuritySection = () => {
       <div className={styles.lockSection}>
         <div className={styles.bakgroundGradient}>
           <div className={styles.lock}>
-            <img src={Lock} alt="lock" />
+            <img src={lock} alt="lock" />
             {/* TODO: make svg glow look better */}
           </div>
         </div>
