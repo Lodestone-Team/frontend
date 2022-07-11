@@ -1,16 +1,14 @@
 import React from 'react';
+import styles from './GhostBlock.module.scss';
 
 // placeholder block for images, text, components. also a nice border component.
-const GhostBlock = (props: any) => {
-  let styles: React.CSSProperties = {
-    borderRadius: '2vmin',
-    boxSizing: 'border-box',
-    border: '0.2vmin solid #767A82',
-    width: '100%',
-    height: '100%',
-  };
-
-  return <div style={styles} className={props.className + ' ghostblock'}>{props.children}</div>;
+// Takes className, children, and "rounded" boolean, all optional.
+const GhostBlock = ({className, children, rounded, }: any) => {
+  return (
+    <div className={`${styles.container} ${className} ${rounded ? styles.rounded : ''}`}>
+      {children}
+    </div>
+  )  
 };
 
 export default GhostBlock;

@@ -1,0 +1,11 @@
+.container {
+  &.rounded {
+    border-radius: 2vmin;
+
+  }
+
+  box-sizing : border-box;
+  border: 0.2vmin solid #767A82;
+  width: 100%;
+  height: 100%;
+}
