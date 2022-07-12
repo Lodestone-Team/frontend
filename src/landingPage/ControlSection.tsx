@@ -7,10 +7,10 @@ import { Transition } from 'react-transition-group';
 const ControlSection = () => {
   const textDescription =
     'If you are looking for a locally hosted server management tool that gives you total control and endless fidelity, look no further than Lodestone. This tool will allow you to manage your server with ease, giving you the ability to customize and configure your server to your liking. With Lodestone, you will have the power to create the perfect Minecraft server for you and your friends to enjoy.';
-  const [ref, inView, entry] = useInView({
+  const [ref, inView] = useInView({
     threshold: 0.75,
     triggerOnce: true,
-    onChange: (inView, entry) => {
+    onChange: (inView) => {
       if (inView) {
         console.log('in view');
       } else {
