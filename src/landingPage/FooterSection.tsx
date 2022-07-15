@@ -9,14 +9,13 @@ const FooterSection = (props: any) => {
   return (
     <footer className={styles.footer}>
       <h1>where will you go?</h1>
+      
+      <a href="/" className={styles.downloadButton}>
+        <button onClick={onClick}>download now!</button>
+      </a>
 
       <ul className={styles.content}>
-        <li className={styles.downloadButton}>
-          {/* this is a link for uniformity, change on implementation */}
-          <a href="/">
-            <button onClick={onClick}>download now!</button>
-          </a>
-        </li>
+        {/* this is a link for uniformity, change on implementation */}
         <li>
           <a href="/">about us &#8594;</a>
         </li>
