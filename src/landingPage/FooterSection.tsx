@@ -3,8 +3,7 @@ import styles from './FooterSection.module.scss';
 import { ReactComponent as YourSVG } from '../assets/footerimg.svg';
 
 const FooterSection = (props: any) => {
-
-  // make this do whatever a download button does. 
+  // make this do whatever a download button does.
   const onClick = () => {};
 
   return (
@@ -28,7 +27,7 @@ const FooterSection = (props: any) => {
           <a href="/">view our GitHub!&#8594;</a>
         </li>
 
-        <li className={styles.copyright}> 
+        <li className={styles.copyright}>
           © COPYRIGHT LODESTONE 2022. ALL RIGHTS RESERVED.
         </li>
       </ul>

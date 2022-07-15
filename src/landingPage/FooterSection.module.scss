@@ -10,13 +10,15 @@
     font-size: 8rem;
     line-height: 100%;
     width: 50vw;
-
+    
+    margin-left: 10vw;
     padding-top: 5vh;
-    margin-left: 5vw;
   }
 
   li {
     margin-top: 2vh;
+    margin-left: 10vw;
+
   }
 
   a {
@@ -33,7 +35,6 @@
   .content {
     list-style: none;
     position: absolute;
-    left: 5vw;
     bottom: 5vh;
   }
 
@@ -41,12 +42,15 @@
     margin-bottom: 10vh;
     button {
       font-style: 'Satoshi';
-      width: 15vw;
-      height: 2.5vw;
+      width: fit-content;
+      height: fit-content;
       color: #e3e3e3;
       font-size: 1.25rem;
       background-image: linear-gradient(270deg, #2af588 0%, #334675 99.99%);
       border-radius: 2vmin;
+
+      padding-inline: max(2vmin, 4vw);
+      padding-block: max(1vmin, 1vh);
     }
   }
 
