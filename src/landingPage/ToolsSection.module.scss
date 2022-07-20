@@ -1,57 +1,66 @@
 .container {
   background: #26282c;
-  position: relative;
   min-height: 150vh;
+  padding-bottom: 30vh;
   width: 100%;
 
-  h1 {
-    color: #e3e3e3;
-    font-size: 6rem;
-    font-weight: 900;
-    margin-left: 10vw;
-    padding-top: 10vh;
-    line-height: 90%;
+  .subcontainer {
+    position: relative;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 10vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
-    .gradient {
-      background-clip: unset;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-image: var(--std-gradient);
-    }
-  }
-
-  ul.parameters {
-    margin-left: 10vw;
-    list-style: none;
-    width: 30vw;
-
-    h2 {
-      padding-top: 4vh;
-      font-weight: 800;
-      font-size: 1.4rem;
-      color: teal;
-    }
-
-    p {
+    h1 {
       color: #e3e3e3;
-      margin-top: 5vh;
-      font-size: 1.25rem;
-      margin-top: 0%;
-    } 
+      font-size: 6rem;
+      font-weight: 900;
+      padding-top: 10vh;
+      padding-bottom: 8vh;
+      line-height: 90%;
+      width: 100%;
+  
+      .gradient {
+        background-clip: unset;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-image: var(--std-gradient);
+      }
+    }
+  
+    ul.parameters {
+      list-style: none;
+      width: 30%;
+  
+      h2 {
+        margin-top: 4vh;
+        font-weight: 800;
+        font-size: 1.7rem;
+        color: teal;
+      }
+  
+      p {
+        color: #e3e3e3;
+        margin-top: 5vh;
+        font-size: 1.25rem;
+        margin-top: 0%;
+        margin-bottom: 3vh;
+        line-height: 1.8rem;
+      } 
+    }
   }
+
 }
 
 .stickyBoxBounds {
-  position: absolute;
-  height: 100vh;
-  width: 40vw;
-
-  top: 30vh;
-  right: 5vw;
+  position: sticky;
+  top: 10%;
+  height: 100%;
+  width: 40%;
 
   .stickyBox {
-    top: 10vh;
     height: 50vh;
-    position: sticky;
   }
 }
