@@ -1,7 +1,7 @@
 .container {
   background: #26282c;
   min-height: 150vh;
-  padding-bottom: 30vh;
+  padding-bottom: 15vh;
   width: 100%;
 
   .subcontainer {
@@ -9,6 +9,7 @@
     max-width: 1600px;
     margin: 0 auto;
     padding: 0 10vw;
+    padding-bottom: 15vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -33,22 +34,29 @@
     ul.parameters {
       list-style: none;
       width: 30%;
-  
-      h2 {
-        margin-top: 4vh;
-        font-weight: 800;
-        font-size: 1.7rem;
-        color: teal;
+
+      li {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 70vh;
+
+        h2 {
+          margin-top: 4vh;
+          font-weight: 800;
+          font-size: 1.7rem;
+          color: teal;
+        }
+    
+        p {
+          color: #e3e3e3;
+          margin-top: 5vh;
+          font-size: 1.25rem;
+          margin-top: 0%;
+          margin-bottom: 3vh;
+          line-height: 1.8rem;
+        } 
       }
-  
-      p {
-        color: #e3e3e3;
-        margin-top: 5vh;
-        font-size: 1.25rem;
-        margin-top: 0%;
-        margin-bottom: 3vh;
-        line-height: 1.8rem;
-      } 
     }
   }
 
@@ -56,11 +64,11 @@
 
 .stickyBoxBounds {
   position: sticky;
-  top: 10%;
+  top: 20vh;
   height: 100%;
   width: 40%;
 
   .stickyBox {
-    height: 50vh;
+    height: 60vh;
   }
 }
