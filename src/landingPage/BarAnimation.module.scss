@@ -69,7 +69,7 @@
       animation-delay: 0s;
 
       .bar {
-        background: linear-gradient(98.23deg, #2af588 0%, #405a9b 154.02%);
+        background: linear-gradient(98.23deg, var(--primary-green) 0%, var(--primary-blue) 154.02%);
       }
     }
 
@@ -78,7 +78,7 @@
       animation-delay: -0.5s;
 
       .bar {
-        background: linear-gradient(98.48deg, #2af588 -15.38%, #405a9b 136.17%);
+        background: linear-gradient(98.48deg, var(--primary-green) -15.38%, var(--primary-blue) 136.17%);
       }
     }
 
@@ -87,7 +87,7 @@
       animation-delay: -0.9s;
 
       .bar {
-        background: linear-gradient(98.22deg, #2af588 -31.14%, #405a9b 119.42%);
+        background: linear-gradient(98.22deg, var(--primary-green) -31.14%, var(--primary-blue) 119.42%);
       }
     }
 
@@ -96,7 +96,7 @@
       animation-delay: -1.2s;
 
       .bar {
-        background: linear-gradient(98.34deg, #2af588 -52.31%, #405a9b 103.33%);
+        background: linear-gradient(98.34deg, var(--primary-green) -52.31%, var(--primary-blue) 103.33%);
       }
     }
   }

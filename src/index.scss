@@ -1,5 +1,8 @@
-a:hover {
-  text-decoration: white solid underline;
+a {
+  text-decoration: none;
+  &:hover{
+    text-decoration: white solid underline;
+  }
 }
 
 @media screen and (max-width: 1536px) {

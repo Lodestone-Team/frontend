@@ -1,11 +1,11 @@
 .section {
-  background: #26282c;
+  background: var(--dark-background);
   display: flex;
   padding: 10vh calc(100vw / 12);
 
   article {
     font-weight: 700;
-    color: #e3e3e3;
+    color: var(--bright-text);
     width: 50%;
 
     h1 {
@@ -34,7 +34,7 @@
 
     h2 {
       font-size: 5rem;
-      color: grey;
+      color: var(--fade-text);
     }
 
     h3 {
@@ -60,7 +60,7 @@
 
     h2 {
       font-size: 2rem;
-      color: grey;
+      color: var(--fade-text);
     }
   }
 }

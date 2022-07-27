@@ -9,7 +9,7 @@
   --fade-text: #767a82;
   --std-gradient: linear-gradient(270deg, #2af588 0%, #334675 99.99%);
   --selection-green: #6dd277;
-  --selection-red: #d26d6d;
+  --selection-red: #d26d6d
 }
 
 @keyframes scroll {
@@ -21,3 +21,5 @@
     transform: translateX(calc(-250px * 7));
   }
 }
+
+

@@ -2,7 +2,7 @@
   width: 100%;
   min-height: 40vh;
   position: relative;
-  background-color: #26282c;
+  background-color: var(--dark-background);
   padding-bottom: 10vh;
 }
 
@@ -16,7 +16,7 @@
     height: 40vh;
     top: 0;
     left: 0;
-    background: linear-gradient(180deg, #26282C 5%, rgba(38, 40, 44, 0) 100%);
+    background: linear-gradient(180deg, var(--dark-background) 5%, rgba(38, 40, 44, 0) 100%);
   }
 
   .lock {
@@ -47,14 +47,14 @@
     font-family: 'Satoshi';
     font-size: 5rem;
     line-height: 95%;
-    color: #767A82;
+    color: var(--fade-text);
   }
 
   h2 {
     font-family: 'Satoshi';
     font-size: 5rem;
     line-height: 95%;
-    color: #ffffff;
+    color: var(--bright-text);
     font-weight: 900;
   }
 
@@ -63,7 +63,7 @@
     font-family: 'Satoshi';
     font-weight: 500;
     font-size: 1rem;
-    color: #FFFFFF;
+    color: var(--bright-text);
     width: 75rem;
     max-width: 80vw;
   }

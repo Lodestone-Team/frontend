@@ -1,5 +1,5 @@
 .container {
-  background: #36393f;
+  background: var(--dark-background-accent);
   height: 90vh;
   position: relative;
   width: 100%;
@@ -7,7 +7,7 @@
 
 .title {
   text-align: left;
-  color: #e3e3e3;
+  color: var(--bright-text);
   position: absolute;
   width: min-content;
   font-size: 1.5rem;
@@ -42,7 +42,7 @@
     line-height: 27px;
     font-weight: 700;
     font-size: 1.75rem;
-    color: #e3e3e4;
+    color: var(--bright-text);
     margin-left: 2rem;
 
     &:hover {

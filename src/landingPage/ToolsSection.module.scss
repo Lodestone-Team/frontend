@@ -1,5 +1,5 @@
 .container {
-  background: #26282c;
+  background: var(--dark-background);
   min-height: 150vh;
   padding-bottom: 15vh;
   width: 100%;
@@ -15,7 +15,7 @@
     justify-content: space-between;
 
     h1 {
-      color: #e3e3e3;
+      color: var(--bright-text);
       font-size: 6rem;
       font-weight: 900;
       padding-top: 10vh;
@@ -49,7 +49,7 @@
         }
     
         p {
-          color: #e3e3e3;
+          color: var(--bright-text);
           margin-top: 5vh;
           font-size: 1.25rem;
           margin-top: 0%;

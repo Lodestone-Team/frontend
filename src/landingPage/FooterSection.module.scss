@@ -1,5 +1,5 @@
 .footer {
-  background: #26282c;
+  background: var(--dark-background);
   min-height: 100vh;
   position: relative;
   width: 100%;
@@ -19,7 +19,7 @@
 
   h1 {
     font-style: 'Chillax';
-    color: #e3e3e3;
+    color: var(--bright-text);
     font-size: 8rem;
     line-height: 100%;
     width: 50vw;
@@ -37,13 +37,8 @@
   a {
     font-style: 'Satoshi';
     width: fit-content;
-    color: #e3e3e3;
-    text-decoration: none;
+    color: var(--bright-text);
     font-size: 1.5rem;
-
-    &:hover {
-      text-decoration: white solid underline;
-    }
   }
 
   .content {
@@ -58,9 +53,9 @@
       font-family: 'Satoshi';
       width: fit-content;
       height: fit-content;
-      color: #e3e3e3;
+      color: var(--bright-text);
       font-size: 1.5rem;
-      background-image: linear-gradient(270deg, #2af588 0%, #334675 99.99%);
+      background-image: linear-gradient(270deg, var(--primary-green) 0%, var(--primary-blue) 99.99%);
       border-radius: 2vmin;
 
       padding-inline: max(2vmin, 4vw);
@@ -70,7 +65,7 @@
 
   .copyright {
     margin-top: 10vh;
-    color: #e3e3e3;
+    color: var(--bright-text);
   }
 
   .svg {
