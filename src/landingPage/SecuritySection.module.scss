@@ -20,16 +20,13 @@
   }
 
   .lock {
-    width: 10rem;
-    position: absolute;
-    // Center the lock in the middle of the screen
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
+
+    text-align: center;
 
     img {
-      overflow: visible;
+      display: block;
+      margin: auto;
+      overflow: hidden;
     }
   }
 }
