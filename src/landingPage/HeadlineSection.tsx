@@ -16,8 +16,8 @@ const HeadlineSection = () => {
       </nav>
 
       <div className={styles.title}>
-        <h1>Lodestone</h1>
-        <h2>The most comprehensive Minecraft Server Management tool.</h2>
+        <h1 className={styles.logo}>Lodestone</h1>
+        <h2 className={styles.h2}>The most comprehensive<br/>Minecraft Server Management tool.</h2>
       </div>
     </section>
   );

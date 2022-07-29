@@ -1,3 +1,5 @@
+@use "foundation/text";
+
 @keyframes leftEnter {
   0% {
     transform: translateX(-100%);
@@ -97,9 +99,7 @@
   padding-bottom: 2rem;
 
   h1 {
-    color: white;
     position: relative;
-    font-size: 6rem;
     transition: left 1s ease-out, right 1s ease-out;
   }
 }
@@ -114,13 +114,8 @@
   align-items: center;
 
   p {
-    color: white;
     text-align: center;
     width: 75rem;
     max-width: 80vw;
-
-    font-family: 'Satoshi';
-    font-weight: 500;
-    font-size: 1rem;
   }
 }

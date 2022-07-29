@@ -1,10 +1,3 @@
-a {
-  text-decoration: none;
-  &:hover{
-    text-decoration: white solid underline;
-  }
-}
-
 @media screen and (max-width: 1536px) {
   html {
     font-size: 16px;
@@ -33,9 +26,7 @@ a {
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Satoshi', 'Segoe UI',
-    'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
-    'Helvetica Neue', sans-serif;
+  font-family: 'Satoshi', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

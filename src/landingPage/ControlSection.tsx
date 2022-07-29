@@ -80,7 +80,7 @@ const ControlSection = () => {
               </div>
               <div className={styles.headerContainer}>
                 <h1
-                  className={styles.left}
+                  className={`${styles.left} ${styles.title}`}
                   style={{
                     ...transitionStylesHeaderLeft[state],
                   }}
@@ -88,7 +88,7 @@ const ControlSection = () => {
                   total control
                 </h1>
                 <h1
-                  className={styles.right}
+                  className={`${styles.right} ${styles.title}`}
                   style={{
                     ...transitionStylesHeaderRight[state],
                   }}

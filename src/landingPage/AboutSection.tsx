@@ -7,10 +7,10 @@ const AboutSection = () => {
     <>
       <section className={styles.section + ' ' + styles.free}>
         <article>
-          <h2>your server.</h2>
-          <h1>
+          <h1 className={`${styles.faded} ${styles.title}`}>your server.</h1>
+          <h1 className={styles.title}>
             <div>
-              for <h3>free</h3>
+              for <h1 className={`${styles.gradient} ${styles.titleBold}`}>free.</h1>
             </div>
             forever.
           </h1>
@@ -29,8 +29,8 @@ const AboutSection = () => {
 
       <section className={styles.section + ' ' + styles.setup}>
         <article>
-          <h2>(the easiest crafting recipe)</h2>
-          <h1>one click setup</h1>
+          <h2 className={styles.faded}>(the easiest crafting recipe)</h2>
+          <h1 className={styles.title}>one-click setup</h1>
           <p>
             Lodestone is the perfect tool for easily managing your local
             Minecraft server. With just a few clicks you can set up and

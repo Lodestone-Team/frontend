@@ -19,8 +19,8 @@ const SecuritySection = () => {
       </div>
 
       <div className={styles.textSection}>
-        <h1>Secure Something</h1>
-        <h2>yeah. secure.</h2>
+        <h1 className={`${styles.title} ${styles.faded}`}>Secure Something</h1>
+        <h1 className={styles.titleBold}>yeah. secure.</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
           at consectetur tortor. Quisque metus lacus, varius ut semper ac,

@@ -1,3 +1,5 @@
+@use "foundation/text";
+
 .footer {
   background: var(--dark-background);
   min-height: 100vh;
@@ -18,27 +20,13 @@
   }
 
   h1 {
-    font-style: 'Chillax';
-    color: var(--bright-text);
-    font-size: 8rem;
-    line-height: 100%;
     width: 50vw;
-    
     padding-top: 5vh;
     padding-bottom: 10vh;
-
   }
 
   li {
     margin-top: 2vh;
-
-  }
-
-  a {
-    font-style: 'Satoshi';
-    width: fit-content;
-    color: var(--bright-text);
-    font-size: 1.5rem;
   }
 
   .content {
@@ -50,12 +38,7 @@
   .downloadButton {
     
     button {
-      font-family: 'Satoshi';
-      width: fit-content;
-      height: fit-content;
-      color: var(--bright-text);
-      font-size: 1.5rem;
-      background-image: linear-gradient(270deg, var(--primary-green) 0%, var(--primary-blue) 99.99%);
+      background-image: var(--std-gradient);
       border-radius: 2vmin;
 
       padding-inline: max(2vmin, 4vw);
@@ -65,7 +48,6 @@
 
   .copyright {
     margin-top: 10vh;
-    color: var(--bright-text);
   }
 
   .svg {

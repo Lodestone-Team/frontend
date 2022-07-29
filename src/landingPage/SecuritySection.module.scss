@@ -1,3 +1,5 @@
+@use "foundation/text";
+
 .container {
   width: 100%;
   min-height: 40vh;
@@ -43,27 +45,8 @@
   align-items: center;
   text-align: center;
 
-  h1 {
-    font-family: 'Satoshi';
-    font-size: 5rem;
-    line-height: 95%;
-    color: var(--fade-text);
-  }
-
-  h2 {
-    font-family: 'Satoshi';
-    font-size: 5rem;
-    line-height: 95%;
-    color: var(--bright-text);
-    font-weight: 900;
-  }
-
   p {
     margin-top: 3vh;
-    font-family: 'Satoshi';
-    font-weight: 500;
-    font-size: 1rem;
-    color: var(--bright-text);
     width: 75rem;
     max-width: 80vw;
   }

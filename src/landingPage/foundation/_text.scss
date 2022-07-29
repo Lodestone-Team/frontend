@@ -1,0 +1,89 @@
+// landingPage/foundation/_text.scss
+
+// Using design system and assuming browser has base font size 16px
+
+.faded{
+    color: var(--fade-text);
+}
+
+.gradient{
+    display: inline;
+    background-clip: unset;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: var(--std-gradient);
+    background-attachment: fixed;
+}
+
+h1 {
+    color: var(--bright-text);
+
+    &.logo{
+        font-family: 'Chillax', sans-serif;
+        font-weight: 600;
+        font-size: 6.5rem;
+        line-height: 140%;
+    }
+    &.titleBold{
+        font-family: 'Satoshi', sans-serif;
+        font-weight: 900;
+        font-size: 6rem;
+        line-height: 100%;
+    }
+    &.title{
+        font-family: 'Satoshi', sans-serif;
+        font-weight: 700;
+        font-size: 6rem;
+        line-height: 100%;
+    }
+}
+
+h2 {
+    color: var(--bright-text);
+    font-family: 'Satoshi', sans-serif;
+    font-weight: 700;
+    font-size: 2.25rem;
+    line-height: 100%;
+}
+
+h3 {
+    color: var(--bright-text);
+    font-family: 'Satoshi', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 100%;
+}
+
+p, .regular {
+    color: var(--bright-text);
+    font-family: 'Satoshi', sans-serif;
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 100%;
+
+    &.small{
+        font-size: 1rem;
+    }
+}
+
+b, .bold {
+    color: var(--bright-text);
+    font-family: 'Satoshi', sans-serif;
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 100%;
+
+    &.small{
+        font-size: 1rem;
+    }
+}
+
+a{
+    color: var(--bright-text);
+    font-family: 'Satoshi', sans-serif;
+    text-decoration: none;
+
+    &:hover{
+        text-decoration: var(--bright-text) underline solid;
+    }
+}

@@ -1,3 +1,5 @@
+@use "foundation/text";
+
 .container {
   background: var(--dark-background);
   min-height: 150vh;
@@ -10,30 +12,10 @@
     margin: 0 auto;
     padding: 0 10vw;
     padding-bottom: 15vh;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
-    h1 {
-      color: var(--bright-text);
-      font-size: 6rem;
-      font-weight: 900;
-      padding-top: 10vh;
-      padding-bottom: 8vh;
-      line-height: 90%;
-      width: 100%;
-  
-      .gradient {
-        background-clip: unset;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-image: var(--std-gradient);
-      }
-    }
   
     ul.parameters {
       list-style: none;
-      width: 30%;
+      width: 40%;
 
       li {
         display: flex;
@@ -41,25 +23,20 @@
         justify-content: center;
         min-height: 70vh;
 
-        h2 {
-          margin-top: 4vh;
-          font-weight: 800;
-          font-size: 1.7rem;
-          color: teal;
-        }
-    
         p {
-          color: var(--bright-text);
-          margin-top: 5vh;
-          font-size: 1.25rem;
-          margin-top: 0%;
-          margin-bottom: 3vh;
           line-height: 1.8rem;
         } 
       }
     }
   }
 
+}
+
+.stickySectionContainer{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .stickyBoxBounds {
