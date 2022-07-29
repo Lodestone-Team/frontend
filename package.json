@@ -13,7 +13,7 @@
     "react-scripts": "5.0.1",
     "react-transition-group": "^4.4.2",
     "react-visibility-sensor": "^5.1.1",
-    "sass": "^1.53.0",
+    "sass": "^1.54.0",
     "styled-components": "^5.3.5",
     "typescript": "^4.6.4",
     "web-vitals": "^2.1.4"
