@@ -9,14 +9,14 @@ const HeadlineSection = () => {
     <>
       <nav className={styles.header}>
         <div className={styles.navLeft}>
-          <a href="/">about</a>
-          <a href="/">setup</a>
-          <a href="/">security</a>
-          <a href="/">control</a>
-          <a href="/">tools</a>
+          <a href="#about">about</a>
+          <a href="#setup">setup</a>
+          <a href="#security">security</a>
+          <a href="#control">control</a>
+          <a href="#tools">tools</a>
         </div>
         <div className={styles.navRight}>
-          <a href="/" >
+          <a href="https://github.com/Lodestone-Team" >
             <img className={styles.linkImage} src={github} alt="github logo" />
           </a>
         </div>
