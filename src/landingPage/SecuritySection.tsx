@@ -10,7 +10,7 @@ const SecuritySection = () => {
   return (
     <div className={styles.container}>
       <div className={styles.lockSection}>
-        <div className={styles.bakgroundGradient}>
+        <div className={styles.backgroundGradient}>
           <div className={styles.lock}>
             <img src={lock} alt="lock" />
             {/* TODO: make svg glow look better */}
