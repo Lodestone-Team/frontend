@@ -12,7 +12,8 @@ const SecuritySection = () => {
       <div className={styles.lockSection}>
         <div className={styles.backgroundGradient}>
           <div className={styles.lock}>
-            <img src={lock} alt="lock" />
+            <img src={lock} alt="lock"/>
+            
             {/* TODO: make svg glow look better */}
           </div>
         </div>

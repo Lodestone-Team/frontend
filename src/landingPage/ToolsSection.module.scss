@@ -13,7 +13,11 @@
     margin: 0 auto;
     padding: 0 10vw;
     padding-bottom: 15vh;
-  
+
+    .titleBold {
+      padding-bottom: 100%;
+    }
+
     ul.parameters {
       list-style: none;
       width: 40%;
