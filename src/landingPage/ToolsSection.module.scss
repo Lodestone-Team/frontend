@@ -1,6 +1,7 @@
 .container {
   background: #26282c;
   min-height: 150vh;
+  padding-top: 25vh;
   padding-bottom: 15vh;
   padding-top: 5rem;
   width: 100%;
@@ -21,7 +22,7 @@
       font-weight: 900;
       padding-top: 10vh;
       padding-bottom: 8vh;
-      line-height: 90%;
+      line-height: 100%;
       width: 100%;
   
       .gradient {
@@ -29,6 +30,7 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-image: var(--std-gradient);
+        padding-bottom: 100%;
       }
     }
   
