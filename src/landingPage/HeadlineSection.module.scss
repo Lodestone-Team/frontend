@@ -33,6 +33,7 @@
 
 .header {
   position: sticky;
+  height: 5rem;
   // right: 5vw;
   // top: 4vh;
   top: 0;
@@ -43,7 +44,7 @@
   color: #e3e3e4;
   background: #36393f;
   border-bottom: 1px solid #aaaaaa;
-  padding: 1.5rem calc(100vw/12);
+  padding: 0 calc(100vw/12);
 
   .navLeft {
     display: flex;
@@ -79,4 +80,11 @@
   }
 
   
+}
+
+.down{
+  transform:translateY(-100%); transition: all 0.3s ease-in-out;
+}
+.up{
+  transform:translateY(0); transition: all 0.3s ease-in-out;
 }

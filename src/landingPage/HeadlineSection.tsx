@@ -1,13 +1,35 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import BarAnimation from './BarAnimation';
 import github from '../assets/GitHub-32px.png';
 
 import styles from './HeadlineSection.module.scss';
 
 const HeadlineSection = () => {
+  const [prevPos, setPrevPos] = useState<number>(0);
+  const [scrollStyle, setScrollStyle] = useState<any>()
+
+  // some good old fashion js DOM manipulation :) https://bootstrap-menu.com/detail-autohide.html
+  useEffect(() => {
+    const handleScroll = () => {
+      const currPos = window.scrollY;
+      if (Math.abs(currPos - prevPos) < 30) {
+        return
+      }
+      if (prevPos < currPos) {
+        setScrollStyle(styles.down)
+      } else if (prevPos > currPos) {
+        setScrollStyle(styles.up)
+      }
+      setPrevPos(currPos);
+    }
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => window.removeEventListener('scroll', handleScroll);
+  });
   return (
     <>
-      <nav className={styles.header}>
+      <nav className={styles.header + ' ' + scrollStyle}>
         <div className={styles.navLeft}>
           <a href="#about">about</a>
           <a href="#setup">setup</a>
