@@ -9,11 +9,13 @@ const AboutSection = () => {
         <article>
           <h1 className={`${styles.faded} ${styles.title}`}>your server.</h1>
           <h1 className={styles.title}>
-            <div>
-              for <h1 className={`${styles.gradient} ${styles.titleBold}`}>free.</h1>
-            </div>
+            for{' '}
+            <span className={`${styles.gradient_color} ${styles.titleBold}`}>free.</span>
+          </h1>
+          <h1 className={styles.title}>
             forever.
           </h1>
+
           <p>
             Lodestone is our cutting edge local server management tool. It is
             the most comprehensive tool of its kind, and offers a wide range of

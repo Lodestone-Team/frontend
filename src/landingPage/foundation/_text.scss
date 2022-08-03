@@ -2,61 +2,56 @@
 
 // Using design system and assuming browser has base font size 16px
 
+h1, h2, h3, h4, h5, h6, p, a, b, strong, em, i, span, li, ul, ol, dl, dt, dd, blockquote, q, cite, pre, code, .faded, .gradient{
+    font-family: 'Satoshi', sans-serif;
+    color: var(--bright-text);
+}
+
 .faded{
     color: var(--fade-text);
 }
 
-.gradient{
-    display: inline;
-    background-clip: unset;
+.gradient_color{
+    display: inline-block;
+    background-clip: text;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: transparent;
     background-image: var(--std-gradient);
     background-attachment: fixed;
 }
 
-h1 {
-    color: var(--bright-text);
+.logo{
+    font-family: 'Chillax', sans-serif;
+    font-weight: 600;
+    font-size: 6.5rem;
+    line-height: 140%;
+}
 
-    &.logo{
-        font-family: 'Chillax', sans-serif;
-        font-weight: 600;
-        font-size: 6.5rem;
-        line-height: 140%;
-    }
-    &.titleBold{
-        font-family: 'Satoshi', sans-serif;
-        font-weight: 900;
-        font-size: 6rem;
-        line-height: 100%;
-    }
-    &.title{
-        font-family: 'Satoshi', sans-serif;
-        font-weight: 700;
-        font-size: 6rem;
-        line-height: 100%;
-    }
+.titleBold{
+    font-weight: 900;
+    font-size: 6rem;
+    line-height: 100%;
+}
+
+.title{
+    font-weight: 700;
+    font-size: 6rem;
+    line-height: 100%;
 }
 
 h2 {
-    color: var(--bright-text);
-    font-family: 'Satoshi', sans-serif;
     font-weight: 700;
     font-size: 2.25rem;
     line-height: 100%;
 }
 
 h3 {
-    color: var(--bright-text);
-    font-family: 'Satoshi', sans-serif;
     font-weight: 700;
     font-size: 1.5rem;
     line-height: 100%;
 }
 
 p, .regular {
-    color: var(--bright-text);
-    font-family: 'Satoshi', sans-serif;
     font-weight: 500;
     font-size: 1.25rem;
     line-height: 100%;
@@ -67,8 +62,6 @@ p, .regular {
 }
 
 b, .bold {
-    color: var(--bright-text);
-    font-family: 'Satoshi', sans-serif;
     font-weight: 700;
     font-size: 1.25rem;
     line-height: 100%;
@@ -79,8 +72,6 @@ b, .bold {
 }
 
 a{
-    color: var(--bright-text);
-    font-family: 'Satoshi', sans-serif;
     text-decoration: none;
 
     &:hover{

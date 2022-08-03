@@ -15,7 +15,7 @@ const ToolsSection = (props: any) => {
     <section className={styles.container}>
       <div className={styles.subcontainer}>
         <div>
-          <h1 className={`${styles.titleBold} ${styles.gradient}`}>
+          <h1 className={`${styles.titleBold} ${styles.gradient_color}`}>
             power&nbsp;manage
           </h1>
           <h1 className={styles.title}>your&nbsp;world.</h1>
@@ -33,7 +33,7 @@ const ToolsSection = (props: any) => {
                   }}
                 >
                   <li>
-                    <h3 className={styles.gradient}>{content.title}</h3>
+                    <h3 className={styles.gradient_color}>{content.title}</h3>
                     <p>{content.body}</p>
                   </li>
                 </VisibilitySensor>
