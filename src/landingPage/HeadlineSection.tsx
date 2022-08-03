@@ -12,9 +12,6 @@ const HeadlineSection = () => {
   useEffect(() => {
     const handleScroll = () => {
       const currPos = window.scrollY;
-      if (Math.abs(currPos - prevPos) < 30) {
-        return
-      }
       if (prevPos < currPos) {
         setScrollStyle(styles.down)
       } else if (prevPos > currPos) {
@@ -27,6 +24,7 @@ const HeadlineSection = () => {
 
     return () => window.removeEventListener('scroll', handleScroll);
   });
+
   return (
     <>
       <nav className={styles.header + ' ' + scrollStyle}>
@@ -38,7 +36,7 @@ const HeadlineSection = () => {
           <a href="#tools">tools</a>
         </div>
         <div className={styles.navRight}>
-          <a href="https://github.com/Lodestone-Team" >
+          <a href="https://github.com/Lodestone-Team" style={{padding: 0}}>
             <img className={styles.linkImage} src={github} alt="github logo" />
           </a>
         </div>
