@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-scroll';
+// import { Link } from 'react-scroll';
 import BarAnimation from './BarAnimation';
 import github from '../assets/GitHub-32px.png';
 import logo from '../assets/logo.png';
@@ -7,7 +9,7 @@ import styles from './HeadlineSection.module.scss';
 
 const HeadlineSection = () => {
   const [prevPos, setPrevPos] = useState<number>(0);
-  const [scrollStyle, setScrollStyle] = useState<any>()
+  const [scrollStyle, setScrollStyle] = useState<string>(); // styles.[blank] is a `string` type
 
   // some good old fashion js DOM manipulation :) https://bootstrap-menu.com/detail-autohide.html
   useEffect(() => {
@@ -21,7 +23,7 @@ const HeadlineSection = () => {
         setScrollStyle(styles.up);
       }
       setPrevPos(currPos);
-    }
+    };
 
     window.addEventListener('scroll', handleScroll);
 
@@ -32,15 +34,19 @@ const HeadlineSection = () => {
     <>
       <nav className={styles.header + ' ' + scrollStyle}>
         <div className={styles.navLeft}>
-          <a href="#home"><img className={styles.linkImage} src={logo} alt="Lodestone logo" /></a>
-          <a href="#about">about</a>
-          <a href="#setup">setup</a>
-          <a href="#security">security</a>
-          <a href="#control">control</a>
-          <a href="#tools">tools</a>
+          <Link to="home" smooth={true}>
+            <img className={styles.linkImage} src={logo} alt="Lodestone logo" />
+          </Link>
+          {/* <a href="#home">
+          </a> */}
+          <Link to="about" smooth={true}>about</Link>
+          <Link to="setup" smooth={true}>setup</Link>
+          <Link to="security" smooth={true}>security</Link>
+          <Link to="control" smooth={true}>control</Link>
+          <Link to="tools" smooth={true}>tools</Link>
         </div>
         <div className={styles.navRight}>
-          <a href="https://github.com/Lodestone-Team" style={{padding: 0}}>
+          <a href="https://github.com/Lodestone-Team" style={{ padding: 0 }}>
             <img className={styles.linkImage} src={github} alt="github logo" />
           </a>
         </div>
