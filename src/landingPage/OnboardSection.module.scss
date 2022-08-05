@@ -1,3 +1,5 @@
+@use "foundation/text";
+
 @media screen and (max-width: 700px){
   .container, .overlay, .ghostContainer {
     display: none;
@@ -8,7 +10,7 @@
   width: 100%;
   position: relative;
   min-height: 90vh;
-  background-color: #36393f;
+  background-color: var(--dark-background-accent);
 }
 
 .overlay {
@@ -29,9 +31,6 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-
-    font-size: 5rem;
-    line-height: 100%;
   }
 }
 

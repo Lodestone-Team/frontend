@@ -14,51 +14,53 @@ const ToolsSection = (props: any) => {
   return (
     <section className={styles.container} id='tools'>
       <div className={styles.subcontainer}>
+        <div>
+          <h1 className={`${styles.titleBold} ${styles.gradient_color}`}>
+            power&nbsp;manage
+          </h1>
+          <h1 className={styles.title}>your&nbsp;world.</h1>
+        </div>
 
-        <h1>
-          <span className={styles.gradient}>power&nbsp;manage.</span>
-          <br />
-          your&nbsp;world
-        </h1>
+        <div className={styles.stickySectionContainer}>
+          <ul className={styles.parameters}>
+            {TOOL_SECTION_CONTENT.map((content, index) => {
+              return (
+                <VisibilitySensor
+                  onChange={(isVisible: boolean) => {
+                    const newSectionVisibility = [...sectionVisibility];
+                    newSectionVisibility[index] = isVisible;
+                    setSectionVisibility(newSectionVisibility);
+                  }}
+                >
+                  <li>
+                    <h3 className={styles.gradient_color}>{content.title}</h3>
+                    <p>{content.body}</p>
+                  </li>
+                </VisibilitySensor>
+              );
+            })}
+          </ul>
 
-        <ul className={styles.parameters}>
-          {TOOL_SECTION_CONTENT.map((content, index) => {
-            return (
-              <VisibilitySensor
-                onChange={(isVisible: boolean) => {
-                  const newSectionVisibility = [...sectionVisibility];
-                  newSectionVisibility[index] = isVisible;
-                  setSectionVisibility(newSectionVisibility);
-                }}
-              >
-                <li>
-                  <h2>{content.title}</h2>
-                  <p>{content.body}</p>
-                </li>
-              </VisibilitySensor>
-            );
-          })}
-        </ul>
-
-        <div className={styles.stickyBoxBounds}>
-          <div className={styles.stickyBox}>
-            <GhostBlock>
-              {placeholderTexts.map((text, index) => (
-                <Transition in={sectionVisibility[index]} timeout={500}>
-                  {(state) => (
-                    <p
-                      style={{
-                        position: 'absolute',
-                        ...defaultStyle,
-                        ...transitionStyles[state],
-                      }}
-                    >
-                      {text}
-                    </p>
-                  )}
-                </Transition>
-              ))}
-            </GhostBlock>
+          <div className={styles.stickyBoxBounds}>
+            <div className={styles.stickyBox}>
+              <GhostBlock>
+                {placeholderTexts.map((text, index) => (
+                  <Transition in={sectionVisibility[index]} timeout={500}>
+                    {(state) => (
+                      <p
+                        style={{
+                          position: 'absolute',
+                          ...defaultStyle,
+                          ...transitionStyles[state],
+                        }}
+                      >
+                        {text}
+                      </p>
+                    )}
+                  </Transition>
+                ))}
+              </GhostBlock>
+            </div>
           </div>
         </div>
       </div>

@@ -1,22 +1,14 @@
+@use "foundation/text";
+
 .section {
-  background: #26282c;
+  background: var(--dark-background);
   display: flex;
   padding: 10vh calc(100vw / 12);
 
   article {
-    font-weight: 700;
-    color: #e3e3e3;
     width: 50%;
-
-    h1 {
-      font-size: 5rem;
-      line-height: 95%;
-    }
-
     p {
       margin-top: 2vh;
-      font-size: 1.25rem;
-      font-family: 'Satoshi';
     }
   }
 
@@ -35,21 +27,6 @@
     order: 1;
 
     margin-right: calc(100vw / 12 / 3);
-
-    h2 {
-      font-size: 5rem;
-      color: grey;
-    }
-
-    h3 {
-      display: inline;
-      background-clip: unset;
-      /* here to avoid warnings */
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-image: var(--std-gradient);
-      font-weight: 900;
-    }
   }
 
   &.setup {
@@ -62,11 +39,6 @@
     order: 3;
 
     margin-left: calc(100vw / 12 / 3);
-
-    h2 {
-      font-size: 2rem;
-      color: grey;
-    }
   }
 }
 

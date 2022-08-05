@@ -10,7 +10,7 @@ const SecuritySection = () => {
   return (
     <div className={styles.container} id='security'>
       <div className={styles.lockSection}>
-        <div className={styles.bakgroundGradient}>
+        <div className={styles.backgroundGradient}>
           <div className={styles.lock}>
             <img src={lock} alt="lock"/>
             
@@ -20,8 +20,8 @@ const SecuritySection = () => {
       </div>
 
       <div className={styles.textSection}>
-        <h1>Secure Something</h1>
-        <h2>yeah. secure.</h2>
+        <h1 className={`${styles.title} ${styles.faded}`}>Secure Something</h1>
+        <h1 className={styles.titleBold}>yeah. secure.</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
           at consectetur tortor. Quisque metus lacus, varius ut semper ac,

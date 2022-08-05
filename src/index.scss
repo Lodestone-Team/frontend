@@ -1,0 +1,39 @@
+html {
+  font-size: 12px;
+
+  @media (min-width:820px) {
+    font-size: 14px;
+  }
+
+  @media (min-width:1280px) {
+    font-size: 16px;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: 'Satoshi', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    'Satoshi', monospace;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: #36393f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}

@@ -18,7 +18,7 @@ const OnboardSection = () => {
         {ghostBlock}
         {ghostBlock}
         <div className={styles.overlay}>
-          <h1>Create your server, coming soon!</h1>
+          <h1 className={styles.title}>Create your server, coming soon!</h1>
         </div>
       </div>
     </div>

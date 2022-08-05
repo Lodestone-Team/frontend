@@ -1,0 +1,88 @@
+// landingPage/foundation/_text.scss
+
+// Using design system and assuming browser has base font size 16px
+
+h1, h2, h3, h4, h5, h6, p, a, b, strong, em, i, span, li, ul, ol, dl, dt, dd, blockquote, q, cite, pre, code, .faded, .gradient{
+    font-family: 'Satoshi', sans-serif;
+    color: var(--bright-text);
+    letter-spacing: -0.01em;
+}
+
+.faded{
+    color: var(--fade-text);
+}
+
+.gradient_color{
+    display: inline-block;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: var(--std-gradient);
+    background-attachment: fixed;
+    // but not for firefox, which has a bug where it doesn't render the gradient correctly
+    // On firefox, set background-attachment to default
+    @-moz-document url-prefix() {
+        background-attachment: scroll;
+        background-image: var(--lighter-gradient);
+    }
+    // Also not for safari, but safari is not completely broken, so we can leave it as is for now
+    padding-bottom: .2em;
+    margin-bottom: -.2em;
+    // inspired by apple (negative margin bottom)
+}
+
+.logo{
+    font-family: 'Chillax', sans-serif;
+    font-weight: 600;
+    font-size: 6.5rem;
+    line-height: 140%;
+    letter-spacing: -0.04em;
+}
+
+.titleBold{
+    font-weight: 900;
+    font-size: 6rem;
+    line-height: 100%;
+}
+
+h1, .title{
+    font-weight: 700;
+    font-size: 6rem;
+    line-height: 100%;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 2.25rem;
+    line-height: 100%;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 100%;
+}
+
+p, .regular {
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 100%;
+}
+
+b, .bold {
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 100%;
+}
+
+.small{
+    font-size: 1rem;
+}
+
+a{
+    text-decoration: none;
+
+    &:hover{
+        text-decoration: var(--bright-text) underline solid;
+    }
+}
