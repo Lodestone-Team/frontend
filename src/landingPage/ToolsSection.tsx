@@ -12,7 +12,7 @@ const ToolsSection = (props: any) => {
   );
 
   return (
-    <section className={styles.container}>
+    <section className={styles.container} id='tools'>
       <div className={styles.subcontainer}>
         <div>
           <h1 className={`${styles.titleBold} ${styles.gradient_color}`}>

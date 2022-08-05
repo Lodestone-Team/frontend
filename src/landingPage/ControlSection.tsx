@@ -51,7 +51,7 @@ const ControlSection = () => {
 
 
   return (
-    <section className={styles.container} ref={ref}>
+    <section className={styles.container} ref={ref} id='control'>
       <div className={styles.animationContainer}>
         <Transition in={inView} timeout={0}>
           {(state) => (

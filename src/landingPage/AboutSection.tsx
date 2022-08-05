@@ -5,7 +5,7 @@ import GhostBlock from 'common/GhostBlock';
 const AboutSection = () => {
   return (
     <>
-      <section className={styles.section + ' ' + styles.free}>
+      <section className={styles.section + ' ' + styles.free} id='about'>
         <article>
           <h1 className={`${styles.faded} ${styles.title}`}>your server.</h1>
           <h1 className={styles.title}>
@@ -29,7 +29,7 @@ const AboutSection = () => {
         </figure>
       </section>
 
-      <section className={styles.section + ' ' + styles.setup}>
+      <section className={styles.section + ' ' + styles.setup} id='setup'>
         <article>
           <h2 className={styles.faded}>(the easiest crafting recipe)</h2>
           <h1 className={styles.title}>one-click setup</h1>

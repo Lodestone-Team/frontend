@@ -8,7 +8,7 @@ const SecuritySection = () => {
   // Underneath the lock is a text section with a heading and a description.
 
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id='security'>
       <div className={styles.lockSection}>
         <div className={styles.backgroundGradient}>
           <div className={styles.lock}>
