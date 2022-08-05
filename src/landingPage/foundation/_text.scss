@@ -19,6 +19,9 @@ h1, h2, h3, h4, h5, h6, p, a, b, strong, em, i, span, li, ul, ol, dl, dt, dd, bl
     color: transparent;
     background-image: var(--std-gradient);
     background-attachment: fixed;
+    padding-bottom: .2em;
+    margin-bottom: -.2em;
+    // inspired by apple (negative margin bottom)
 }
 
 .logo{
