@@ -32,7 +32,7 @@ const HeadlineSection = () => {
     <>
       <nav className={styles.header + ' ' + scrollStyle}>
         <div className={styles.navLeft}>
-          <a href="#top"><img className={styles.linkImage} src={logo} alt="Lodestone logo" /></a>
+          <a href="#home"><img className={styles.linkImage} src={logo} alt="Lodestone logo" /></a>
           <a href="#about">about</a>
           <a href="#setup">setup</a>
           <a href="#security">security</a>
