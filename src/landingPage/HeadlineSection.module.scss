@@ -64,11 +64,6 @@
       &:hover {
         text-decoration: white solid underline;
       }
-
-      .linkImage {
-        height: 27px;
-        width: 27px;
-      }
     }
   }
 
@@ -82,11 +77,6 @@
       display: flex;
       align-items: center;
       margin-left: 2rem;
-
-      .linkImage {
-        height: 27px;
-        width: 27px;
-      }
     }
   }
 
@@ -98,4 +88,14 @@
 }
 .up{
   transform:translateY(0); transition: all 0.3s ease-in-out;
+}
+
+.linkImage {
+  height: 27px;
+  width: 27px;
+  cursor: pointer;
+}
+
+a {
+  cursor: pointer;
 }
