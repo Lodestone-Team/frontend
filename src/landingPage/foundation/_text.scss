@@ -5,6 +5,7 @@
 h1, h2, h3, h4, h5, h6, p, a, b, strong, em, i, span, li, ul, ol, dl, dt, dd, blockquote, q, cite, pre, code, .faded, .gradient{
     font-family: 'Satoshi', sans-serif;
     color: var(--bright-text);
+    letter-spacing: -0.01em;
 }
 
 .faded{
@@ -25,6 +26,7 @@ h1, h2, h3, h4, h5, h6, p, a, b, strong, em, i, span, li, ul, ol, dl, dt, dd, bl
     font-weight: 600;
     font-size: 6.5rem;
     line-height: 140%;
+    letter-spacing: -0.04em;
 }
 
 .titleBold{
@@ -33,7 +35,7 @@ h1, h2, h3, h4, h5, h6, p, a, b, strong, em, i, span, li, ul, ol, dl, dt, dd, bl
     line-height: 100%;
 }
 
-.title{
+h1, .title{
     font-weight: 700;
     font-size: 6rem;
     line-height: 100%;

@@ -1,26 +1,12 @@
-@media screen and (max-width: 1536px) {
-  html {
-    font-size: 16px;
-  }
-}
-@media screen and (max-width: 1408px) {
-  html {
+html {
+  font-size: 12px;
+
+  @media (min-width:1024px) {
     font-size: 14px;
   }
-}
-@media screen and (max-width: 1280px) {
-  html {
-    font-size: 12px;
-  }
-}
-@media screen and (max-width: 1152px) {
-  html {
-    font-size: 10px;
-  }
-}
-@media screen and (max-width: 1024px) {
-  html {
-    font-size: 8px;
+
+  @media (min-width:1280px) {
+    font-size: 16px;
   }
 }
 
