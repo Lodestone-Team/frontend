@@ -55,20 +55,16 @@ p, .regular {
     font-weight: 500;
     font-size: 1.25rem;
     line-height: 100%;
-
-    &.small{
-        font-size: 1rem;
-    }
 }
 
 b, .bold {
     font-weight: 700;
     font-size: 1.25rem;
     line-height: 100%;
+}
 
-    &.small{
-        font-size: 1rem;
-    }
+.small{
+    font-size: 1rem;
 }
 
 a{
