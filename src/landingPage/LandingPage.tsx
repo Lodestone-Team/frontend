@@ -12,8 +12,9 @@ import FooterSection from './FooterSection';
 const LandingPage = () => {
 
   return (
-    <div className={styles.page}>
-      <HeadlineSection />
+    <div className={styles.page} id="top">
+
+      <HeadlineSection/>
 
       <OnboardSection />
 

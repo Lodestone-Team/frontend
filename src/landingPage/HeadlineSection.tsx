@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import BarAnimation from './BarAnimation';
 import github from '../assets/GitHub-32px.png';
+import logo from '../assets/logo.png';
 
 import styles from './HeadlineSection.module.scss';
 
@@ -13,9 +14,11 @@ const HeadlineSection = () => {
     const handleScroll = () => {
       const currPos = window.scrollY;
       if (prevPos < currPos) {
-        setScrollStyle(styles.down)
+        setScrollStyle(styles.down);
       } else if (prevPos > currPos) {
-        setScrollStyle(styles.up)
+        setScrollStyle(styles.up);
+      } else if (currPos < 30) {
+        setScrollStyle(styles.up);
       }
       setPrevPos(currPos);
     }
@@ -29,6 +32,7 @@ const HeadlineSection = () => {
     <>
       <nav className={styles.header + ' ' + scrollStyle}>
         <div className={styles.navLeft}>
+          <a href="#top"><img className={styles.linkImage} src={logo} alt="Lodestone logo" /></a>
           <a href="#about">about</a>
           <a href="#setup">setup</a>
           <a href="#security">security</a>
@@ -41,7 +45,7 @@ const HeadlineSection = () => {
           </a>
         </div>
       </nav>
-      <section className={styles.container}>
+      <section className={styles.container} id="top">
         <BarAnimation></BarAnimation>
 
         <div className={styles.title}>
