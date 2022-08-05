@@ -19,6 +19,13 @@ h1, h2, h3, h4, h5, h6, p, a, b, strong, em, i, span, li, ul, ol, dl, dt, dd, bl
     color: transparent;
     background-image: var(--std-gradient);
     background-attachment: fixed;
+    // but not for firefox, which has a bug where it doesn't render the gradient correctly
+    // On firefox, set background-attachment to default
+    @-moz-document url-prefix() {
+        background-attachment: scroll;
+        background-image: var(--lighter-gradient);
+    }
+    // Also not for safari, but safari is not completely broken, so we can leave it as is for now
     padding-bottom: .2em;
     margin-bottom: -.2em;
     // inspired by apple (negative margin bottom)
