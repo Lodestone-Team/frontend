@@ -9,7 +9,7 @@ import styles from './HeadlineSection.module.scss';
 
 const HeadlineSection = () => {
   const [prevPos, setPrevPos] = useState<number>(0);
-  const [scrollStyle, setScrollStyle] = useState<any>();
+  const [scrollStyle, setScrollStyle] = useState<string>(); // styles.[blank] is a `string` type
 
   // some good old fashion js DOM manipulation :) https://bootstrap-menu.com/detail-autohide.html
   useEffect(() => {
