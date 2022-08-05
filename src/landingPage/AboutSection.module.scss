@@ -26,6 +26,10 @@
     height: 40vh;
   }
 
+  &.free {
+    padding-top: 5rem;
+  }
+
   &.free article {
     text-align: left;
     order: 1;
@@ -49,8 +53,9 @@
   }
 
   &.setup {
-    padding-top: 3vh;
-  }
+    padding-top: 5rem;
+  }  
+
 
   &.setup article {
     text-align: right;
