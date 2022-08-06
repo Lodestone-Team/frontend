@@ -3,7 +3,7 @@ import { Link } from 'react-scroll';
 // import { Link } from 'react-scroll';
 import BarAnimation from './BarAnimation';
 import github from '../assets/GitHub-32px.png';
-import logo from '../assets/logo.png';
+import logo from '../assets/Lodestone-32px.png';
 
 import styles from './HeadlineSection.module.scss';
 
