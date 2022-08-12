@@ -8,10 +8,10 @@ import { placeholderTexts } from 'placeholders/ToolsSectionImage';
 
 const ToolsSection = (props: any) => {
   const [realVisibility, setRealVisibility] = useState<boolean[]>(
-    TOOL_SECTION_CONTENT.map(() => false),
+    [true, false, false, false, false],
   );
   const [transitionVisibility, setTransitionVisibility] = useState<boolean[]>(
-    TOOL_SECTION_CONTENT.map(() => false),
+    [true, false, false, false, false],
   );
 
   useEffect(() => {
