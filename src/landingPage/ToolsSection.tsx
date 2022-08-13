@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import styles from './ToolsSection.module.scss';
 import GhostBlock from 'common/GhostBlock';
 import { TOOL_SECTION_CONTENT } from '../content/ToolSectionText';
@@ -7,24 +7,12 @@ import { Transition } from 'react-transition-group';
 import { placeholderTexts } from 'placeholders/ToolsSectionImage';
 
 const ToolsSection = (props: any) => {
-  const [realVisibility, setRealVisibility] = useState<boolean[]>(
-    [true, false, false, false, false],
+  const [sectionVisibility, setSectionVisibility] = useState<boolean[]>(
+    TOOL_SECTION_CONTENT.map(() => true),
   );
-  const [transitionVisibility, setTransitionVisibility] = useState<boolean[]>(
-    [true, false, false, false, false],
-  );
-
-  useEffect(() => {
-    const firstVisibleIndex = realVisibility.indexOf(true);
-    if (firstVisibleIndex !== -1) {
-      const newVisbility = TOOL_SECTION_CONTENT.map(() => false);
-      newVisbility[firstVisibleIndex] = true;
-      setTransitionVisibility(newVisbility);
-    }
-  }, [realVisibility]);
 
   return (
-    <section className={styles.container} id="tools">
+    <section className={styles.container} id='tools'>
       <div className={styles.subcontainer}>
         <div>
           <h1 className={`${styles.titleBold} ${styles.gradient_color}`}>
@@ -39,12 +27,10 @@ const ToolsSection = (props: any) => {
               return (
                 <VisibilitySensor
                   onChange={(isVisible: boolean) => {
-                    const newRealVisibility = [...realVisibility];
-                    newRealVisibility[index] = isVisible;
-                    console.log(newRealVisibility);
-                    setRealVisibility(newRealVisibility);
+                    const newSectionVisibility = [...sectionVisibility];
+                    newSectionVisibility[index] = isVisible;
+                    setSectionVisibility(newSectionVisibility);
                   }}
-                  // partialVisibility={true}
                 >
                   <li>
                     <h3 className={styles.gradient_color}>{content.title}</h3>
@@ -59,7 +45,7 @@ const ToolsSection = (props: any) => {
             <div className={styles.stickyBox}>
               <GhostBlock>
                 {placeholderTexts.map((text, index) => (
-                  <Transition in={transitionVisibility[index]} timeout={500}>
+                  <Transition in={sectionVisibility[index]} timeout={500}>
                     {(state) => (
                       <p
                         style={{
