@@ -8,10 +8,10 @@ import { placeholderTexts } from 'placeholders/ToolsSectionImage';
 
 const ToolsSection = (props: any) => {
   const [realVisibility, setRealVisibility] = useState<boolean[]>(
-    [true, false, false, false, false],
+    [false, false, false, false, false],
   );
   const [transitionVisibility, setTransitionVisibility] = useState<boolean[]>(
-    [true, false, false, false, false],
+    [false, false, false, false, false],
   );
 
   useEffect(() => {
@@ -41,10 +41,11 @@ const ToolsSection = (props: any) => {
                   onChange={(isVisible: boolean) => {
                     const newRealVisibility = [...realVisibility];
                     newRealVisibility[index] = isVisible;
-                    console.log(newRealVisibility);
                     setRealVisibility(newRealVisibility);
                   }}
-                  // partialVisibility={true}
+                  intervalDelay={10}
+                  intervalCheck={true}
+                  scrollCheck={true}
                 >
                   <li>
                     <h3 className={styles.gradient_color}>{content.title}</h3>
