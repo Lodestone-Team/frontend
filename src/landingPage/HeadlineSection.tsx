@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-scroll';
-// import { Link } from 'react-scroll';
 import BarAnimation from './BarAnimation';
 import github from '../assets/GitHub-32px.png';
+import menu from '../assets/Burger-menu-36px.png';
 import logo from '../assets/Lodestone-32px.png';
 
 import styles from './HeadlineSection.module.scss';
@@ -30,35 +29,74 @@ const HeadlineSection = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   });
 
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+
   return (
     <>
-      <nav className={styles.header + ' ' + scrollStyle}>
-        <div className={styles.navLeft}>
-          <Link to="home" smooth={true}>
-            <img className={styles.linkImage} src={logo} alt="Lodestone logo" />
-          </Link>
-          {/* <a href="#home">
-          </a> */}
-          <Link to="about" smooth={true}>about</Link>
-          <Link to="setup" smooth={true}>setup</Link>
-          <Link to="security" smooth={true}>security</Link>
-          <Link to="control" smooth={true}>control</Link>
-          <Link to="tools" smooth={true}>tools</Link>
+      <nav className={`${styles.header} ${scrollStyle}`}>
+        <div className={styles.navTop}>
+          <div className={styles.navLeft}>
+            <div className={styles.desktopLinks}>
+              <a href="#home">
+                <img
+                  className={styles.linkImage}
+                  src={logo}
+                  alt="Lodestone logo"
+                />
+              </a>
+              <a href="#about">about</a>
+              <a href="#setup">setup</a>
+              <a href="#security">security</a>
+              <a href="#tools">tools</a>
+            </div>
+            <img
+            className={styles.linkImage}
+            src={menu}
+            alt="menu icon"
+            onClick={() => {
+              setIsOpen(!isOpen);
+            }}
+          />
+          </div>
+
+          
+          <div className={styles.navRight}>
+            <a href="https://github.com/Lodestone-Team" style={{ padding: 0 }}>
+              <img
+                className={styles.linkImage}
+                src={github}
+                alt="github logo"
+              />
+            </a>
+          </div>
         </div>
-        <div className={styles.navRight}>
-          <a href="https://github.com/Lodestone-Team" style={{ padding: 0 }}>
-            <img className={styles.linkImage} src={github} alt="github logo" />
-          </a>
+        
+        <div className={`${styles.navBottom}`}>
+          <div
+            className={`${styles.mobileMenu} ${
+              isOpen ? styles.opened : styles.closed
+            }`}
+          >
+            <a href="#about">about</a>
+            <a href="#setup">setup</a>
+            <a href="#security">security</a>
+            <a href="#tools">tools</a>
+          </div>
         </div>
       </nav>
+
       <section className={styles.container} id="top">
         <BarAnimation></BarAnimation>
 
-      <div className={styles.headlineContainer}>
-        <h1 className={styles.logo}>Lodestone</h1>
-        <h2>The most comprehensive<br/>Minecraft Server Management tool.</h2>
-      </div>
-    </section>
+        <div className={styles.headlineContainer}>
+          <h1 className={styles.logo}>Lodestone</h1>
+          <h2>
+            The most comprehensive
+            <br />
+            Minecraft Server Management tool.
+          </h2>
+        </div>
+      </section>
     </>
   );
 };
