@@ -11,8 +11,12 @@ const HeadlineSection = () => {
   const [scrollStyle, setScrollStyle] = useState<string>(); // styles.[blank] is a `string` type
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
-  // some good old fashion js DOM manipulation :) https://bootstrap-menu.com/detail-autohide.html
+  const handleCloseMenu = () => {
+    setIsOpen(false);
+  };
+
   useEffect(() => {
+    // some good old fashion js DOM manipulation :) https://bootstrap-menu.com/detail-autohide.html
     const handleScroll = () => {
       const currPos = window.scrollY;
       if (prevPos < currPos) {
@@ -26,10 +30,6 @@ const HeadlineSection = () => {
     };
 
     window.addEventListener('scroll', handleScroll);
-
-    const handleCloseMenu = () => {
-      setIsOpen(false);
-    }
 
     const widthMatch = window.matchMedia('(min-width: 768px)');
 
@@ -90,10 +90,12 @@ const HeadlineSection = () => {
           }`}
         >
           <div className={`${styles.mobileMenu} `}>
-            <a href="#about">about</a>
-            <a href="#setup">setup</a>
-            <a href="#security">security</a>
-            <a href="#tools">tools</a>
+            <a href="#about" onClick={handleCloseMenu}>
+              about
+            </a>
+            <a href="#setup" onClick={handleCloseMenu}>setup</a>
+            <a href="#security" onClick={handleCloseMenu}>security</a>
+            <a href="#tools"onClick={handleCloseMenu}>tools</a>
             <a href="https://github.com/Lodestone-Team" style={{ padding: 0 }}>
               <img
                 className={styles.linkImage}
