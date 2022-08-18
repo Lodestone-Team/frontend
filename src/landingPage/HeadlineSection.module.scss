@@ -24,6 +24,11 @@
   .toggleMenu{
     display: none;
   }
+  .navBottom {
+    max-height: 0;
+    transition: max-height 0.3s ease-in-out;
+
+  }
 }
 
 .container {

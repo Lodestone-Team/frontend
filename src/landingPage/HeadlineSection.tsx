@@ -9,6 +9,7 @@ import styles from './HeadlineSection.module.scss';
 const HeadlineSection = () => {
   const [prevPos, setPrevPos] = useState<number>(0);
   const [scrollStyle, setScrollStyle] = useState<string>(); // styles.[blank] is a `string` type
+  const [isOpen, setIsOpen] = useState<boolean>(false);
 
   // some good old fashion js DOM manipulation :) https://bootstrap-menu.com/detail-autohide.html
   useEffect(() => {
@@ -26,10 +27,19 @@ const HeadlineSection = () => {
 
     window.addEventListener('scroll', handleScroll);
 
-    return () => window.removeEventListener('scroll', handleScroll);
-  });
+    const handleCloseMenu = () => {
+      setIsOpen(false);
+    }
 
-  const [isOpen, setIsOpen] = useState<boolean>(false);
+    const widthMatch = window.matchMedia('(min-width: 768px)');
+
+    widthMatch.addEventListener('change', handleCloseMenu);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      widthMatch.removeEventListener('change', handleCloseMenu);
+    };
+  });
 
   return (
     <>
