@@ -46,6 +46,14 @@ const HeadlineSection = () => {
       <nav className={`${styles.header} ${scrollStyle}`}>
         <div className={styles.navTop}>
           <div className={styles.navLeft}>
+            <img
+              className={`${styles.linkImage} ${styles.toggleMenu}`}
+              src={menu}
+              alt="menu icon"
+              onClick={() => {
+                setIsOpen(!isOpen);
+              }}
+            />
             <a href="#home">
               <img
                 className={styles.linkImage}
@@ -73,14 +81,6 @@ const HeadlineSection = () => {
                 alt="github logo"
               />
             </a>
-            <img
-              className={`${styles.linkImage} ${styles.toggleMenu}`}
-              src={menu}
-              alt="menu icon"
-              onClick={() => {
-                setIsOpen(!isOpen);
-              }}
-            />
           </div>
         </div>
 
@@ -93,9 +93,15 @@ const HeadlineSection = () => {
             <a href="#about" onClick={handleCloseMenu}>
               about
             </a>
-            <a href="#setup" onClick={handleCloseMenu}>setup</a>
-            <a href="#security" onClick={handleCloseMenu}>security</a>
-            <a href="#tools"onClick={handleCloseMenu}>tools</a>
+            <a href="#setup" onClick={handleCloseMenu}>
+              setup
+            </a>
+            <a href="#security" onClick={handleCloseMenu}>
+              security
+            </a>
+            <a href="#tools" onClick={handleCloseMenu}>
+              tools
+            </a>
             <a href="https://github.com/Lodestone-Team" style={{ padding: 0 }}>
               <img
                 className={styles.linkImage}
