@@ -36,31 +36,54 @@ const HeadlineSection = () => {
       <nav className={`${styles.header} ${scrollStyle}`}>
         <div className={styles.navTop}>
           <div className={styles.navLeft}>
-            <div className={styles.desktopLinks}>
-              <a href="#home">
-                <img
-                  className={styles.linkImage}
-                  src={logo}
-                  alt="Lodestone logo"
-                />
-              </a>
+            <a href="#home">
+              <img
+                className={styles.linkImage}
+                src={logo}
+                alt="Lodestone logo"
+              />
+            </a>
+            <div className={`${styles.linksDesktop}`}>
               <a href="#about">about</a>
               <a href="#setup">setup</a>
               <a href="#security">security</a>
               <a href="#tools">tools</a>
             </div>
-            <img
-            className={styles.linkImage}
-            src={menu}
-            alt="menu icon"
-            onClick={() => {
-              setIsOpen(!isOpen);
-            }}
-          />
           </div>
 
-          
           <div className={styles.navRight}>
+            <a
+              className={`${styles.navGitHub}`}
+              href="https://github.com/Lodestone-Team"
+              style={{ padding: 0 }}
+            >
+              <img
+                className={styles.linkImage}
+                src={github}
+                alt="github logo"
+              />
+            </a>
+            <img
+              className={`${styles.linkImage} ${styles.toggleMenu}`}
+              src={menu}
+              alt="menu icon"
+              onClick={() => {
+                setIsOpen(!isOpen);
+              }}
+            />
+          </div>
+        </div>
+
+        <div
+          className={`${styles.navBottom} ${
+            isOpen ? styles.opened : styles.closed
+          }`}
+        >
+          <div className={`${styles.mobileMenu} `}>
+            <a href="#about">about</a>
+            <a href="#setup">setup</a>
+            <a href="#security">security</a>
+            <a href="#tools">tools</a>
             <a href="https://github.com/Lodestone-Team" style={{ padding: 0 }}>
               <img
                 className={styles.linkImage}
@@ -68,19 +91,6 @@ const HeadlineSection = () => {
                 alt="github logo"
               />
             </a>
-          </div>
-        </div>
-        
-        <div className={`${styles.navBottom}`}>
-          <div
-            className={`${styles.mobileMenu} ${
-              isOpen ? styles.opened : styles.closed
-            }`}
-          >
-            <a href="#about">about</a>
-            <a href="#setup">setup</a>
-            <a href="#security">security</a>
-            <a href="#tools">tools</a>
           </div>
         </div>
       </nav>

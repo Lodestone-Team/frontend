@@ -1,14 +1,28 @@
 @use 'foundation/text';
 
 @media screen and (max-width: 768px) {
-  .navLeft, .navRight{
+  .linksDesktop{
     display: none; 
+  }
+  .navGitHub {
+    display: none;
+  }
+  .toggleMenu {
+    display: block;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .navLeft, .navRight{
+  .linksDesktop{
     display: flex; 
+    flex-direction: row;
+    align-items: center;
+  }
+  .navGitHub{
+    display: block;
+  }
+  .toggleMenu{
+    display: none;
   }
 }
 
@@ -33,7 +47,7 @@
 .header {
   position: fixed;
   top: 0;
-  width: calc(100vw - (100vw/6));
+  width: 100%;
   z-index: 100; // O_O, lets hope no one write `z-index: 1000` in the future
   display: flex;
   flex-direction: column;
@@ -41,18 +55,20 @@
   color: var(--bright-text);
   background: var(--dark-background-accent);
   border-bottom: 1px solid #aaaaaa;
-  padding: 0 calc(100vw/12);
 
   .navTop {
     height: 5rem;
     display: flex;
     flex-direction: row;
-    width: 100%;
+    width: auto;
     justify-content: space-between;
     align-items: center;
+    padding: 0 calc(100vw/12);
+    border-bottom: 1px solid #aaaaaa;
+
   
     .navLeft {
-      // display: flex;
+      display: flex;
       flex-direction: row;
       align-items: center;
   
@@ -66,23 +82,15 @@
           width: 27px;
         }
       }
-  
-      .desktopLinks {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-      }
     }
   
     .navRight {
-      display: flex;
+      // display: flex;
       flex-direction: row;
       align-items: center;
       padding: 0;
   
       a {
-        display: flex;
         align-items: center;
         margin-left: 2rem;
       }
@@ -90,26 +98,31 @@
   }
 
   .navBottom {
-    width: 100%;
+    width: auto;
+    padding: 0 calc(100vw/12);
+    // border-bottom: 1px solid #aaaaaa;
 
     .mobileMenu {
       display: flex;
       flex-direction: column;
+      padding-bottom: 1rem;
 
       a {
-        margin: 1rem 0;
+        @extend .bold, .small;
+        margin-top: 2rem;
       }
     }
+  }
 
-    .opened {
-      max-height: 100vh;
-      transition: max-height 0.3s ease-in-out
-    }
+  .opened {
+    max-height: 100vh;
+    transition: max-height 0.3s ease-in-out;
+  }
 
-    .closed {
-      max-height: 0;
-      transition: max-height 0.3s ease-in-out
-    }
+  .closed {
+    max-height: 0;
+    transition: max-height 0.3s ease-in-out;
+
   }
 }
 
