@@ -1,5 +1,36 @@
 @use 'foundation/text';
 
+@media screen and (max-width: 768px) {
+  .linksDesktop{
+    display: none; 
+  }
+  .navGitHub {
+    display: none;
+  }
+  .toggleMenu {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .linksDesktop{
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+  }
+  .navGitHub{
+    display: block;
+  }
+  .toggleMenu{
+    display: none;
+  }
+  .navBottom {
+    max-height: 0;
+    transition: max-height 0.3s ease-in-out;
+
+  }
+}
+
 .container {
   background: var(--dark-background-accent);
   height: 90vh;
@@ -19,49 +50,89 @@
 }
 
 .header {
-  position: sticky;
-  height: 5rem;
+  position: fixed;
   top: 0;
+  width: 100%;
   z-index: 100; // O_O, lets hope no one write `z-index: 1000` in the future
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
   color: var(--bright-text);
   background: var(--dark-background-accent);
   border-bottom: 1px solid #aaaaaa;
-  padding: 0 calc(100vw/12);
 
-  .navLeft {
+  .navTop {
+    height: 5rem;
     display: flex;
     flex-direction: row;
+    width: auto;
+    justify-content: space-between;
     align-items: center;
+    padding: 0 calc(100vw/12);
+    border-bottom: 1px solid #aaaaaa;
 
-    a {
-      @extend .bold, .small;
-      display: flex;
-      margin-right: 2rem;
   
-      .linkImage {
-        height: 27px;
-        width: 27px;
+    .navLeft {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+  
+      a {
+        @extend .bold, .small;
+        display: flex;
+        margin-right: 2rem;
+    
+        .linkImage {
+          height: 27px;
+          width: 27px;
+        }
+      }
+
+      .toggleMenu {
+        margin-right: 2rem;
+      }
+    }
+  
+    .navRight {
+      // display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 0;
+  
+      a {
+        align-items: center;
+        margin-left: 2rem;
       }
     }
   }
 
-  .navRight {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0;
+  .navBottom {
+    width: auto;
+    padding: 0 calc(100vw/12);
+    // border-bottom: 1px solid #aaaaaa;
 
-    a {
+    .mobileMenu {
       display: flex;
-      align-items: center;
-      margin-left: 2rem;
+      flex-direction: column;
+      padding-bottom: 1rem;
+
+      a {
+        @extend .bold, .small;
+        margin-top: 2rem;
+      }
     }
   }
 
-  
+  .opened {
+    max-height: 100vh;
+    transition: max-height 0.3s ease-in-out;
+  }
+
+  .closed {
+    max-height: 0;
+    transition: max-height 0.3s ease-in-out;
+
+  }
 }
 
 .down{
