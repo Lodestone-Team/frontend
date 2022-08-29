@@ -51,3 +51,26 @@
     height: 60vh;
   }
 }
+
+@media screen and (max-width: 768px){
+  .subcontainer {
+    h1 {
+      font-size: 48px;
+    }
+  }
+  .stickySectionContainer {
+    .parameters li {
+      width: 85vw;
+      h3 {
+        font-size: 18px;
+        font-weight: 500;
+        color: #2AF588;
+        margin-bottom: 10px;
+      }
+      p {
+        font-size: 18px;
+        color: #C4C4C4;
+      }
+    }
+  }
+}

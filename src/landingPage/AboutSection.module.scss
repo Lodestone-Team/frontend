@@ -59,24 +59,22 @@
       height: 30vh;
     }
 
-    &.free article {
-      p {
-        color: #767A82;
-        font-weight: 700;
-      }
-      
-      // 0_0
-      .title{
-        .titleBold {
-          font-size: inherit;
-        }
-        font-size: 54px;
-        font-weight: 900;
-      }
+    p {
+      color: #767A82;
+      font-weight: 700;
     }
 
-    &.setup {
-      display: none;
+    .title{
+      .titleBold {
+        font-size: inherit;
+      }
+      font-size: 54px;
+      font-weight: 900;
+    }
+
+    &.setup article{
+      text-align: left;
+      order: 1;
     }
   }
 }

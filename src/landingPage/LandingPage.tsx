@@ -19,14 +19,14 @@ const LandingPage = () => {
       <OnboardSection />
 
       <AboutSection />
-{/* 
+
       <SecuritySection />
 
       <ControlSection />
 
       <ToolsSection />
 
-      <FooterSection /> */}
+      <FooterSection />
     </div>
   );
 };
