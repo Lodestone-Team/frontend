@@ -16,7 +16,7 @@ const LandingPage = () => {
 
       <HeadlineSection/>
 
-      <OnboardSection />
+      {/* <OnboardSection />
 
       <AboutSection />
 
@@ -26,7 +26,7 @@ const LandingPage = () => {
 
       <ToolsSection />
 
-      <FooterSection />
+      <FooterSection /> */}
     </div>
   );
 };

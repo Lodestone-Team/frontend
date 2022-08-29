@@ -1,5 +1,15 @@
 @use 'foundation/text';
 
+@media screen and (max-width: 768px){
+  .headlineContainer {
+    h1 {
+      font-size: 52px;
+    }
+    h2 {
+      font-size: 24px;
+    }
+  }
+}
 .container {
   background: var(--dark-background-accent);
   height: 90vh;
@@ -12,6 +22,7 @@
   width: min-content;
   margin-top: 20vh;
   margin-left: calc(100vw/12);
+  width: 80vw;
 
   h1 {
     margin-bottom: 1rem;
