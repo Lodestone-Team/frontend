@@ -44,22 +44,39 @@
 
 @media screen and (max-width: 768px) {
   .section {
+    height: 90vh;
     flex-direction: column;
     padding: 3vh calc(100vw / 12);
 
     article {
       width: 100%;
+      margin-top: 18vh;
       margin-bottom: 2vh;
     }
 
     figure {
       width: 100%;
-      height: 20vh;
+      height: 30vh;
     }
 
-    &.setup article {
-      text-align: right;
-      order: 1;
+    &.free article {
+      p {
+        color: #767A82;
+        font-weight: 700;
+      }
+      
+      // 0_0
+      .title{
+        .titleBold {
+          font-size: inherit;
+        }
+        font-size: 54px;
+        font-weight: 900;
+      }
+    }
+
+    &.setup {
+      display: none;
     }
   }
 }

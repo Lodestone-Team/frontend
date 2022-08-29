@@ -16,10 +16,10 @@ const LandingPage = () => {
 
       <HeadlineSection/>
 
-      {/* <OnboardSection />
+      <OnboardSection />
 
       <AboutSection />
-
+{/* 
       <SecuritySection />
 
       <ControlSection />
