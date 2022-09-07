@@ -86,3 +86,39 @@ a{
         text-decoration: var(--bright-text) underline solid;
     }
 }
+
+@media screen and (max-width: 768px) {
+    p, .regular {
+        color: var(--fade-text);
+        font-weight: 700;
+        font-size: 1.25rem;
+        line-height: 100%;
+    }
+
+    .title{
+        font-size: 3.375rem;
+        font-weight: 900;
+    }
+    .titleBold {
+        font-size: 3.375rem;
+    }
+
+    h1 {
+        font-size: 3.375rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h4 {
+        font-size: 1.5rem;
+        font-weight: 900;
+    }
+    
+    .textSection {
+        p {
+            text-align: left;
+        }
+    }
+}

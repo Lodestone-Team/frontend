@@ -48,7 +48,7 @@ const ToolsSection = (props: any) => {
                   scrollCheck={true}
                 >
                   <li>
-                    <h3 className={styles.gradient_color}>{content.title}</h3>
+                    <h4 className={styles.gradient_color}>{content.title}</h4>
                     <p>{content.body}</p>
                   </li>
                 </VisibilitySensor>

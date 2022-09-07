@@ -1,14 +1,6 @@
 @use 'foundation/text';
 
 @media screen and (max-width: 768px){
-  .headlineContainer {
-    h1 {
-      font-size: 52px;
-    }
-    h2 {
-      font-size: 24px;
-    }
-  }
   .linksDesktop{
     display: none; 
   }
