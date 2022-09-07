@@ -37,6 +37,7 @@ h1, h2, h3, h4, h5, h6, p, a, b, strong, em, i, span, li, ul, ol, dl, dt, dd, bl
     font-size: 6.5rem;
     line-height: 140%;
     letter-spacing: -0.04em;
+    overflow: hidden;
 }
 
 .titleBold{
@@ -58,6 +59,12 @@ h2 {
 }
 
 h3 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 100%;
+}
+
+h4 {
     font-weight: 700;
     font-size: 1.5rem;
     line-height: 100%;
@@ -88,6 +95,10 @@ a{
 }
 
 @media screen and (max-width: 768px) {
+    .logo {
+        font-size: 4.35rem;
+    }
+
     p, .regular {
         color: var(--fade-text);
         font-weight: 700;
@@ -108,7 +119,7 @@ a{
     }
 
     h2 {
-        font-size: 1.5rem;
+        font-size: 1.45rem;
     }
 
     h4 {
