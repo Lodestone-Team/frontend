@@ -51,3 +51,19 @@
     height: 60vh;
   }
 }
+
+@media screen and (max-width: 768px){
+  .stickySectionContainer {
+    .parameters li {
+      width: 85vw;
+        
+      h4 {
+        margin-bottom: 10px;
+      }
+
+      p {
+        color: var(--mid-grey-text);
+      }
+    }
+  }
+}

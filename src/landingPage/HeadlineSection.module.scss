@@ -1,6 +1,6 @@
 @use 'foundation/text';
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px){
   .linksDesktop{
     display: none; 
   }
@@ -12,23 +12,20 @@
   }
 }
 
-@media screen and (min-width: 768px) {
-  .linksDesktop{
-    display: flex; 
-    flex-direction: row;
-    align-items: center;
-  }
-  .navGitHub{
-    display: block;
-  }
-  .toggleMenu{
-    display: none;
-  }
-  .navBottom {
-    max-height: 0;
-    transition: max-height 0.3s ease-in-out;
-
-  }
+.linksDesktop{
+  display: flex; 
+  flex-direction: row;
+  align-items: center;
+}
+.navGitHub{
+  display: block;
+}
+.toggleMenu{
+  display: none;
+}
+.navBottom {
+  max-height: 0;
+  transition: max-height 0.3s ease-in-out;
 }
 
 .container {
@@ -43,6 +40,7 @@
   width: min-content;
   margin-top: 20vh;
   margin-left: calc(100vw/12);
+  width: 80vw;
 
   h1 {
     margin-bottom: 1rem;

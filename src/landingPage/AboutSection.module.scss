@@ -44,21 +44,23 @@
 
 @media screen and (max-width: 768px) {
   .section {
+    height: 90vh;
     flex-direction: column;
     padding: 3vh calc(100vw / 12);
 
     article {
       width: 100%;
+      margin-top: 18vh;
       margin-bottom: 2vh;
     }
 
     figure {
       width: 100%;
-      height: 20vh;
+      height: 30vh;
     }
 
-    &.setup article {
-      text-align: right;
+    &.setup article{
+      text-align: left;
       order: 1;
     }
   }

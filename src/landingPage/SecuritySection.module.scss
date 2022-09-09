@@ -49,3 +49,17 @@
     max-width: 80vw;
   }
 }
+
+@media screen and (max-width: 768px){
+  .textSection p {
+    text-align: left;
+  }
+  
+  h3 {
+    margin-bottom: 10px;
+  }
+  
+  .lockSection .lock img{
+    height: 25vh;
+  }
+}

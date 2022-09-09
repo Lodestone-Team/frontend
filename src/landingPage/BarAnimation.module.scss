@@ -40,17 +40,31 @@
   }
 }
 
+@media screen and (min-width: 768px){
+  .container {
+    top: 15vh;
+    .barWrapper {
+      height: 14%;
+    }
+  }
+}
+@media screen and (max-width: 768px){
+  .container {
+    top: 35vh;
+    .barWrapper {
+      height: 7%;
+    }
+  }
+}
 .container {
   animation-timing-function: cubiccubic-bezier(0.35, 0.29, 0.68, 0.69);
   position: absolute;
   right: 0;
-  top: 15vh;
   width: 50%;
   min-width: 40vh;
   height: 100%;
 
   .barWrapper {
-    height: 14%;
     margin-bottom: 6%;
     margin-left: auto;
     margin-right: 0;
