@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './ControlSection.module.scss';
+import 'animate.css';
 import GhostBlock from 'common/GhostBlock';
 import { useInView } from 'react-intersection-observer';
 import { Transition } from 'react-transition-group';
@@ -53,53 +54,30 @@ const ControlSection = () => {
   return (
     <section className={styles.container} ref={ref} id='control'>
       <div className={styles.animationContainer}>
-        <Transition in={inView} timeout={0}>
-          {(state) => (
-            <>
-              <div
-                className={`${styles.left} ${styles.ghostContainer}`}
-                style={{
-                  ...transitionStylesLeft[state],
-                }}
-              >
-                {ghostBlock}
-                {ghostBlock}
-                {ghostBlock}
-                {ghostBlock}
-              </div>
-              <div
-                className={`${styles.right} ${styles.ghostContainer}`}
-                style={{
-                  ...transitionStylesRight[state],
-                }}
-              >
-                {ghostBlock}
-                {ghostBlock}
-                {ghostBlock}
-                {ghostBlock}
-              </div>
-              <div className={styles.headerContainer}>
+        <div className={`${styles.left} ${styles.ghostContainer} ${"animate__animated animate__slideInLeft"}`}>
+          {ghostBlock}
+          {ghostBlock}
+          {ghostBlock}
+          {ghostBlock}
+        </div>
+        <div className={`${styles.right} ${styles.ghostContainer} ${"animate__animated animate__slideInRight"}`}>
+          {ghostBlock}
+          {ghostBlock}
+          {ghostBlock}
+          {ghostBlock}
+        </div>
+      </div>
+
+      <div className={styles.headerContainer}>
                 <h1
-                  className={`${styles.left} ${styles.title}`}
-                  style={{
-                    ...transitionStylesHeaderLeft[state],
-                  }}
-                >
+                  className={`${styles.left} ${styles.title} ${"animate__animated animate__slideInLeft"}`}>
                   total control
                 </h1>
                 <h1
-                  className={`${styles.right} ${styles.title}`}
-                  style={{
-                    ...transitionStylesHeaderRight[state],
-                  }}
-                >
+                  className={`${styles.right} ${styles.title} ${"animate__animated animate__slideInRight"}`}>
                   endless fidelity.
                 </h1>
               </div>
-            </>
-          )}
-        </Transition>
-      </div>
 
       <p>{textDescription}</p>
     </section>

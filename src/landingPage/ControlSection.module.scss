@@ -35,12 +35,10 @@
     column-gap: 1vw;
     row-gap: 1vw;
 
-    position: absolute;
-
-    transition: left 1s ease-out, right 1s ease-out;
-  }
+    position: absolute;}
 
   .left {
+    margin-left: -20vw;
     :nth-child(1) {
       grid-column: 1 / span 2;
       grid-row: 1 / span 2;
@@ -63,6 +61,7 @@
   }
 
   .right {
+    margin-left: 45vw;
     :nth-child(1) {
       grid-column: 4 / span 2;
       grid-row: 1 / span 2;
@@ -100,7 +99,6 @@
 
   h1 {
     position: relative;
-    transition: left 1s ease-out, right 1s ease-out;
   }
 }
 
@@ -120,3 +118,4 @@
     max-width: 80vw;
   }
 }
+
