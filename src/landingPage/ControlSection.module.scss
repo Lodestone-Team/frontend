@@ -1,25 +1,5 @@
 @use "foundation/text";
 
-@keyframes leftEnter {
-  0% {
-    transform: translateX(-100%);
-  }
-
-  100% {
-    transform: translateX(0);
-  }
-}
-
-@keyframes rightEnter {
-  0% {
-    transform: translateX(100%);
-  }
-
-  100% {
-    transform: translateX(0);
-  }
-}
-
 .animationContainer {
   width: 100%;
   height: calc(20vh * 2 + 1vw);
@@ -119,3 +99,6 @@
   }
 }
 
+.out {
+  display: none;
+}
