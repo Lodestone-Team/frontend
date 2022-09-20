@@ -1,106 +1,73 @@
 import React from 'react';
 import styles from './ControlSection.module.scss';
+import 'animate.css';
 import GhostBlock from 'common/GhostBlock';
 import { useInView } from 'react-intersection-observer';
-import { Transition } from 'react-transition-group';
 
 const ControlSection = () => {
   const textDescription =
     'If you are looking for a locally hosted server management tool that gives you total control and endless fidelity, look no further than Lodestone. This tool will allow you to manage your server with ease, giving you the ability to customize and configure your server to your liking. With Lodestone, you will have the power to create the perfect Minecraft server for you and your friends to enjoy.';
   const [ref, inView] = useInView({
-    threshold: 0.75,
+    threshold: 1,
     triggerOnce: true,
     onChange: (inView) => {
       if (inView) {
         console.log('in view');
       } else {
-        console.log('out of view');
+        console.log('out of view'); 
       }
     },
   });
+  const ghostBlock = <GhostBlock rounded={true}/>;
 
-  const ghostBlock = <GhostBlock rounded={true} />;
-
-  const transitionStylesLeft: { [id: string]: React.CSSProperties } = {
-    entering: { right: '100%' },
-    entered: { right: '42.5%' },
-    exiting: { right: '100%' },
-    exited: { right: '100%' },
-  };
-
-  const transitionStylesRight: { [id: string]: React.CSSProperties } = {
-    entering: { left: '100%' },
-    entered: { left: '42.5%' },
-    exiting: { left: '100%' },
-    exited: { left: '100%' },
-  };
-
-  const transitionStylesHeaderLeft: { [id: string]: React.CSSProperties } = {
-    entering: { right: '100%' },
-    entered: { right: '10%' },
-    exiting: { right: '100%' },
-    exited: { right: '100%' },
-  };
-
-  const transitionStylesHeaderRight: { [id: string]: React.CSSProperties } = {
-    entering: { left: '100%' },
-    entered: { left: '10%' },
-    exiting: { left: '100%' },
-    exited: { left: '100%' },
-  };
-
+  // this gets translated to classnames.
+  const animationClassname = (direction:String) => { return inView? `animate__animated animate__slideIn${direction} animate__slower` : 'animate__animated animate__fadeOut'}
 
   return (
     <section className={styles.container} ref={ref} id='control'>
-      <div className={styles.animationContainer}>
-        <Transition in={inView} timeout={0}>
-          {(state) => (
-            <>
-              <div
-                className={`${styles.left} ${styles.ghostContainer}`}
-                style={{
-                  ...transitionStylesLeft[state],
-                }}
-              >
-                {ghostBlock}
-                {ghostBlock}
-                {ghostBlock}
-                {ghostBlock}
-              </div>
-              <div
-                className={`${styles.right} ${styles.ghostContainer}`}
-                style={{
-                  ...transitionStylesRight[state],
-                }}
-              >
-                {ghostBlock}
-                {ghostBlock}
-                {ghostBlock}
-                {ghostBlock}
-              </div>
-              <div className={styles.headerContainer}>
-                <h1
-                  className={`${styles.left} ${styles.title}`}
-                  style={{
-                    ...transitionStylesHeaderLeft[state],
-                  }}
-                >
-                  total control
-                </h1>
-                <h1
-                  className={`${styles.right} ${styles.title}`}
-                  style={{
-                    ...transitionStylesHeaderRight[state],
-                  }}
-                >
-                  endless fidelity.
-                </h1>
-              </div>
-            </>
-          )}
-        </Transition>
+      <div className={`${styles.animationContainer} animate_animated `}>
+        <div className={`${styles.left} ${styles.ghostContainer} ${animationClassname("Left")}`}>  
+          {ghostBlock}
+          {ghostBlock}
+          <div></div>
+          {ghostBlock}
+          {ghostBlock}
+        </div>
+        <div className={`${styles.right} ${styles.ghostContainer} ${animationClassname("Right")}`}>
+          {ghostBlock}
+          {ghostBlock}
+          {ghostBlock}
+          <div></div>
+          {ghostBlock}
+          {ghostBlock}
+        </div>
+        <div className={`${styles.offscreenLeft} ${styles.ghostContainer}`}>
+          <div></div>
+          {ghostBlock}
+          <div></div>
+          {ghostBlock}
+          {ghostBlock}
+        </div>
+        <div className={`${styles.offscreenRight} ${styles.ghostContainer}`}>
+          {ghostBlock}
+          {ghostBlock}
+          {ghostBlock}
+          <div></div>
+          {ghostBlock}
+          {ghostBlock}
+        </div>
       </div>
 
+      <div className={styles.headerContainer}>
+        <h1
+          className={`${styles.left} ${styles.title} ${animationClassname("Left")}`}>  
+          total control
+        </h1>
+        <h1
+          className={`${styles.right} ${styles.title} ${animationClassname("Right")}`}>
+          endless fidelity.
+        </h1>
+      </div>
       <p>{textDescription}</p>
     </section>
   );
