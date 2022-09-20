@@ -18,23 +18,41 @@ const ControlSection = () => {
       }
     },
   });
+  const ghostBlock = <GhostBlock rounded={true}/>;
 
-  const ghostBlock = <GhostBlock rounded={true} />;
+  // this gets translated to classnames.
+  const animationClassname = (direction:String) => { return inView? `animate__animated animate__slideIn${direction} animate__slower` : 'animate__animated animate__fadeOut'}
 
   return (
     <section className={styles.container} ref={ref} id='control'>
-      <div className={styles.animationContainer}>
-        <div className={`${styles.left} ${styles.ghostContainer} 
-                      ${inView? `animate__animated animate__slideInLeft animate__slow` : 'animate__animated animate__fadeOut'}`}>
+      <div className={`${styles.animationContainer} animate_animated `}>
+        <div className={`${styles.left} ${styles.ghostContainer} ${animationClassname("Left")}`}>  
           {ghostBlock}
           {ghostBlock}
+          <div></div>
           {ghostBlock}
           {ghostBlock}
         </div>
-        <div className={`${styles.right} ${styles.ghostContainer} 
-                      ${inView? `animate__animated animate__slideInRight animate__slow` : 'animate__animated animate__fadeOut'}`}>
+        <div className={`${styles.right} ${styles.ghostContainer} ${animationClassname("Right")}`}>
           {ghostBlock}
           {ghostBlock}
+          {ghostBlock}
+          <div></div>
+          {ghostBlock}
+          {ghostBlock}
+        </div>
+        <div className={`${styles.offscreenLeft} ${styles.ghostContainer}`}>
+          <div></div>
+          {ghostBlock}
+          <div></div>
+          {ghostBlock}
+          {ghostBlock}
+        </div>
+        <div className={`${styles.offscreenRight} ${styles.ghostContainer}`}>
+          {ghostBlock}
+          {ghostBlock}
+          {ghostBlock}
+          <div></div>
           {ghostBlock}
           {ghostBlock}
         </div>
@@ -42,13 +60,11 @@ const ControlSection = () => {
 
       <div className={styles.headerContainer}>
         <h1
-          className={`${styles.left} ${styles.title} 
-                      ${inView? `animate__animated animate__slideInLeft animate__slow` : 'animate__animated animate__fadeOut'}`}>
+          className={`${styles.left} ${styles.title} ${animationClassname("Left")}`}>  
           total control
         </h1>
         <h1
-          className={`${styles.right} ${styles.title} 
-                      ${inView? `animate__animated animate__slideInRight animate__slow` : 'animate__animated animate__fadeOut'}`}>
+          className={`${styles.right} ${styles.title} ${animationClassname("Right")}`}>
           endless fidelity.
         </h1>
       </div>

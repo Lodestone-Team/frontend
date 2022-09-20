@@ -1,11 +1,17 @@
 @use "foundation/text";
 
+//
+@keyframes scroll {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(16vw * 7 * -1))}
+}
+//
+
 .animationContainer {
-  width: 100%;
+  width: 128vw;
   height: calc(20vh * 2 + 1vw);
   position: relative;
-  overflow-x: clip;
-  overflow-y: visible;
+  display: block;
   margin-bottom: 2rem;
 
   .ghostContainer {
@@ -14,52 +20,73 @@
     grid-template-rows: 20vh 20vh;
     column-gap: 1vw;
     row-gap: 1vw;
-
-    position: absolute;}
+    position: absolute;
+  }
 
   .left {
-    margin-left: -20vw;
+    right: 48.5vw;
+
     :nth-child(1) {
-      grid-column: 1 / span 2;
-      grid-row: 1 / span 2;
+      grid-row: span 2;
     }
-
     :nth-child(2) {
-      grid-column: 3 / span 2;
-      grid-row: 2 / span 1;
+      grid-column: span 2;
     }
-
     :nth-child(3) {
-      grid-column: 3 / span 1;
-      grid-row: 1 / span 1;
+      grid-column: span 2;
     }
-
-    :nth-child(4) {
-      grid-column: 4 / span 2;
-      grid-row: 1 / span 1;
+    :nth-child(5) {
+      grid-column: span 2;
     }
   }
 
   .right {
-    margin-left: 45vw;
+    left: 48.5vw;
+
     :nth-child(1) {
-      grid-column: 4 / span 2;
-      grid-row: 1 / span 2;
+      grid-column: span 2;
     }
-
-    :nth-child(2) {
-      grid-column: 1 / span 2;
-      grid-row: 2 / span 1;
-    }
-
     :nth-child(3) {
-      grid-column: 3 / span 1;
-      grid-row: 2 / span 1;
+      grid-row: span 2;
     }
+    :nth-child(2) {
+      grid-column: span 2;
+    }
+    :nth-child(5) {
+      grid-column: span 2;
+    }
+  }
 
-    :nth-child(4) {
-      grid-column: 2 / span 2;
-      grid-row: 1 / span 1;
+  // off screen content 
+
+  .offscreenLeft {
+    left: 112.5vw;
+    :nth-child(1) {
+      grid-row: span 2;
+    }
+    :nth-child(2) {
+      grid-column: span 2;
+    }
+    :nth-child(3) {
+      grid-column: span 2;
+    }
+    :nth-child(5) {
+      grid-column: span 2;
+    }
+  }
+  .offscreenRight {
+    left: 161vw;
+    :nth-child(1) {
+      grid-column: span 2;
+    }
+    :nth-child(3) {
+      grid-row: span 2;
+    }
+    :nth-child(2) {
+      grid-column: span 2;
+    }
+    :nth-child(5) {
+      grid-column: span 2;
     }
   }
 }
@@ -92,13 +119,36 @@
   align-items: center;
   padding-top: 5rem;
 
+  overflow: hidden;
+
   p {
     text-align: center;
     width: 75rem;
     max-width: 80vw;
   }
-}
 
-.out {
-  display: none;
+  // attempt at implementing a autoscroll carousel
+  &::before,
+	&::after {
+		content: "";
+		position: absolute;
+		z-index: 2;
+	}
+
+  &::after {
+		right: 0;
+		transform: rotateZ(180deg);
+	}
+
+	&::before {
+		left: 0;
+	}
+
+  .animationContainer {
+    // setting animation speed < 20 (i.e. faster) will make the site look weird
+		animation: scroll 20s linear infinite;
+		display: flex;
+		width: 128vw;
+	}
+  //
 }
